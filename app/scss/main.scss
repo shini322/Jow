@@ -150,6 +150,11 @@ button{
 .profile{
     font-size: 16px;
     line-height: 20px;
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+    &:hover{
+        border-color: $black;
+    }
 }
 .title-block{
     display: flex;
