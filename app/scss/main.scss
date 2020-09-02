@@ -469,7 +469,7 @@ button{
         }
     }
     &__table{
-        width: 100%;
+        width: 1170px;
         font-weight: 300;
         text-align: left;
         vertical-align: bottom;
@@ -581,4 +581,27 @@ button{
             background-color: #8dd98b;
         }
     }   
+}
+
+.footer{
+    &__inner{
+        display: flex;
+        margin-top: 50px;
+        padding: 7px 36px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #c3d5dc;
+        border-radius: 16px 16px 0 0;
+        font-weight: 300;
+    }
+    &__link{
+        border-bottom: 1px solid transparent;
+        transition: .3s;
+        &:hover{
+            border-color: $black;
+        }
+    }
+    &__link + &__link{
+        margin-left: 40px;
+    }
 }
