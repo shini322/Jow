@@ -166,17 +166,22 @@ button{
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    &__sticker{
-        position: absolute;
-        font-size: 10px;
-        line-height: 14px;
-        border-radius: 4px;
-        padding: 2px 5px;
-        right: -39px;
-        top: -8px;
-        &--new{
-            background-color: #d4c460;
-        }
+    
+}
+.sticker{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    line-height: 14px;
+    border-radius: 4px;
+    width: 22px;
+    height: 12px;
+    right: -32px;
+    top: -2px;
+    &--new{
+        background-color: #d4c460;
     }
 }
 .title-menu{
@@ -294,8 +299,6 @@ button{
         margin-top: 21px;
     }
 }
-
-
 .project-desc{
     &__inner{
         display: flex;
@@ -420,7 +423,6 @@ button{
     }    
 
 }
-
 .team-item{
     display: flex;
     align-items: center;
@@ -479,7 +481,7 @@ button{
         &:nth-child(2){
             .project-tasks__td{
                 border-top: 1px solid $black;
-                padding-top: 25px;
+                padding-top: 15px;
             }
         }
     }
@@ -489,8 +491,26 @@ button{
             text-align: right;
             padding-right: 30px;
         }
+        &--end-date{
+            position: relative;
+            cursor: pointer;
+            padding-right: 23px;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 9px;
+                background-image: url(../img/arrow-top.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                top: 0;
+                right: 0;
+                transform: translateY(70%);
+            }
+        }
     }
     &__td{
+        position: relative;
         padding-bottom: 15px;
         padding-right: 30px;
         vertical-align: bottom;
@@ -503,6 +523,18 @@ button{
         }
         &:first-child, &:nth-child(2), &:nth-child(3){
             font-weight: 500;
+        }
+        &:nth-child(2), &:nth-child(3){
+            width: 14%;
+        }
+        &:nth-child(4){
+            width: 80px;
+        }
+        &:nth-child(5){
+            width: 127px;
+        }
+        &:nth-child(6){
+            width: 127px;
         }
         &--comments{
             text-align: right;
@@ -517,7 +549,6 @@ button{
         display: flex;
         align-items: center;
         padding-top: 28px;
-        padding-bottom: 10px;
         border-top: 1px solid #b9e0c2;
     }
     &__button-toggle{
@@ -537,50 +568,131 @@ button{
             }
         }
     }
-}
-.status-item{
-    position: relative;
-    padding-left: 18px;
-    &:before{
-        content: '';
+    &__calendar{
+        font-weight: 300;
+        border: none;
+        width: 100%;
+    }
+    &__select{
+        font-weight: 300;
+        line-height: 18px;
+        padding: 0;
+        border: none;
+        height: auto;
+        &:after{
+            display: none;
+        }
+    }
+    &__priority-list{
         position: absolute;
+        margin-top: 4px;
+        padding: 10px 0;
+        display: none;
+        background-color: $white;
+        border: 1px solid $black;
+        border-radius: 4px;
+    }
+    &__priority-list-item{
+        padding: 0 8px;
+        line-height: 18px;
+        font-weight: 300;
+        cursor: pointer;
+        & + &{
+            margin-top: 5px;
+        }
+    }
+    &__sticker{
+        right: -26px;
+    }
+
+    &__td-list{
+        position: absolute;
+        margin-top: 4px;
+        padding: 10px 8px;
+        display: none;
+        background-color: $white;
+        border: 1px solid $black;
+        border-radius: 4px;
+        z-index: 10;
+    }
+    &__td-list-item{
+        line-height: 18px;
+        font-weight: 300;
+        cursor: pointer;
+        & + &{
+            margin-top: 5px;
+        }
+    }
+    &__td-list-open{
+        cursor: pointer;
+    }
+    &__assigned-to{
+        position: absolute;
+        display: none;
+        left: -10px;
+        top: 0;
+        z-index: 10;
+    }
+    &__assigned-to-input{
+        
+        padding: 0 10px;
+        max-width: 136px;
+        width: 100%;
+        height: 33px;
+        border-radius: 4px;
+        border: 1px solid $black;
+        
+    }
+    &__assigned-to-button{
+        cursor: pointer;
+    }
+    &__td-name{
+        position: relative;
+    }
+    
+}
+
+
+.status-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    &__color{
+        margin-right: 6px;
         width: 12px;
         height: 12px;
-        top: 50%;
-        left: 0;
         border-radius: 2px;
-        transform: translateY(-50%);
-    }
-    &--correction{
-        &:before{
-            background-color: #818dc1;
-        }
-    }
-    &--production{
-        &:before{
-            background-color: #ce82d7;
-        }
-    }
-    &--reading{
-        &::before{
-            background-color: #dad078;
-        }
-    }
-    &--design{
-        &::before{
-            background-color: #db8686;
-        }
-    }
-    &--copywrite{
-        &::before{
-            background-color: #7ed5c8;
-        }
-    }
-    &--complete{
-        &::before{
-            background-color: #8dd98b;
-        }
     }   
+    // &--correction{
+    //     &:before{
+    //         background-color: #818dc1;
+    //     }
+    // }
+    // &--production{
+    //     &:before{
+    //         background-color: #ce82d7;
+    //     }
+    // }
+    // &--reading{
+    //     &::before{
+    //         background-color: #dad078;
+    //     }
+    // }
+    // &--design{
+    //     &::before{
+    //         background-color: #db8686;
+    //     }
+    // }
+    // &--copywrite{
+    //     &::before{
+    //         background-color: #7ed5c8;
+    //     }
+    // }
+    // &--complete{
+    //     &::before{
+    //         background-color: #8dd98b;
+    //     }
+    // }   
 }
 
 .footer{
@@ -605,3 +717,103 @@ button{
         margin-left: 40px;
     }
 }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Geometria', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    max-width: 22px;
+    height: 22px;
+}
+.ui-state-active{
+    background-color: #758eb8 !important;
+}
+.ui-datepicker td{
+    text-align: right;
+    padding: 0;
+}
+.ui-datepicker .ui-datepicker-header{
+    padding: 0;
+}
+.ui-widget.ui-widget-content{
+    padding: 8px 13px;
+    border: 1px solid $black;
+    border-radius: 4px;
+    max-width: 230px;
+    width: 100%;
+}
+.ui-datepicker th{
+    display: none;
+}
+.ui-widget-header{
+    background-color: $white;
+    border: none;
+}
+.ui-datepicker{
+    padding: 0;    
+}
+.ui-datepicker .ui-datepicker-title{
+    text-align: left;
+    margin: 0;
+}
+.ui-datepicker td span, .ui-datepicker td a{
+    padding: 0;
+}
+.ui-datepicker-calendar tr{
+    &:first-child{
+        .ui-datepicker-week-end{
+            &:nth-child(6){
+                border-radius: 4px 0 0 0;
+            }
+            &:last-child{
+                border-radius: 0 4px 0 0;
+            }
+        }
+    }
+    &:last-child{
+        .ui-datepicker-week-end{
+            &:nth-child(6){
+                border-radius: 0 0 0 4px;
+            }
+            &:last-child{
+                border-radius: 0 0 4px 0;
+            }
+        }
+    }
+    
+}
+.ui-datepicker-week-end {
+    background-color: #dddedd;
+}
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled{
+    opacity: 1;
+}
+.ui-datepicker .ui-datepicker-next{
+    width: 10px;
+    height: 15px;
+    background-image: url(../img/calendar-next.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ui-datepicker .ui-datepicker-prev{
+    width: 10px;
+    height: 15px;
+    background-image: url(../img/calendar-prev.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 43px;
+    left: auto;
+}
+.datepicker{
+    cursor: pointer;
+}
+

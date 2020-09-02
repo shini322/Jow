@@ -90,7 +90,7 @@
                         <div class="title-block">
                             <h1 class="project-page__title page-title">
                                 Project 1   
-                                <div class="page-title__sticker page-title__sticker--new">
+                                <div class="sticker sticker--new">
                                     new
                                 </div>                         
                             </h1>
@@ -269,7 +269,8 @@
                                         <div class="project-desc__item-title">
                                             Status
                                         </div>
-                                        <div class="project-desc__item-desc status-item status-item--copywrite">
+                                        <div class="project-desc__item-desc status-item">
+                                            <div class="status-item__color" style="background-color: #7ed5c8;"></div>
                                             Copywrite                                         
                                         </div>
                                     </div>
@@ -441,8 +442,9 @@
                                             <th class="project-tasks__th">
                                                 Start date
                                             </th>
-                                            <th class="project-tasks__th project-tasks__th--end-date">
-                                                End date
+                                            <th class="project-tasks__th ">
+                                                <span class="project-tasks__th--end-date">End date</span>
+                                                
                                             </th>
                                             <th class="project-tasks__th">
                                                 Status 
@@ -456,7 +458,7 @@
                                         </tr>
                                         <tr class="project-tasks__tr">
                                             <td class="project-tasks__td" colspan="9">
-                                                Subcategory 1
+                                                <span class="project-tasks__td-name">Subcategory 1</span>
                                             </td>
                                         </tr>
                                         <tr class="project-tasks__tr">
@@ -466,22 +468,64 @@
                                             <td class="project-tasks__td">
                                                 James Hetfield
                                             </td>
-                                            <td class="project-tasks__td">
-                                                Kirk Hammett
+                                            <td class="project-tasks__td ">
+                                                <span class="project-tasks__assigned-to-button">Kirk Hammett</span>
+                                                <div class="project-tasks__assigned-to">
+                                                    <input class="project-tasks__assigned-to-input" type="text">
+                                                </div>
                                             </td>
-                                            <td class="project-tasks__td priority priority--high">
-                                                High
+                                            <td class="project-tasks__td"> 
+                                                <span class="project-tasks__td-list-open project-tasks__td-priority priority priority--high">High</span> 
+                                                <ul class="project-tasks__td-list project-tasks__priority-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--high">
+                                                        High
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--normal">
+                                                        Normal
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--low">
+                                                        Low
+                                                    </li>
+                                                </ul>                                                
                                             </td>
+                                            
                                             <td class="project-tasks__td">
-                                                01 Jan 2020
+                                                <input class="project-tasks__calendar datepicker" type="text"  placeholder="01 Jan 2020">
                                             </td>
                                             <td class="project-tasks__td">
                                                 22 Mar 2020
                                             </td>
-                                            <td class="project-tasks__td">
-                                                <div class="status-item status-item--correction">
+                                            <td class="project-tasks__td"> 
+                                                <div class="project-tasks__td-list-open project-tasks__td-status status-item" >
+                                                    <div class="status-item__color" style="background-color: #818dc1;"></div>
                                                     Correction
-                                                </div>
+                                                </div> 
+                                                <ul class="project-tasks__td-list project-tasks__status-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #7ed5c8;"></div>
+                                                        Design
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #db8686;"></div>
+                                                        Copywrite
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #818dc1;"></div>
+                                                        Correction
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #dad078;"></div>
+                                                        Development
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #ce82d7;"></div>
+                                                        QA
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </li>
+                                                </ul>                                                
                                             </td>
                                             <td class="project-tasks__td project-tasks__td--comments">
                                                 23
@@ -492,27 +536,68 @@
                                         </tr>
                                         <tr class="project-tasks__tr">
                                             <td class="project-tasks__td">
-                                                Long-long task 8
+                                                <span class="project-tasks__td-name">Long-long task 8</span>
                                             </td>
                                             <td class="project-tasks__td">
                                                 Kirk Hammett
                                             </td>
-                                            <td class="project-tasks__td">
-                                                Vinnie Paul
+                                            <td class="project-tasks__td ">
+                                                <span class="project-tasks__assigned-to-button">Kirk Hammett</span>
+                                                <div class="project-tasks__assigned-to">
+                                                    <input class="project-tasks__assigned-to-input" type="text">
+                                                </div>
                                             </td>
-                                            <td class="project-tasks__td priority priority--high">
-                                                High
+                                            <td class="project-tasks__td"> 
+                                                <span class="project-tasks__td-list-open project-tasks__td-priority priority priority--high">High</span> 
+                                                <ul class="project-tasks__td-list project-tasks__priority-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--high">
+                                                        High
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--normal">
+                                                        Normal
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--low">
+                                                        Low
+                                                    </li>
+                                                </ul>                                                
                                             </td>
-                                            <td class="project-tasks__td">
-                                                24 Jan 2020
+                                            <td class="project-tasks__td">                                                
+                                                <input class="project-tasks__calendar datepicker" type="text"  placeholder="24 Jan 2020">
                                             </td>
                                             <td class="project-tasks__td">
                                                 12 Feb 2020
                                             </td>
-                                            <td class="project-tasks__td">
-                                                <div class="status-item status-item--production">
+                                            <td class="project-tasks__td"> 
+                                                <div class="project-tasks__td-list-open project-tasks__td-status status-item" >
+                                                    <div class="status-item__color" style="background-color: #ce82d7;"></div>
                                                     Production
-                                                </div>
+                                                </div> 
+                                                <ul class="project-tasks__td-list project-tasks__status-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #7ed5c8;"></div>
+                                                        Design
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #db8686;"></div>
+                                                        Copywrite
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #818dc1;"></div>
+                                                        Correction
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #dad078;"></div>
+                                                        Development
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #ce82d7;"></div>
+                                                        QA
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </li>
+                                                </ul>                                                
                                             </td>
                                             <td class="project-tasks__td project-tasks__td--comments">
                                                 12
@@ -523,27 +608,68 @@
                                         </tr>
                                         <tr class="project-tasks__tr">
                                             <td class="project-tasks__td">
-                                                Simple yet effective task 7 with long long  long long long name
+                                                <span class="project-tasks__td-name">Simple yet effective task 7 with long long  long long long name</span>
                                             </td>
                                             <td class="project-tasks__td">
                                                 Jason Newstead
                                             </td>
-                                            <td class="project-tasks__td">
-                                                Dimebag Darrell
+                                            <td class="project-tasks__td ">
+                                                <span class="project-tasks__assigned-to-button">Kirk Hammett</span>
+                                                <div class="project-tasks__assigned-to">
+                                                    <input class="project-tasks__assigned-to-input" type="text">
+                                                </div>
                                             </td>
-                                            <td class="project-tasks__td priority priority--low">
-                                                Low
+                                            <td class="project-tasks__td"> 
+                                                <span class="project-tasks__td-list-open project-tasks__td-priority priority priority--low">Low</span> 
+                                                <ul class="project-tasks__td-list project-tasks__priority-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--high">
+                                                        High
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--normal">
+                                                        Normal
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--low">
+                                                        Low
+                                                    </li>
+                                                </ul>                                                
                                             </td>
-                                            <td class="project-tasks__td">
-                                                11 Dec 2019
+                                            <td class="project-tasks__td">                                                
+                                                <input class="project-tasks__calendar datepicker" type="text"  placeholder="11 Dec 2019">
                                             </td>
                                             <td class="project-tasks__td">
                                                 17 Oct 2020
                                             </td>
-                                            <td class="project-tasks__td">
-                                                <div class="status-item status-item--reading">
-                                                    Reading
-                                                </div>
+                                            <td class="project-tasks__td"> 
+                                                <div class="project-tasks__td-list-open project-tasks__td-status status-item" >
+                                                    <div class="status-item__color" style="background-color: #dad078;"></div>
+                                                    Correction
+                                                </div> 
+                                                <ul class="project-tasks__td-list project-tasks__status-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #7ed5c8;"></div>
+                                                        Design
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #db8686;"></div>
+                                                        Copywrite
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #818dc1;"></div>
+                                                        Correction
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #dad078;"></div>
+                                                        Development
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #ce82d7;"></div>
+                                                        QA
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </li>
+                                                </ul>                                                
                                             </td>
                                             <td class="project-tasks__td project-tasks__td--comments">
                                                 9
@@ -555,27 +681,70 @@
                                         
                                         <tr class="project-tasks__tr">
                                             <td class="project-tasks__td">
-                                                Impossible task 6
+                                                <span class="project-tasks__td-name">Impossible task 6
+                                                    <span class="project-tasks__sticker sticker sticker--new">new</span>
+                                                </span>
                                             </td>
                                             <td class="project-tasks__td">
                                                 Lars Ulrich
                                             </td>
-                                            <td class="project-tasks__td">
-                                                Rex Brown
+                                            <td class="project-tasks__td ">
+                                                <span class="project-tasks__assigned-to-button">Kirk Hammett</span>
+                                                <div class="project-tasks__assigned-to">
+                                                    <input class="project-tasks__assigned-to-input" type="text">
+                                                </div>
                                             </td>
-                                            <td class="project-tasks__td priority priority--normal">
-                                                Normal
+                                            <td class="project-tasks__td"> 
+                                                <span class="project-tasks__td-list-open project-tasks__td-priority priority priority--normal">Normal</span> 
+                                                <ul class="project-tasks__td-list project-tasks__priority-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--high">
+                                                        High
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--normal">
+                                                        Normal
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--low">
+                                                        Low
+                                                    </li>
+                                                </ul>                                                
                                             </td>
-                                            <td class="project-tasks__td">
-                                                24 Jan 2020
+                                            <td class="project-tasks__td">                                                
+                                                <input class="project-tasks__calendar datepicker" type="text"  placeholder="24 Jan 2020">
                                             </td>
                                             <td class="project-tasks__td">
                                                 27 Jun 2020
                                             </td>
-                                            <td class="project-tasks__td">
-                                                <div class="status-item status-item--design">
+                                            <td class="project-tasks__td"> 
+                                                <div class="project-tasks__td-list-open project-tasks__td-status status-item" >
+                                                    <div class="status-item__color" style="background-color: #db8686;"></div>
                                                     Design
-                                                </div>
+                                                </div> 
+                                                <ul class="project-tasks__td-list project-tasks__status-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #7ed5c8;"></div>
+                                                        Design
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #db8686;"></div>
+                                                        Copywrite
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #818dc1;"></div>
+                                                        Correction
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #dad078;"></div>
+                                                        Development
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #ce82d7;"></div>
+                                                        QA
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </li>
+                                                </ul>                                                
                                             </td>
                                             <td class="project-tasks__td project-tasks__td--comments">
                                                 109
@@ -586,27 +755,68 @@
                                         </tr>
                                         <tr class="project-tasks__tr">
                                             <td class="project-tasks__td">
-                                                Infernous task 5
+                                                <span class="project-tasks__td-name">Infernous task 5</span>
                                             </td>
                                             <td class="project-tasks__td">
                                                 James Hetfield
                                             </td>
-                                            <td class="project-tasks__td">
-                                                Phil Anselmo
+                                            <td class="project-tasks__td ">
+                                                <span class="project-tasks__assigned-to-button">Kirk Hammett</span>
+                                                <div class="project-tasks__assigned-to">
+                                                    <input class="project-tasks__assigned-to-input" type="text">
+                                                </div>
                                             </td>
-                                            <td class="project-tasks__td priority priority--normal">
-                                                Normal
+                                            <td class="project-tasks__td"> 
+                                                <span class="project-tasks__td-list-open project-tasks__td-priority priority priority--normal">Normal</span> 
+                                                <ul class="project-tasks__td-list project-tasks__priority-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--high">
+                                                        High
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--normal">
+                                                        Normal
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--low">
+                                                        Low
+                                                    </li>
+                                                </ul>                                                
                                             </td>
-                                            <td class="project-tasks__td">
-                                                01 Jan 2020
+                                            <td class="project-tasks__td">                                                
+                                                <input class="project-tasks__calendar datepicker" type="text"  placeholder="01 Jan 2020">
                                             </td>
                                             <td class="project-tasks__td">
                                                 22 Mar 2020
                                             </td>
-                                            <td class="project-tasks__td">
-                                                <div class="status-item status-item--copywrite">
+                                            <td class="project-tasks__td"> 
+                                                <div class="project-tasks__td-list-open project-tasks__td-status status-item" >
+                                                    <div class="status-item__color" style="background-color: #7ed5c8;"></div>
                                                     Copywrite
-                                                </div>
+                                                </div> 
+                                                <ul class="project-tasks__td-list project-tasks__status-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #7ed5c8;"></div>
+                                                        Design
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #db8686;"></div>
+                                                        Copywrite
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #818dc1;"></div>
+                                                        Correction
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #dad078;"></div>
+                                                        Development
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #ce82d7;"></div>
+                                                        QA
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </li>
+                                                </ul>                                                
                                             </td>
                                             <td class="project-tasks__td project-tasks__td--comments">
                                                 54
@@ -631,7 +841,7 @@
                                             </tr>
                                             <tr class="project-tasks__tr">
                                                 <td class="project-tasks__td">
-                                                    Just task 4
+                                                    <span class="project-tasks__td-name">Just task 4</span>
                                                 </td>
                                                 <td class="project-tasks__td">
                                                     Jason Newstead
@@ -642,14 +852,16 @@
                                                 <td class="project-tasks__td priority priority--low">
                                                     Low
                                                 </td>
-                                                <td class="project-tasks__td">
-                                                    11 Dec 2019
+                                                <td class="project-tasks__td">  
+                                                    11 Dec 2019                                                  
+                                                    
                                                 </td>
                                                 <td class="project-tasks__td">
                                                     17 Oct 2020
                                                 </td>
                                                 <td class="project-tasks__td">
-                                                    <div class="status-item status-item--complete">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
                                                         Complete
                                                     </div>
                                                 </td>
@@ -662,7 +874,7 @@
                                             </tr>
                                             <tr class="project-tasks__tr">
                                                 <td class="project-tasks__td">
-                                                    Simple yet effective task 7 copy
+                                                    <span class="project-tasks__td-name">Simple yet effective task 7 copy</span>
                                                 </td>
                                                 <td class="project-tasks__td">
                                                     Jason Newstead
@@ -673,14 +885,15 @@
                                                 <td class="project-tasks__td priority priority--low">
                                                     Low
                                                 </td>
-                                                <td class="project-tasks__td">
-                                                    11 Dec 2019
+                                                <td class="project-tasks__td">        
+                                                    11 Dec 2019                                            
                                                 </td>
                                                 <td class="project-tasks__td">
                                                     17 Oct 2020
                                                 </td>
                                                 <td class="project-tasks__td">
-                                                    <div class="status-item status-item--complete">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
                                                         Complete
                                                     </div>
                                                 </td>
@@ -693,7 +906,7 @@
                                             </tr>
                                             <tr class="project-tasks__tr">
                                                 <td class="project-tasks__td">
-                                                    Impossible task 2
+                                                    <span class="project-tasks__td-name">Impossible task 2</span>
                                                 </td>
                                                 <td class="project-tasks__td">
                                                     Lars Ulrich
@@ -711,7 +924,8 @@
                                                     27 Jun 2020
                                                 </td>
                                                 <td class="project-tasks__td">
-                                                    <div class="status-item status-item--complete">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
                                                         Complete
                                                     </div>
                                                 </td>
@@ -724,7 +938,7 @@
                                             </tr>
                                             <tr class="project-tasks__tr">
                                                 <td class="project-tasks__td">
-                                                    Infernous task 1
+                                                    <span class="project-tasks__td-name">Infernous task 1</span>
                                                 </td>
                                                 <td class="project-tasks__td">
                                                     James Hetfield
@@ -735,14 +949,15 @@
                                                 <td class="project-tasks__td priority priority--normal">
                                                     Normal
                                                 </td>
-                                                <td class="project-tasks__td">
+                                                <td class="project-tasks__td">                                                    
                                                     01 Jan 2020
                                                 </td>
                                                 <td class="project-tasks__td">
                                                     22 Mar 2020
                                                 </td>
                                                 <td class="project-tasks__td">
-                                                    <div class="status-item status-item--complete">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
                                                         Complete
                                                     </div>
                                                 </td>
@@ -761,32 +976,73 @@
                                         </tr>
                                         <tr class="project-tasks__tr">
                                             <td class="project-tasks__td" colspan="9">
-                                                Subcategory 2
+                                                <span class="project-tasks__td-name">Subcategory 2</span>
                                             </td>
                                         </tr>
                                         <tr class="project-tasks__tr">
                                             <td class="project-tasks__td">
-                                                Task 9
+                                                <span class="project-tasks__td-name">Task 9</span>
                                             </td>
                                             <td class="project-tasks__td">
                                                 James Hetfield
                                             </td>
-                                            <td class="project-tasks__td">
-                                                Kirk Hammett
+                                            <td class="project-tasks__td ">
+                                                <span class="project-tasks__assigned-to-button">Kirk Hammett</span>
+                                                <div class="project-tasks__assigned-to">
+                                                    <input class="project-tasks__assigned-to-input" type="text">
+                                                </div>
                                             </td>
-                                            <td class="project-tasks__td priority priority--high">
-                                                High
+                                            <td class="project-tasks__td"> 
+                                                <span class="project-tasks__td-list-open project-tasks__td-priority priority priority--high">High</span> 
+                                                <ul class="project-tasks__td-list project-tasks__priority-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--high">
+                                                        High
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--normal">
+                                                        Normal
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--low">
+                                                        Low
+                                                    </li>
+                                                </ul>                                                
                                             </td>
                                             <td class="project-tasks__td">
-                                                01 Jan 2020
+                                                <input class="project-tasks__calendar datepicker" type="text"  placeholder="01 Jan 2020">
                                             </td>
                                             <td class="project-tasks__td">
                                                 22 Mar 2020
                                             </td>
-                                            <td class="project-tasks__td">
-                                                <div class="status-item status-item--correction">
+                                            <td class="project-tasks__td"> 
+                                                <div class="project-tasks__td-list-open project-tasks__td-status status-item" >
+                                                    <div class="status-item__color" style="background-color: #818dc1;"></div>
                                                     Correction
-                                                </div>
+                                                </div> 
+                                                <ul class="project-tasks__td-list project-tasks__status-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #7ed5c8;"></div>
+                                                        Design
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #db8686;"></div>
+                                                        Copywrite
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #818dc1;"></div>
+                                                        Correction
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #dad078;"></div>
+                                                        Development
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #ce82d7;"></div>
+                                                        QA
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </li>
+                                                </ul>                                                
                                             </td>
                                             <td class="project-tasks__td project-tasks__td--comments">
                                                 8
@@ -797,27 +1053,68 @@
                                         </tr>
                                         <tr class="project-tasks__tr">
                                             <td class="project-tasks__td">
-                                                Long-long task 8
+                                                <span class="project-tasks__td-name">Long-long task 8</span>
                                             </td>
                                             <td class="project-tasks__td">
                                                 Kirk Hammett
                                             </td>
-                                            <td class="project-tasks__td">
-                                                Vinnie Paul
+                                            <td class="project-tasks__td ">
+                                                <span class="project-tasks__assigned-to-button">Kirk Hammett</span>
+                                                <div class="project-tasks__assigned-to">
+                                                    <input class="project-tasks__assigned-to-input" type="text">
+                                                </div>
                                             </td>
-                                            <td class="project-tasks__td priority priority--high">
-                                                High
+                                            <td class="project-tasks__td"> 
+                                                <span class="project-tasks__td-list-open project-tasks__td-priority priority priority--high">High</span> 
+                                                <ul class="project-tasks__td-list project-tasks__priority-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--high">
+                                                        High
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--normal">
+                                                        Normal
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--low">
+                                                        Low
+                                                    </li>
+                                                </ul>                                                
                                             </td>
                                             <td class="project-tasks__td">
-                                                24 Jan 2020
+                                                <input class="project-tasks__calendar datepicker" type="text"  placeholder="24 Jan 2020">
                                             </td>
                                             <td class="project-tasks__td">
                                                 12 Feb 2020
                                             </td>
-                                            <td class="project-tasks__td">
-                                                <div class="status-item status-item--production">
+                                            <td class="project-tasks__td"> 
+                                                <div class="project-tasks__td-list-open project-tasks__td-status status-item" >
+                                                    <div class="status-item__color" style="background-color: #ce82d7;"></div>
                                                     Production
-                                                </div>
+                                                </div> 
+                                                <ul class="project-tasks__td-list project-tasks__status-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #7ed5c8;"></div>
+                                                        Design
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #db8686;"></div>
+                                                        Copywrite
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #818dc1;"></div>
+                                                        Correction
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #dad078;"></div>
+                                                        Development
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #ce82d7;"></div>
+                                                        QA
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </li>
+                                                </ul>                                                
                                             </td>
                                             <td class="project-tasks__td project-tasks__td--comments">
                                                 12
@@ -828,27 +1125,68 @@
                                         </tr>
                                         <tr class="project-tasks__tr">
                                             <td class="project-tasks__td">
-                                                Simple yet effective task 7 with long long  long long long name
+                                                <span class="project-tasks__td-name">Simple yet effective task 7</span>
                                             </td>
                                             <td class="project-tasks__td">
                                                 Jason Newstead
                                             </td>
-                                            <td class="project-tasks__td">
-                                                Dimebag Darrell
+                                            <td class="project-tasks__td ">
+                                                <span class="project-tasks__assigned-to-button">Kirk Hammett</span>
+                                                <div class="project-tasks__assigned-to">
+                                                    <input class="project-tasks__assigned-to-input" type="text">
+                                                </div>
                                             </td>
-                                            <td class="project-tasks__td priority priority--low">
-                                                Low
+                                            <td class="project-tasks__td"> 
+                                                <span class="project-tasks__td-list-open project-tasks__td-priority priority priority--low">Low</span> 
+                                                <ul class="project-tasks__td-list project-tasks__priority-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--high">
+                                                        High
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--normal">
+                                                        Normal
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--low">
+                                                        Low
+                                                    </li>
+                                                </ul>                                                
                                             </td>
                                             <td class="project-tasks__td">
-                                                11 Dec 2019
+                                                <input class="project-tasks__calendar datepicker" type="text"  placeholder="11 Dec 2019">
                                             </td>
                                             <td class="project-tasks__td">
                                                 17 Oct 2020
                                             </td>
-                                            <td class="project-tasks__td">
-                                                <div class="status-item status-item--reading">
+                                            <td class="project-tasks__td"> 
+                                                <div class="project-tasks__td-list-open project-tasks__td-status status-item" >
+                                                    <div class="status-item__color" style="background-color: #dad078;"></div>
                                                     Reading
-                                                </div>
+                                                </div> 
+                                                <ul class="project-tasks__td-list project-tasks__status-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #7ed5c8;"></div>
+                                                        Design
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #db8686;"></div>
+                                                        Copywrite
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #818dc1;"></div>
+                                                        Correction
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #dad078;"></div>
+                                                        Development
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #ce82d7;"></div>
+                                                        QA
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </li>
+                                                </ul>                                                
                                             </td>
                                             <td class="project-tasks__td project-tasks__td--comments">
                                                 9
@@ -860,27 +1198,68 @@
                                         
                                         <tr class="project-tasks__tr">
                                             <td class="project-tasks__td">
-                                                Impossible task 6
+                                                <span class="project-tasks__td-name">Impossible task 6</span>
                                             </td>
                                             <td class="project-tasks__td">
                                                 Lars Ulrich
                                             </td>
-                                            <td class="project-tasks__td">
-                                                Rex Brown
+                                            <td class="project-tasks__td ">
+                                                <span class="project-tasks__assigned-to-button">Kirk Hammett</span>
+                                                <div class="project-tasks__assigned-to">
+                                                    <input class="project-tasks__assigned-to-input" type="text">
+                                                </div>
                                             </td>
-                                            <td class="project-tasks__td priority priority--normal">
-                                                Normal
+                                            <td class="project-tasks__td"> 
+                                                <span class="project-tasks__td-list-open project-tasks__td-priority priority priority--normal">Normal</span> 
+                                                <ul class="project-tasks__td-list project-tasks__priority-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--high">
+                                                        High
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--normal">
+                                                        Normal
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--low">
+                                                        Low
+                                                    </li>
+                                                </ul>                                                
                                             </td>
                                             <td class="project-tasks__td">
-                                                24 Jan 2020
+                                                <input class="project-tasks__calendar datepicker" type="text"  placeholder="24 Jan 2020">
                                             </td>
                                             <td class="project-tasks__td">
                                                 27 Jun 2020
                                             </td>
-                                            <td class="project-tasks__td">
-                                                <div class="status-item status-item--design">
+                                            <td class="project-tasks__td"> 
+                                                <div class="project-tasks__td-list-open project-tasks__td-status status-item" >
+                                                    <div class="status-item__color" style="background-color: #db8686;"></div>
                                                     Design
-                                                </div>
+                                                </div> 
+                                                <ul class="project-tasks__td-list project-tasks__status-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #7ed5c8;"></div>
+                                                        Design
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #db8686;"></div>
+                                                        Copywrite
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #818dc1;"></div>
+                                                        Correction
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #dad078;"></div>
+                                                        Development
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #ce82d7;"></div>
+                                                        QA
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </li>
+                                                </ul>                                                
                                             </td>
                                             <td class="project-tasks__td project-tasks__td--comments">
                                                 109
@@ -891,27 +1270,68 @@
                                         </tr>
                                         <tr class="project-tasks__tr">
                                             <td class="project-tasks__td">
-                                                Infernous task 5
+                                                <span class="project-tasks__td-name">Infernous task 5</span>
                                             </td>
                                             <td class="project-tasks__td">
                                                 James Hetfield
                                             </td>
-                                            <td class="project-tasks__td">
-                                                Phil Anselmo
+                                            <td class="project-tasks__td ">
+                                                <span class="project-tasks__assigned-to-button">Kirk Hammett</span>
+                                                <div class="project-tasks__assigned-to">
+                                                    <input class="project-tasks__assigned-to-input" type="text">
+                                                </div>
                                             </td>
-                                            <td class="project-tasks__td priority priority--normal">
-                                                Normal
+                                            <td class="project-tasks__td"> 
+                                                <span class="project-tasks__td-list-open project-tasks__td-priority priority priority--normal">Normal</span> 
+                                                <ul class="project-tasks__td-list project-tasks__priority-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--high">
+                                                        High
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--normal">
+                                                        Normal
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__priority-list-item priority priority--low">
+                                                        Low
+                                                    </li>
+                                                </ul>                                                
                                             </td>
                                             <td class="project-tasks__td">
-                                                01 Jan 2020
+                                                <input class="project-tasks__calendar datepicker" type="text"  placeholder="01 Jan 2020">
                                             </td>
                                             <td class="project-tasks__td">
                                                 22 Mar 2020
                                             </td>
-                                            <td class="project-tasks__td">
-                                                <div class="status-item status-item--copywrite">
+                                            <td class="project-tasks__td"> 
+                                                <div class="project-tasks__td-list-open project-tasks__td-status status-item" >
+                                                    <div class="status-item__color" style="background-color: #7ed5c8;"></div>
                                                     Copywrite
-                                                </div>
+                                                </div> 
+                                                <ul class="project-tasks__td-list project-tasks__status-list">
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #7ed5c8;"></div>
+                                                        Design
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #db8686;"></div>
+                                                        Copywrite
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #818dc1;"></div>
+                                                        Correction
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #dad078;"></div>
+                                                        Development
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #ce82d7;"></div>
+                                                        QA
+                                                    </li>
+                                                    <li class="project-tasks__td-list-item project-tasks__status-list-item status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </li>
+                                                </ul>                                                
                                             </td>
                                             <td class="project-tasks__td project-tasks__td--comments">
                                                 54
@@ -936,7 +1356,7 @@
                                             </tr>
                                             <tr class="project-tasks__tr">
                                                 <td class="project-tasks__td">
-                                                    Just task 4
+                                                    <span class="project-tasks__td-name">Just task 4</span>
                                                 </td>
                                                 <td class="project-tasks__td">
                                                     Jason Newstead
@@ -954,7 +1374,8 @@
                                                     17 Oct 2020
                                                 </td>
                                                 <td class="project-tasks__td">
-                                                    <div class="status-item status-item--complete">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
                                                         Complete
                                                     </div>
                                                 </td>
@@ -985,7 +1406,8 @@
                                                     17 Oct 2020
                                                 </td>
                                                 <td class="project-tasks__td">
-                                                    <div class="status-item status-item--complete">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
                                                         Complete
                                                     </div>
                                                 </td>
@@ -998,7 +1420,7 @@
                                             </tr>
                                             <tr class="project-tasks__tr">
                                                 <td class="project-tasks__td">
-                                                    Impossible task 2
+                                                    <span class="project-tasks__td-name">Impossible task 2</span>
                                                 </td>
                                                 <td class="project-tasks__td">
                                                     Lars Ulrich
@@ -1016,7 +1438,8 @@
                                                     27 Jun 2020
                                                 </td>
                                                 <td class="project-tasks__td">
-                                                    <div class="status-item status-item--complete">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
                                                         Complete
                                                     </div>
                                                 </td>
@@ -1029,7 +1452,7 @@
                                             </tr>
                                             <tr class="project-tasks__tr">
                                                 <td class="project-tasks__td">
-                                                    Infernous task 1
+                                                    <span class="project-tasks__td-name">Infernous task 1</span>
                                                 </td>
                                                 <td class="project-tasks__td">
                                                     James Hetfield
@@ -1047,7 +1470,8 @@
                                                     22 Mar 2020
                                                 </td>
                                                 <td class="project-tasks__td">
-                                                    <div class="status-item status-item--complete">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
                                                         Complete
                                                     </div>
                                                 </td>
