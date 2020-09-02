@@ -77,18 +77,37 @@ button{
         align-items: center;
         background-color: #c3d5dc;
         border-radius: 0 0 16px 16px;
+        @include for-lg{
+            padding: 15px 20px;
+        }
     }
     &__logo{
         margin-right: 62.5px;
+        @include for-lg{
+            margin-right: 30px;
+        }
     }
     &__profile{
         margin-left: 15px;
+        @include for-md{
+            
+            margin-top: 15px;
+            margin-left: 0;
+            text-align: center;
+        }
     }
     &__search{
         margin-left: auto;
+        @include for-md{
+            text-align: center;
+            margin: 15px auto 0;
+        }
     }
     &__menu{
         margin-right: 19px;
+        @include for-md{
+            margin-right: 0;
+        }
     }
 }
 .logo{
@@ -103,10 +122,81 @@ button{
     }
 }
 
+.search{
+    &__input{
+        max-width: 170px;
+    }
+}
+
 .menu-block{
     display: flex;
     align-items: center;
     width: 100%;
+    @include for-md{
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        background-color: $white;
+        padding: 20px 15px;
+        width: 100%;
+        height: 50vh;
+        left: 0;
+        top: 0;
+        background-color: #c3d5dc;
+        border-radius: 0 0 16px 16px;
+        z-index: 20;
+    }
+}
+
+.nav-toggle{
+    display: none;
+    margin-left: auto;
+    z-index: 30;
+    @include for-md{
+        display: block;
+    }
+}
+
+.nav-toggle:focus {
+    outline-width: 0;
+}
+
+.nav-toggle [class*='bar-'] {
+    background: $black;
+    display: block;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .2s ease all;
+    transition: .2s ease all;
+    height: 3px;
+    width: 23px;
+    margin-bottom: 4px;
+    border-radius: 1px;
+}
+
+.nav-toggle .bar-bot {
+    margin-bottom: 0;
+}
+
+
+.opened .bar-top {
+    background-color: $black;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 5% 50%;
+}
+
+.opened .bar-mid {
+    opacity: 0;
+}
+
+.opened .bar-bot {
+    background-color: $black;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 10% 50%;
 }
 
 .menu{
@@ -117,6 +207,9 @@ button{
         justify-content: space-between;
         font-size: 16px;
         line-height: 20px;
+        @include for-md{
+            flex-direction: column;
+        }
     }
     &__list-project{
         position: relative;
@@ -142,6 +235,11 @@ button{
             border-color: black;
         }
     }
+    li + li{
+        @include for-md{
+            margin-top: 15px;
+        }
+    }
 }
 .main{
     padding-top: 29px;
@@ -149,12 +247,15 @@ button{
 
 .profile{
     font-size: 16px;
-    line-height: 20px;
-    border-bottom: 1px solid transparent;
+    line-height: 20px;    
     transition: .3s;
-    &:hover{
-        border-color: $black;
+    &__link{
+        border-bottom: 1px solid transparent;
+        &:hover{
+            border-color: $black;
+        }
     }
+    
 }
 .title-block{
     display: flex;
@@ -261,11 +362,15 @@ button{
         display: flex;
         align-items: center;
         margin-top: 37.5px;
+        @include for-md-mob{
+            margin-top: 15px;
+            flex-direction: column;
+        }
     }
 
     &__tab{
         padding: 15px 32.5px 12px;
-        border: 2px solid #868e9b;
+        border: 1px solid #868e9b;
         // border-right: none;
         font-size: 16px;
         line-height: 20px;
@@ -273,7 +378,10 @@ button{
         border-radius: 4px 4px 0 0;
         border-bottom-color: $black;
         &:last-child{
-            // border-right: 2px solid #868e9b;
+            @include for-md-mob{
+                border: 1px solid #868e9b;
+                
+            }
         }
         &.active{
             position: relative;
@@ -283,9 +391,17 @@ button{
                 display: inline-block;
             }
         }
+        @include for-md-mob{
+            width: 100%;
+            border-bottom: none;
+            border-radius: 0;
+        }
     }
     &__tab + &__tab{
         margin-left: -2px;
+        @include for-md-mob{
+            margin-left: 0;
+        }
     }
 
     &__title-menu-button{
@@ -303,6 +419,9 @@ button{
     &__inner{
         display: flex;
         margin-top: 42.5px;
+        @include for-md{
+            flex-direction: column-reverse;
+        }
     }
     &__text-block{
         width: 100%;
@@ -312,6 +431,10 @@ button{
         align-items: center;
         min-height: 18px;
         margin-bottom: 16px;
+        @include for-sm{
+            flex-direction: column;
+            align-items: flex-start;
+        }
         &--date{
            .project-desc__item-desc{
                width: 200px;
@@ -338,6 +461,9 @@ button{
 
                 }
             }
+            @include for-sm{
+                margin-top: 16px;
+            }
         }
         &--reminder{
             margin-bottom: 0;
@@ -360,6 +486,10 @@ button{
 
                 }
             }
+            @include for-sm{
+                margin-top: 16px;
+            }
+            
         }
         &--desc{
             align-items: flex-start;
@@ -367,6 +497,9 @@ button{
     }
     &__item-title{
         width: 15%;
+        @include for-sm{
+            width: 100%;
+        }
     }
     &__item-desc{
         display: flex;
@@ -379,11 +512,17 @@ button{
         *{
             margin-right: 10px;
         }
+        @include for-sm{
+            width: 100%;
+        }
     }
     &__img-block{
         width: 250px;
         height: 150px;
         border-radius: 5px;
+        @include for-md{
+            margin:  0 auto;
+        }
     }
     &__img{
         display: block;
@@ -464,18 +603,26 @@ button{
 }
 
 .project-tasks{
+    overflow-x: scroll;
     &--completed{
         .project-tasks__tr:nth-child(2) .project-tasks__td{
             padding-top: 15px;
             border-top: none;
         }
+        .project-tasks__tr:first-child{
+            .project-tasks__td{
+                padding: 0;
+            }
+        }
     }
     &__table{
-        width: 1170px;
+        position: relative;
+        width: 1170px;        
         font-weight: 300;
         text-align: left;
         vertical-align: bottom;
         border-spacing: 0;
+        
     }
     &__tr{
         &:nth-child(2){
@@ -549,6 +696,7 @@ button{
         display: flex;
         align-items: center;
         padding-top: 28px;
+        padding-bottom: 10px;
         border-top: 1px solid #b9e0c2;
     }
     &__button-toggle{
@@ -705,6 +853,16 @@ button{
         background-color: #c3d5dc;
         border-radius: 16px 16px 0 0;
         font-weight: 300;
+        @include for-md-mob{
+            flex-direction: column-reverse;
+        }
+    }
+    &__right-links{
+        @include for-md-mob{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__link{
         border-bottom: 1px solid transparent;
@@ -715,6 +873,15 @@ button{
     }
     &__link + &__link{
         margin-left: 40px;
+        @include for-md-mob{
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+    &__copy{
+        @include for-md-mob{
+            margin-top: 10px;
+        }
     }
 }
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {

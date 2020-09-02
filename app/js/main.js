@@ -76,3 +76,8 @@ $(document).mouseup(function (e) {
     }
 });
 
+$('.nav-toggle').click(function(){
+    $(this).toggleClass('opened')
+    $('.menu-block').slideToggle()
+});
+

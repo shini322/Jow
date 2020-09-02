@@ -1,17 +1,37 @@
-@font-face {
-    font-family: 'Geometria';    
-    src: url('../fonts/Geometria-Light.eot') format('embedded-opentype'),
-    url('../fonts/Geometria-Light.woff') format('woff'),
-    url('../fonts/Geometria-Light.ttf') format('truetype');
-    font-weight: 300;
+// @font-face {
+//     font-family: 'Geometria';    
+//     src: url('../fonts/Geometria-Light.eot') format('embedded-opentype'),
+//     url('../fonts/Geometria-Light.woff') format('woff'),
+//     url('../fonts/Geometria-Light.ttf') format('truetype');
+//     font-weight: 300;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'Geometria';    
+//     src: url('../fonts/Geometria-Medium.eot') format('embedded-opentype'),
+//     url('../fonts/Geometria-Medium.woff') format('woff'),
+//     url('../fonts/Geometria-Medium.ttf') format('truetype');
+//     font-weight: 500;
+//     font-style: normal;
+// }
+
+@font-face{
+    font-family:"DietDidot Title W01 Bold";
+    src:url("../fonts/2086092/0e2e0db7-8840-4817-9fbf-73f255223cb0.eot?#iefix");
+    src:url("../fonts/2086092/0e2e0db7-8840-4817-9fbf-73f255223cb0.eot?#iefix") format("eot"),url("Fonts/2086092/db37225e-da4f-49ac-a73f-6f3c858a06ba.woff2") format("woff2"),url("Fonts/2086092/6e070189-b014-4020-9571-b22a3efebdb6.woff") format("woff"),url("Fonts/2086092/e3b32f4f-541d-41f6-957e-badb8c254c1e.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Geometria";
+    src:url("../fonts/5274076/d19fcd29-60c0-40d3-aee7-23a0f9df295f.eot?#iefix");
+    src:url("../fonts/5274076/d19fcd29-60c0-40d3-aee7-23a0f9df295f.eot?#iefix") format("eot"),url("Fonts/5274076/a7d10488-59cd-4c42-a7d1-18558045ca31.woff2") format("woff2"),url("Fonts/5274076/71135123-f908-4f5f-8112-f473105a4be6.woff") format("woff"),url("Fonts/5274076/c198981d-e3aa-4fe2-ad64-6662e366e3ce.ttf") format("truetype");
+    font-weight: 500;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'Geometria';    
-    src: url('../fonts/Geometria-Medium.eot') format('embedded-opentype'),
-    url('../fonts/Geometria-Medium.woff') format('woff'),
-    url('../fonts/Geometria-Medium.ttf') format('truetype');
-    font-weight: 500;
+@font-face{
+    font-family:"Geometria";
+    src:url("../fonts/5274153/fbe5cb85-9cb4-4a75-bd2a-3b9f10c547e7.eot?#iefix");
+    src:url("../fonts/5274153/fbe5cb85-9cb4-4a75-bd2a-3b9f10c547e7.eot?#iefix") format("eot"),url("Fonts/5274153/081b3c4d-ab0b-4a85-a76d-6f97e8ca75f1.woff2") format("woff2"),url("Fonts/5274153/2ecfe330-286d-448c-9613-38f28fe8f014.woff") format("woff"),url("Fonts/5274153/384bde34-676a-4508-84bb-86ce74a66d09.ttf") format("truetype");
+    font-weight: 300;
     font-style: normal;
 }
