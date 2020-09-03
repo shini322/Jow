@@ -12,16 +12,16 @@ $('.tab').on('click', function(e){
     
     $($(this).parent().find('.tab')).removeClass('active');
 
-    let thistitleMenu = $($(this).find('.project-page__title-menu'));
+    // let thistitleMenu = $($(this).find('.project-page__title-menu'));
 
-    let titleMenu = $($(this).parent().siblings().find('.project-page__title-menu'));
+    // let titleMenu = $($(this).parent().siblings().find('.project-page__title-menu'));
 
-    if(titleMenu.hasClass('active')){ 
-        titleMenu.removeClass('active');       
-        titleMenu.slideUp(200);        
-    } else {
+    // if(titleMenu.hasClass('active')){ 
+    //     titleMenu.removeClass('active');       
+    //     titleMenu.slideUp(200);        
+    // } else {
 
-    }
+    // }
 
     $($(this).parent().siblings().find('.tab-content')).removeClass('active');  
     $(this).addClass('active');
