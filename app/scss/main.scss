@@ -249,7 +249,7 @@ button{
     }
 }
 .main{
-    padding-top: 29px;
+    // padding-top: 29px;
 }
 
 .profile{
@@ -268,6 +268,10 @@ button{
     display: flex;
     align-items: flex-end;
     padding-top: 25px;
+    &__container{
+        display: flex;
+        align-items: flex-end;
+    }
 }
 .page-title{
     position: relative;
@@ -296,7 +300,7 @@ button{
     position: relative;
     padding-left: 10px;
     text-align: left;
-    z-index: 10;
+    z-index: 40;
         &__button{
             position: relative;
             width: 12px;
@@ -349,6 +353,7 @@ button{
 .project-page{
     &__category{
         position: relative;
+        padding-top: 25px;
         padding-left: 25px;
         font-size: 14px;
         line-height: 18px;
@@ -370,7 +375,7 @@ button{
         display: flex;
         align-items: center;
         margin-top: 37.5px;
-        @include for-md-mob{
+        @include for-sm{
             margin-top: 15px;
             flex-direction: column;
         }
@@ -385,10 +390,9 @@ button{
         text-align: center;
         border-radius: 4px 4px 0 0;
         border-bottom-color: $black;
-        &:last-child{
-            @include for-md-mob{
-                border: 1px solid #868e9b;
-                
+        &:first-child{
+            @include for-sm{
+                border: 1px solid #868e9b;                
             }
         }
         &.active{
@@ -399,15 +403,15 @@ button{
                 display: inline-block;
             }
         }
-        @include for-md-mob{
+        @include for-sm{
             width: 100%;
-            border-bottom: none;
+            border-top: none;
             border-radius: 0;
         }
     }
     &__tab + &__tab{
         margin-left: -2px;
-        @include for-md-mob{
+        @include for-sm{
             margin-left: 0;
         }
     }
@@ -813,8 +817,8 @@ button{
 }
 
 .project-timeline{
-    overflow-x: scroll;
-    overflow-y: hidden;
+    // overflow-x: scroll;
+    // overflow-y: hidden;
     &--completed{
         .project-timeline__tr:nth-child(2) .project-timeline__td{
             padding-top: 15px;
@@ -826,6 +830,24 @@ button{
             }
         }
     }
+    &__inner{
+        position: relative;
+        padding-bottom: 22.5px;
+        width: 1170px;
+        // overflow-x: scroll;
+        overflow-y: hidden;
+        &:after{
+            content: '';
+            position: absolute;
+            margin-left: 300px;
+            bottom: -2px;
+            width: 100%;
+            height: 23.5px;
+            background-color: $white;
+            z-index: 38;
+        }
+
+    }
     &__table{
         position: relative;
         width: 1170px;        
@@ -834,11 +856,24 @@ button{
         vertical-align: bottom;
         border-spacing: 0;
         
+        &--border-bottom{
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: -1px;
+                width: 100%;
+                height: 1px;
+                background-color: $black;
+                z-index: 20;
+            }
+        }
+        
+        
     }
     &__tr{
         &:nth-child(2){
             .project-timeline__td{
-                border-top: 1px solid $black;
+                // border-top: 1px solid $black;
                 padding-top: 15px;
             }
         }
@@ -847,6 +882,7 @@ button{
         font-weight: 500;
         padding-bottom: 10px;
         border-bottom: 1px solid $black;
+        height: 34px;
         &:last-child{
             text-align: right;
         }      
@@ -878,14 +914,30 @@ button{
         padding-right: 30px;
         vertical-align: bottom;
         min-width: 19px;
+        z-index: 10;
         &:first-child{
-            width: 27%;
+            width: 300px;
+            // background-color: $white;
+            // z-index: 12;
         }
         
         &--comments{
             text-align: right;
         }
 
+    }
+    &__td-graphic-name{
+        background-color: #fff;
+        z-index: 12;
+    }
+
+    &__td-graphic-title{
+        padding-top: 35px;
+        border-top: 1px solid $black;
+    }
+    &__td-grahic{
+        position: relative;
+        z-index: 10;
     }
     &__th-img{
         width: 17px;
@@ -896,9 +948,9 @@ button{
         align-items: center;
         padding-top: 28px;
         padding-bottom: 10px;
-        border-top: 1px solid #b9e0c2;
     }
     &__button-toggle{
+        font-weight: 300;
         margin-left: 36px;
         max-width: 100px;
         width: 100%;
@@ -934,14 +986,18 @@ button{
     &__td-name{
         position: relative;
     }
-    &__tr-filters{
+    &__filters{
+        position: relative;
         display: flex;
         padding: 13px 0;
         margin-left: 300px;
         align-items: center;
         justify-content: space-between;
         border-bottom: 1px solid $black;
-
+        z-index: 15;
+    }
+    &__td-filters{
+        padding-right: 0;
     }
     &__left-icons{
         display: flex;
@@ -988,15 +1044,13 @@ button{
             font-weight: 500;
         }
     }
-    &__dates{
-        display: flex;
-    }
+   
     &__graphic-block{
         width: 870px;
         display: flex;
         align-items: center;
-        overflow-x: scroll;
-        overflow-y: hidden;
+        // overflow-x: scroll;
+        // overflow-y: hidden;
         margin-left: 300px;
     }
     &__graphic-inner{
@@ -1025,10 +1079,10 @@ button{
                 content: '';
                 position: absolute;
                 left: 50%;
-                top: -50px;
+                top: -47px;
                 background-color: #dedddc;
                 width: 102%;
-                height: 1000px;
+                height: 2000px;
                 z-index: -1;
                 transform: 
                 translate(-50%, 0);
@@ -1076,16 +1130,148 @@ button{
     }
     &__graphic-name{
         white-space: nowrap;
+        font-weight: 500;
     }
     &__graphic-item + &__graphic-item{
         margin-top: 32.5px;
     }   
     &__graphic-item-name{
-        position: absolute;
-        left: 0;
+        // width: 300px;
     } 
-}
 
+    &__td-dates{
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    &__dates{
+        display: flex;
+        width: 870px;
+        margin-left: 300px;
+        // overflow-x: scroll;
+       
+    }
+    &__td-completed{
+        border-top: 1px solid #b9e0c2;
+    }
+    &__today-line{
+        position: absolute;
+        height: calc(100% - 168px);
+        width: 1px;
+        background-color: $black;
+        z-index: 30;
+        bottom: 0;
+        &:before{
+            content: '';
+            position: absolute;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            border-top: 3px solid $black;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            border-bottom: 3px solid $black;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 22px;
+        }
+    }
+    &__bottom{
+        position: relative;
+        width: 1170px;
+        background-color: $white;
+        min-height: 22.5px;
+        z-index: 20;
+    }
+    &__tr-completed-hidden{
+        display: none;
+    }
+}
+.table-scale{
+    margin-left: auto;
+    &__inner{
+        display: flex;
+        margin-top: 9px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__button{
+        position: relative;
+        width: 15px;
+        height: 15px;
+        border-radius: 2px;
+        background-color: #9bb6d8;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 2px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $black;
+        }
+    }
+    &__minus{
+        margin-right: 8px;
+        
+    }
+    &__plus{
+        margin-left: 8px;
+        &:after{
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 2px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(90deg);
+            background-color: $black;
+        }
+    }
+}
+.today{
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 0;
+    left: 62%;
+    &__text{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 40;
+    }
+}
+.today-coord{
+    left: 62%;
+}
+.link-grahic{
+    position: absolute;
+    height: 35px;
+    width: 1px;
+    background-color: $black;
+    left: -4px;
+    &__img-block{
+        position: absolute;
+        width: 9.5px;
+        height: 5.5px;
+        left: 4px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+}
 .key-point{
     position: absolute;
     top: -7.5px;
@@ -1295,3 +1481,458 @@ button{
     cursor: pointer;
 }
 
+.project-budget{
+    &__table{
+        width: 708px;
+        border-spacing: 0;
+    }
+    &__th{
+        padding-bottom: 22px;
+        border-bottom: 1px solid $black;
+        font-weight: 500;
+        text-align: right;
+        &:first-child, &:nth-child(2){
+            text-align: left;
+        }
+    }
+    &__tr{
+        &:nth-child(2){
+            .project-budget__td{
+                padding-top: 25px;
+            }
+        }
+    }
+    &__td{
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 300;
+        text-align: right;
+        padding-bottom: 10px;
+        &:first-child, &:nth-child(2){
+            text-align: left;
+        }
+    }
+    &__td-category{
+        text-transform: uppercase;
+    }
+    &__tr-sub-total{
+        padding-top: 20px;
+        border-top: 1px solid $black;
+        font-weight: 500;
+        .project-budget__td{
+            text-align: right;
+        }
+    }
+    &__table-title{
+        display: flex;
+        align-items: center;
+        margin-bottom: 37.5px;
+    }
+    &__table-block{
+        & + &{
+            margin-top: 25px;
+        }
+        @include for-sm{
+            overflow-x: scroll;
+        }
+    }
+    &__tr-total{
+        position: relative;
+        
+    }
+    &__td-total{
+        position: relative;
+        padding-top: 20px;
+        font-weight: 500;
+        border-top: 1px solid $black;
+        
+    }
+}
+.project-budget-calc{
+    display: none;
+    &.active{
+        display: block;
+    }
+    &__inner{
+        position: relative;
+        margin-left: 66px;
+        @include for-sm{
+            margin-left: 20px;
+        }
+        @include for-sm{
+            width: 100%;
+            margin-left: 0;
+            margin-top: 15px;
+        }
+    }
+    &__input{
+        padding: 15px;
+        max-width: 250px;
+        height: 40px;
+        width: 100%;
+        border: 1px solid $black;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        @include for-sm{
+            max-width: 100%;
+        }
+    }
+    &__clear{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__clear-img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.projects-page{
+    &__categories{
+        margin-top: 15px;
+    }
+    &__table-block{
+        margin-top: 35px;
+        padding-bottom: 20px;
+        &--hidden{
+            display: none;
+            
+        }
+    }
+    &__tab-container{
+        @include for-lg{
+            overflow-x: scroll;
+        }
+    }
+    &__title-menu{
+        margin-bottom: 3px;
+    }
+
+    &__title-block{
+        display: flex; 
+        justify-content: space-between;
+        @include for-md-mob{
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    }
+    &__timeline{
+        margin-top: 25px;
+    }
+
+    &__timeline-item-line{
+        // height: 13px;
+    }
+    
+}
+.catagories{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    &__tab{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 131px;
+        width: 100%;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        min-height: 44px;
+        &--1{
+            border-color: #c3a57d;
+            &.active{
+                background-color: #c3a57d;
+            }
+        }
+        &--2{
+            border-color: #7d85c3;
+            &.active{
+                background-color: #7d85c3;
+            }
+        }
+        &--3{
+            border-color: #c37db2;
+            &.active{
+                background-color: #c37db2;
+            }
+        }
+        &--4{
+            border-color: #c3847d;
+            &.active{
+                background-color: #c3847d;
+            }
+        }
+        &--5{
+            border-color: #c3bf7d;
+            &.active{
+                background-color: #c3bf7d;
+            }
+        }
+        &--6{
+            border-color: #7dc38d;
+            &.active{
+                background-color: #7dc38d;
+            }
+        }
+        &--7{
+            border-color: #807dc3;
+            &.active{
+                background-color: #807dc3;
+            }
+        }
+        
+    }
+    &__tab-sticker{
+        position: relative;
+        text-transform: lowercase;
+        right: -3.5px;
+        top: -6px;
+    }
+
+}
+.projects-table{
+    position: relative;
+    width: 1170px;
+    text-align: left;
+    vertical-align: bottom;
+    border-spacing: 0;  
+    &__tr{
+        &:first-child{
+            .projects-table__th{
+                border-bottom: 1px solid $black;
+                padding-bottom: 15px;
+            }
+        }
+        &:nth-child(2){
+            .projects-table__td{
+                padding-top: 25px;
+            }
+        }
+    }
+    &__th{
+        font-weight: 500;
+        padding-bottom: 10px;  
+        
+        &--name{
+            position: relative;
+            cursor: pointer;
+            padding-right: 23px;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 9px;
+                background-image: url(../img/arrow-top.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                top: 0;
+                right: 0;
+                transform: translateY(50%);
+            }
+        }
+    }
+    &__td{
+        position: relative;
+        padding-bottom: 25px;
+        padding-right: 30px;
+        vertical-align: bottom;
+        min-width: 19px;
+        &--light{
+           font-weight: 300;
+        }
+
+        &--budget{
+            text-align: center;
+        }
+        &:first-child{
+            // width: 30%;
+            font-size: 18px;
+        }
+        &:last-child{
+            padding-right: 0;
+        }
+
+        &:nth-child(2){
+            width: 17%;
+        }
+        &:nth-child(3){
+            width: 10%;
+        }
+        &:nth-child(2){
+           font-size: 16px;
+        }
+        &:nth-child(4){
+            width: 14%;
+        }
+        &:nth-child(5){
+            width: 13%;
+        }
+        &:nth-child(6){
+            width: 12%;
+        }
+    }
+    &__td-name{
+        position: relative;
+        font-weight: 500;
+    }
+    &__button-toggle{
+        margin-left: 36px;
+        max-width: 100px;
+        width: 100%;
+        min-height: 23px;
+        text-align: center;
+        border-radius: 4px;
+        background-color: #b9e0c2;
+        &::before{
+            content: 'Hide';
+        }
+        &.hide{
+            &::before{
+                content: 'Show';
+            }
+        }
+    }
+    &__closed-counter{
+        display: flex;
+        align-items: center;
+        padding-top: 28px;
+        border-top: 1px solid #b9e0c2;
+    }
+    &--closed{
+        .projects-table__tr:nth-child(2) .projects-table__td{
+            padding-top: 25px;
+            border-top: none;
+        }
+        .projects-table__tr:first-child{
+            .projects-table__td{
+                padding: 0 30px 0 0;
+            }
+        }
+    }
+}
+.view{
+    display: flex;
+    align-items: center;
+    @include for-md-mob{
+        padding-top: 10px;
+    }
+    &__text{
+        margin-right: 19px;
+        font-weight: 300;
+    }
+    &__block{
+        display: flex;
+        align-items: center;
+    }
+    &__item{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__item + &__item{
+        margin-left: 21px;
+    }
+    &__table{
+        width: 25px;
+        height: 17px;
+        background-image: url(../img/view-table.png);
+        &.active{
+            background-image: url(../img/view-table-active.png);
+        }
+    }
+    &__timeline{
+        width: 25px;
+        height: 17px;
+        background-image: url(../img/view-timeline.png);
+        &.active{
+            background-image: url(../img/view-timeline-active.png);
+        }
+    }
+    &__img{
+        width: 18px;
+        height: 18px;
+        background-image: url(../img/view-img.png);
+        &.active{
+            background-image: url(../img/view-img-active.png);
+        }
+    }
+}
+.projects-thumbs{
+    width: 1170px;
+    &__inner{
+        margin-top: 23px;
+    }
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -50px;
+    }
+    &__container{
+        width: 25%;
+        padding-right: 50px;
+        margin-bottom: 50px;
+    }
+}
+.projects-thumb-item{
+    display: flex;
+    padding: 20px 0 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #868e9b;
+    border-radius: 4px;
+    font-weight: 300;
+    &__title{
+        position: relative;
+        display: inline-block;
+        padding: 0 12px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+    }
+    &__img-block{
+        margin-top: 15px;
+        width: 100%;
+        height: 148px;
+    }
+    &__img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__dates{
+        font-weight: 300;
+        margin-top: 11px;
+        padding: 0 12px;
+    }
+    &__budget{
+        margin-top: 11px;
+        padding: 0 12px;
+        font-weight: 500;
+    }
+    &__bottom{
+        width:  100%;
+        margin-top: 11px;
+        padding: 0 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title-sticker{
+        right: -18px;
+    }
+}

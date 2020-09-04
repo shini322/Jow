@@ -429,6 +429,14 @@
                                     </ul>
                                 </span>
                             </a>
+                            <div class="project-budget-calc">
+                                <div class="project-budget-calc__inner">
+                                    <input class="project-budget-calc__input" type="text" placeholder="120+34=154">
+                                    <button class="project-budget-calc__clear">
+                                        <img class="project-budget-calc__clear-img" src="images/close.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="project-page__tabs-content">
                             <div class="project-page__tab-content tab-content active" id="tasks">
@@ -1496,421 +1504,1021 @@
                             </div>
                             <div class="project-page__tab-content tab-content" id="timeline">
                                 <div class="project-timeline">
-                                    <table class="project-timeline__table">
-                                        <tr class="project-timeline__tr">
-                                            <th class="project-timeline__th">
-                                                Name
-                                            </th>
-                                            <th class="project-timeline__th">
-                                                Started by
-                                            </th>
-                                            <th class="project-timeline__th">
-                                                Assigned to
-                                            </th>
-                                            <th class="project-timeline__th">
-                                                Priority
-                                            </th>
-                                            <th class="project-timeline__th">
-                                                Start date
-                                            </th>
-                                            <th class="project-timeline__th ">
-                                                <span class="project-timeline__th--end-date">End date</span>
-                                                
-                                            </th>
-                                            <th class="project-timeline__th">
-                                                Status 
-                                            </th>
-                                            <th class="project-timeline__th project-timeline__th--comments">
-                                                <img class="project-timeline__th-img" src="images/comments.png" alt="">
-                                            </th>
-                                            <th class="project-timeline__th">
-                                                <img class="project-timeline__th-img" src="images/flag.png" alt="">
-                                            </th>
-                                        </tr>
-                                        
-                                    </table> 
-                                    <div class="project-timeline__tr-filters">
-                                        <div class=" project-timeline__left-icons">
-                                            <span class="project-timeline__icon-block">
-                                                <img class="project-timeline__icon" src="images/link-icon.png" alt="">
-                                            </span>
-                                            <span class="project-timeline__icon-block">
-                                                <img class="project-timeline__icon" src="images/constrain-icon.png" alt="">
-                                            </span>
-                                            <span class="project-timeline__icon-block">
-                                                <img class="project-timeline__icon" src="images/color-icon.png" alt="">
-                                            </span>
-                                            <span class="project-timeline__icon-block">
-                                                <img class="project-timeline__icon" src="images/star.png" alt="">
-                                            </span>
-                                            <span class="project-timeline__icon-block">
-                                                <img class="project-timeline__icon" src="images/star-line.png" alt="">
-                                            </span>
-                                        </div>
-                                        <div class=" project-timeline__show-block">
-                                            <span class="project-timeline__show-text">
-                                                Show:
-                                            </span>
-                                            <button class="project-timeline__show-button active">
-                                                Assigned to
-                                            </button>
-                                            <button class="project-timeline__show-button">
-                                                Status
-                                            </button>
-                                            <button class="project-timeline__show-button">
-                                                Priority
-                                            </button>
-                                            <button class="project-timeline__show-button">
-                                                Comments
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="project-timeline__graphic-block">
-                                        <div class="project-timeline__graphic-inner">
-                                            <div class="project-timeline__dates">                                                
-                                                <div class="project-timeline__month">
-                                                    <div class="project-timeline__month-name">
-                                                        Jan 2020
-                                                    </div>                                                   
-                                                    <div class="project-timeline__month-item">
-                                                        15
-                                                    </div>
-                                                    <div class="project-timeline__month-item project-timeline__month-item--weekend">
-                                                        16
-                                                    </div>
-                                                    <div class="project-timeline__month-item project-timeline__month-item--weekend">
-                                                        17
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        18
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        19
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        20
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        21
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        22
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        23
-                                                    </div>
-                                                    <div class="project-timeline__month-item project-timeline__month-item--weekend">
-                                                        24
-                                                    </div>
-                                                    <div class="project-timeline__month-item project-timeline__month-item--weekend">
-                                                        25
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        26
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        27
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        28
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        29
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        30
-                                                    </div>
-                                                    <div class="project-timeline__month-item project-timeline__month-item--weekend">
-                                                        31
-                                                    </div>
-                                                </div>
-                                                <div class="project-timeline__month">
-                                                    <div class="project-timeline__month-name">
-                                                        Feb 2020
-                                                    </div>
-                                                    <div class="project-timeline__month-item project-timeline__month-item--weekend">
-                                                        01
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        02
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        03
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        04
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        05
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        06
-                                                    </div>
-                                                    <div class="project-timeline__month-item project-timeline__month-item--weekend">
-                                                        07
-                                                    </div>
-                                                    <div class="project-timeline__month-item project-timeline__month-item--weekend">
-                                                        08
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        09
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        10
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        11
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        12
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        13
-                                                    </div>
-                                                    <div class="project-timeline__month-item project-timeline__month-item--weekend">
-                                                        14
-                                                    </div>
-                                                    <div class="project-timeline__month-item project-timeline__month-item--weekend">
-                                                        15
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        16
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        17
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        18
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        19
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        20
-                                                    </div>
-                                                    <div class="project-timeline__month-item project-timeline__month-item--weekend">
-                                                        21
-                                                    </div>
-                                                    <div class="project-timeline__month-item project-timeline__month-item--weekend">
-                                                        22
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        23
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        24
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        25
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        26
-                                                    </div>
-                                                    <div class="project-timeline__month-item">
-                                                        27
-                                                    </div>
-                                                    <div class="project-timeline__month-item project-timeline__month-item--weekend">
-                                                        28
-                                                    </div>
-                                                    
-                                                </div>                                            
-                                            </div>
+                                    <div class="project-timeline__inner">
+                                        <div class="project-timeline__block">
                                             
-                                            <div class="project-timeline__graphic-items">
-                                                <div class="project-timeline__graphic-item">
-                                                <div class="project-timeline__graphic-item-name">
-                                                    Subcategory 1
-                                                </div>
-                                                </div>
-                                                <div class="project-timeline__graphic-item" style="margin-left: 33%;">
-                                                    <div class="project-timeline__graphic-line" style="width: 460px;">
+                                        </div>
+                                        <div class="today-coord">
+                                            <div class="project-timeline__today-line today-coord">
+                                                
+                                            </div>
+                                            <div class="today__text today-coord">
+                                                Today
+                                            </div>
+                                        </div>
+                                        
+                                        <table class="project-timeline__table">
+                                            
+                                            <tr class="project-timeline__tr">
+                                                <th class="project-timeline__th">
+                                                    Name
+                                                </th>
+                                                <th class="project-timeline__th">
+                                                    Started by
+                                                </th>
+                                                <th class="project-timeline__th">
+                                                    Assigned to
+                                                </th>
+                                                <th class="project-timeline__th">
+                                                    Priority
+                                                </th>
+                                                <th class="project-timeline__th">
+                                                    Start date
+                                                </th>
+                                                <th class="project-timeline__th ">
+                                                    <span class="project-timeline__th--end-date">End date</span>
                                                     
-                                                    </div>
-                                                    <div class="project-timeline__graphic-name">
-                                                        Kirk Hammett
-                                                    </div>
-                                                </div>
-                                                <div class="project-timeline__graphic-item" style="margin-left: 26%;">
-                                                    <div class="project-timeline__graphic-line" style="width: 460px;">
-                                                        <div class="key-point" style="left: 50%;">
-                                                            <div class="key-point__text">
-                                                                Key point 1
-                                                            </div>
-                                                            <div class="key-point__img-block">
-                                                                <img class="key-point__img" src="images/key-point-star.png" alt="">
-                                                            </div>
+                                                </th>
+                                                <th class="project-timeline__th">
+                                                    Status 
+                                                </th>
+                                                <th class="project-timeline__th project-timeline__th--comments">
+                                                    <img class="project-timeline__th-img" src="images/comments.png" alt="">
+                                                </th>
+                                                <th class="project-timeline__th">
+                                                    <img class="project-timeline__th-img" src="images/flag.png" alt="">
+                                                </th>
+                                            </tr>
+    
+                                            <tr class="project-timeline__tr">
+                                                <td class="project-timeline__td-filters" colspan="9">
+                                                    <div class="project-timeline__filters">
+                                                        <div class=" project-timeline__left-icons">
+                                                            <button class="project-timeline__icon-block">
+                                                                <img class="project-timeline__icon" src="images/link-icon.png" alt="">
+                                                            </button>
+                                                            <button class="project-timeline__icon-block">
+                                                                <img class="project-timeline__icon" src="images/constrain-icon.png" alt="">
+                                                            </button>
+                                                            <button class="project-timeline__icon-block">
+                                                                <img class="project-timeline__icon" src="images/color-icon.png" alt="">
+                                                            </button>
+                                                            <button class="project-timeline__icon-block">
+                                                                <img class="project-timeline__icon" src="images/star.png" alt="">
+                                                            </button>
+                                                            <button class="project-timeline__icon-block">
+                                                                <img class="project-timeline__icon" src="images/star-line.png" alt="">
+                                                            </button>
+                                                        </div>
+                                                        <div class=" project-timeline__show-block">
+                                                            <span class="project-timeline__show-text">
+                                                                Show:
+                                                            </span>
+                                                            <button class="project-timeline__show-button active">
+                                                                Assigned to
+                                                            </button>
+                                                            <button class="project-timeline__show-button">
+                                                                Status
+                                                            </button>
+                                                            <button class="project-timeline__show-button">
+                                                                Priority
+                                                            </button>
+                                                            <button class="project-timeline__show-button">
+                                                                Comments
+                                                            </button>
                                                         </div>
                                                     </div>
-                                                    <div class="project-timeline__graphic-name">
-                                                        Vinnie Paul
+                                                </td>
+                                            </tr>
+                                            <tr class="project-timeline__tr">
+                                                <td class="project-timeline__td project-timeline__td-dates" colspan="9">
+                                                    <div class="project-timeline__dates">                                                
+                                                        <div class="project-timeline__month">
+                                                            <div class="project-timeline__month-name">
+                                                                Jan 2020
+                                                            </div>                                                   
+                                                            <div class="project-timeline__month-item">
+                                                                15
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                16
+                                                            </div>
+                                                            <div class="project-timeline__month-item project-timeline__month-item--weekend">
+                                                                17
+                                                            </div>
+                                                            <div class="project-timeline__month-item project-timeline__month-item--weekend">
+                                                                18
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                19
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                20
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                21
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                22
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                23
+                                                            </div>
+                                                            <div class="project-timeline__month-item project-timeline__month-item--weekend">
+                                                                24
+                                                            </div>
+                                                            <div class="project-timeline__month-item project-timeline__month-item--weekend">
+                                                                25
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                26
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                27
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                28
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                29
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                30
+                                                            </div>
+                                                            <div class="project-timeline__month-item project-timeline__month-item--weekend">
+                                                                31
+                                                            </div>
+                                                        </div>
+                                                        <div class="project-timeline__month">
+                                                            <div class="project-timeline__month-name">
+                                                                Feb 2020
+                                                            </div>
+                                                            <div class="project-timeline__month-item project-timeline__month-item--weekend">
+                                                                01
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                02
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                03
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                04
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                05
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                06
+                                                            </div>
+                                                            <div class="project-timeline__month-item project-timeline__month-item--weekend">
+                                                                07
+                                                            </div>
+                                                            <div class="project-timeline__month-item project-timeline__month-item--weekend">
+                                                                08
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                09
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                10
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                11
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                12
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                13
+                                                            </div>
+                                                            <div class="project-timeline__month-item project-timeline__month-item--weekend">
+                                                                14
+                                                            </div>
+                                                            <div class="project-timeline__month-item project-timeline__month-item--weekend">
+                                                                15
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                16
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                17
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                18
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                19
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                20
+                                                            </div>
+                                                            <div class="project-timeline__month-item project-timeline__month-item--weekend">
+                                                                21
+                                                            </div>
+                                                            <div class="project-timeline__month-item project-timeline__month-item--weekend">
+                                                                22
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                23
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                24
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                25
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                26
+                                                            </div>
+                                                            <div class="project-timeline__month-item">
+                                                                27
+                                                            </div>
+                                                            <div class="project-timeline__month-item project-timeline__month-item--weekend">
+                                                                28
+                                                            </div>
+                                                            
+                                                        </div>                                            
                                                     </div>
-                                                </div>
-                                                <div class="project-timeline__graphic-item" style="margin-left: 55%;">
-                                                    <div class="project-timeline__graphic-line" style="width: 170px;">
+                                                </td>
+                                            </tr>
+                                            <tr class="project-timeline__tr">
+                                                <td class="project-timeline__td project-timeline__td-graphic-name project-timeline__td-graphic-title">
+                                                    <div class="project-timeline__graphic-item-name">
+                                                        Subcategory 1
+                                                    </div>
+                                                </td>
+                                                <td class="project-timeline__td project-timeline__td-grahic project-timeline__td-graphic-title" colspan="8">
+                                                    
+                                                </td>
+                                            </tr>
+                                            <tr class="project-timeline__tr">
+                                                <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                    <div class="project-timeline__graphic-item-name">
+                                                        Task 9
+                                                    </div>
+                                                </td>
+                                                <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                    <div class="project-timeline__graphic-item" style="margin-left: 33%;">
+                                                        <div class="project-timeline__graphic-line" style="width: 460px;">
                                                         
-                                                        <div class="key-point" style="left: 30%;">
-                                                            <div class="key-point__text">
-                                                                Key point 1
-                                                            </div>
-                                                            <div class="key-point__img-block">
-                                                                <img class="key-point__img" src="images/key-point-star.png" alt="">
-                                                            </div>
-                                                        </div>                                                   
+                                                        </div>
+                                                        <div class="project-timeline__graphic-name">
+                                                            Kirk Hammett
+                                                        </div>
                                                     </div>
-                                                    <div class="project-timeline__graphic-name">
-                                                        Dimebag Darrell
+                                                </td>
+                                            </tr>
+                                            <tr class="project-timeline__tr">
+                                                <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                    <div class="project-timeline__graphic-item-name">
+                                                        Long-long task 8
                                                     </div>
-                                                </div>
-                                                
+                                                </td>
+                                                <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                    <div class="project-timeline__graphic-item" style="margin-left: 26%;">
+                                                        <div class="project-timeline__graphic-line" style="width: 460px;">
+                                                            <div class="key-point" style="left: 50%;">
+                                                                <div class="key-point__text">
+                                                                    Key point 1
+                                                                </div>
+                                                                <div class="key-point__img-block">
+                                                                    <img class="key-point__img" src="images/key-point-star.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="project-timeline__graphic-name">
+                                                            Vinnie Paul
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="project-timeline__tr">
+                                                <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                    <div class="project-timeline__graphic-item-name">
+                                                        Simple yet effective task 7
+                                                    </div>
+                                                </td>
+                                                <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                    <div class="project-timeline__graphic-item" style="margin-left: 50%;">
+                                                        <div class="project-timeline__graphic-line" style="width: 170px;">
+                                                            <div class="key-point" style="left: 41%;">
+                                                                <div class="key-point__text">
+                                                                    Key point 1
+                                                                </div>
+                                                                <div class="key-point__img-block">
+                                                                    <img class="key-point__img" src="images/key-point-star.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="link-grahic">
+                                                                <div class="link-grahic__img-block">
+                                                                    <img class="link-grahic__img" src="images/link-icon.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="project-timeline__graphic-name">
+                                                            Vinnie Paul
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="project-timeline__tr">
+                                                <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                    <div class="project-timeline__graphic-item-name">
+                                                        Impossible task 6
+                                                    </div>
+                                                </td>
+                                                <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                    <div class="project-timeline__graphic-item" style="margin-left: 34%;">
+                                                        <div class="project-timeline__graphic-line" style="width: 250px;">
+                                                            <div class="link-grahic">
+                                                                <div class="link-grahic__img-block">
+                                                                    <img class="link-grahic__img" src="images/link-icon.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="project-timeline__graphic-name">
+                                                            Rex Brown
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="project-timeline__tr">
+                                                <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                    <div class="project-timeline__graphic-item-name">
+                                                        Infernous task 5
+                                                    </div>
+                                                </td>
+                                                <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                    <div class="project-timeline__graphic-item" style="margin-left: 21%;">
+                                                        <div class="project-timeline__graphic-line" style="width: 326px;">
+                                                            
+                                                        </div>
+                                                        <div class="project-timeline__graphic-name">
+                                                            Phil Anselmo
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr class="project-timeline__tr">
+                                                <td class="project-timeline__td project-timeline__td-completed">
+                                                    <div class="project-timeline__completed-counter">
+                                                        Completed (<span class="project-timeline__completed-total">4</span> )
+                                                        <button class="project-timeline__button-toggle project-timeline__button-toggle-graphic">
+                                            
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                                <td class="project-timeline__td project-timeline__td-completed" colspan="8">
+                                                    
+                                                </td>
+                                            </tr>
+                                            <div class="project-timeline__completed-block">
+                                                <tr class="project-timeline__tr project-timeline__tr-completed">
+                                                    <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                        <div class="project-timeline__graphic-item-name">
+                                                            Just task 4
+                                                        </div>
+                                                    </td>
+                                                    <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                        <div class="project-timeline__graphic-item" style="margin-left: 13%;">
+                                                            <div class="project-timeline__graphic-line" style="width: 465px;">
+                                                                <div class="key-point" style="left: 41%;">
+                                                                    <div class="key-point__text">
+                                                                        Key point 1
+                                                                    </div>
+                                                                    <div class="key-point__img-block">
+                                                                        <img class="key-point__img" src="images/key-point-star.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="project-timeline__graphic-name">
+                                                                Dimebag Darrell
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="project-timeline__tr project-timeline__tr-completed ">
+                                                    <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                        <div class="project-timeline__graphic-item-name">
+                                                            Simple yet effective task 7
+                                                        </div>
+                                                    </td>
+                                                    <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                        <div class="project-timeline__graphic-item" style="margin-left: -6%;">
+                                                            <div class="project-timeline__graphic-line" style="width: 326px;">
+                                                                
+                                                            </div>
+                                                            <div class="project-timeline__graphic-name">
+                                                                Dimebag Darrell
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="project-timeline__tr project-timeline__tr-completed ">
+                                                    <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                        <div class="project-timeline__graphic-item-name">
+                                                            Impossible task 2
+                                                        </div>
+                                                    </td>
+                                                    <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                        <div class="project-timeline__graphic-item" style="margin-left: -14%;">
+                                                            <div class="project-timeline__graphic-line" style="width: 326px;">
+                                                                
+                                                            </div>
+                                                            <div class="project-timeline__graphic-name">
+                                                                Rex Brown
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="project-timeline__tr project-timeline__tr-completed ">
+                                                    <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                        <div class="project-timeline__graphic-item-name">
+                                                            Infernous task 1
+                                                        </div>
+                                                    </td>
+                                                    <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                        <div class="project-timeline__graphic-item" style="margin-left: -26%;">
+                                                            <div class="project-timeline__graphic-line" style="width: 326px;">
+                                                                
+                                                            </div>
+                                                            <div class="project-timeline__graphic-name">
+                                                                Phil Anselmo
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
                                             </div>
+    
+                                               
+                                        </table>
+                                        <table class="project-timeline__table project-timeline__table--border-bottom">
+                                            <tr class="project-timeline__tr">
+                                                <td class="project-timeline__td project-timeline__td-graphic-title">
+                                                    <div class="project-timeline__graphic-item-name">
+                                                        Subcategory 2
+                                                    </div>
+                                                </td>
+                                                <td class="project-timeline__td project-timeline__td-grahic project-timeline__td-graphic-title" colspan="8">
+                                                    
+                                                </td>
+                                            </tr>
+                                            <tr class="project-timeline__tr">
+                                                <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                    <div class="project-timeline__graphic-item-name">
+                                                        Task 11
+                                                    </div>
+                                                </td>
+                                                <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                    <div class="project-timeline__graphic-item" style="margin-left: 56%;">
+                                                        <div class="project-timeline__graphic-line" style="width: 255px;">
+                                                        
+                                                        </div>
+                                                        <div class="project-timeline__graphic-name">
+                                                            Kirk Hammett
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="project-timeline__tr">
+                                                <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                    <div class="project-timeline__graphic-item-name">
+                                                        Long-long task 12
+                                                    </div>
+                                                </td>
+                                                <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                    <div class="project-timeline__graphic-item" style="margin-left: 40%;">
+                                                        <div class="project-timeline__graphic-line" style="width: 250px;">
+                                                            <div class="key-point" style="left: 50%;">
+                                                                <div class="key-point__text">
+                                                                    Key point 1
+                                                                </div>
+                                                                <div class="key-point__img-block">
+                                                                    <img class="key-point__img" src="images/key-point-star.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="project-timeline__graphic-name">
+                                                            Vinnie Paul
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="project-timeline__tr">
+                                                <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                    <div class="project-timeline__graphic-item-name">
+                                                        Simple yet effective task 19
+                                                    </div>
+                                                </td>
+                                                <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                    <div class="project-timeline__graphic-item" style="margin-left: 24%;">
+                                                        <div class="project-timeline__graphic-line" style="width: 265px;">
+                                                            
+                                                        </div>
+                                                        <div class="project-timeline__graphic-name">
+                                                            Vinnie Paul
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="project-timeline__tr">
+                                                <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                    <div class="project-timeline__graphic-item-name">
+                                                        Impossible task 6
+                                                    </div>
+                                                </td>
+                                                <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                    <div class="project-timeline__graphic-item" style="margin-left: 2%;">
+                                                        <div class="project-timeline__graphic-line" style="width: 260px;">
+                                                            <div class="key-point" style="left: 50%;">
+                                                                <div class="key-point__text">
+                                                                    Key point 1
+                                                                </div>
+                                                                <div class="key-point__img-block">
+                                                                    <img class="key-point__img" src="images/key-point-star.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="project-timeline__graphic-name">
+                                                            Rex Brown
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="project-timeline__tr">
+                                                <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                    <div class="project-timeline__graphic-item-name">
+                                                        Infernous task 5
+                                                    </div>
+                                                </td>
+                                                <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                    <div class="project-timeline__graphic-item" style="margin-left: -27%;">
+                                                        <div class="project-timeline__graphic-line" style="width: 326px;">
+                                                            
+                                                        </div>
+                                                        <div class="project-timeline__graphic-name">
+                                                            Phil Anselmo
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="project-timeline__tr">
+                                                <td class="project-timeline__td project-timeline__td-completed">
+                                                    <div class="project-timeline__completed-counter">
+                                                        Completed (<span class="project-timeline__completed-total">4</span> )
+                                                        <button class="project-timeline__button-toggle project-timeline__button-toggle-graphic hide">
+                                            
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                                <td class="project-timeline__td project-timeline__td-completed" colspan="8">
+                                                    
+                                                </td>
+                                            </tr>
+                                            <div class="project-timeline__completed-block">
+                                                <tr class="project-timeline__tr project-timeline__tr-completed project-timeline__tr-completed-hidden">
+                                                    <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                        <div class="project-timeline__graphic-item-name">
+                                                            Just task 4
+                                                        </div>
+                                                    </td>
+                                                    <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                        <div class="project-timeline__graphic-item" style="margin-left: 13%;">
+                                                            <div class="project-timeline__graphic-line" style="width: 465px;">
+                                                                <div class="key-point" style="left: 41%;">
+                                                                    <div class="key-point__text">
+                                                                        Key point 1
+                                                                    </div>
+                                                                    <div class="key-point__img-block">
+                                                                        <img class="key-point__img" src="images/key-point-star.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="project-timeline__graphic-name">
+                                                                Dimebag Darrell
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="project-timeline__tr project-timeline__tr-completed project-timeline__tr-completed-hidden">
+                                                    <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                        <div class="project-timeline__graphic-item-name">
+                                                            Simple yet effective task 7
+                                                        </div>
+                                                    </td>
+                                                    <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                        <div class="project-timeline__graphic-item" style="margin-left: -6%;">
+                                                            <div class="project-timeline__graphic-line" style="width: 326px;">
+                                                                
+                                                            </div>
+                                                            <div class="project-timeline__graphic-name">
+                                                                Dimebag Darrell
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="project-timeline__tr project-timeline__tr-completed project-timeline__tr-completed-hidden">
+                                                    <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                        <div class="project-timeline__graphic-item-name">
+                                                            Impossible task 2
+                                                        </div>
+                                                    </td>
+                                                    <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                        <div class="project-timeline__graphic-item" style="margin-left: -14%;">
+                                                            <div class="project-timeline__graphic-line" style="width: 326px;">
+                                                                
+                                                            </div>
+                                                            <div class="project-timeline__graphic-name">
+                                                                Rex Brown
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="project-timeline__tr project-timeline__tr-completed project-timeline__tr-completed-hidden">
+                                                    <td class="project-timeline__td project-timeline__td-graphic-name">
+                                                        <div class="project-timeline__graphic-item-name">
+                                                            Infernous task 1
+                                                        </div>
+                                                    </td>
+                                                    <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                        <div class="project-timeline__graphic-item" style="margin-left: -26%;">
+                                                            <div class="project-timeline__graphic-line" style="width: 326px;">
+                                                                
+                                                            </div>
+                                                            <div class="project-timeline__graphic-name">
+                                                                Phil Anselmo
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </div>
+                                        </table>
+                                        
+                                    </div>
+
+                                    <div class="table-scale">
+                                        <div class="table-scale__inner">
+                                            <button class="table-scale__button table-scale__minus">
+
+                                            </button>
+                                            <div class="table-scale__text">
+                                                100%
+                                            </div>
+                                            <button class="table-scale__button table-scale__plus">
+                                                
+                                            </button>
                                         </div>
                                         
                                     </div>
-                                    
-                                    <div class="project-timeline__completed-counter">
-                                        Completed (<span class="project-timeline__completed-total">4</span> )
-                                        <button class="project-timeline__button-toggle">
-                            
-                                        </button>
-                                    </div>
-                                    <div class="project-timeline--completed">
-                                        <table class="project-timeline__table ">                                    
-                                            <tr class="project-timeline__tr">
-                                                <td class="project-timeline__td">
-                                                    
-                                                </td>
+                                </div>                                
+                            </div>
+                            <div class="project-page__tab-content tab-content" id="budget">
+                                <div class="project-budget">
+                                    <div class="project-budget__table-block">
+                                        <div class="project-budget__table-title">
+                                            People
+                                            <div class="title-menu">
+                                                <button class="title-menu__button">
+                        
+                                                </button>
+                                                <ul class="title-menu__list">
+                                                    <li class="title-menu__list-item">
+                                                        <button class="title-menu__list-button">
+                                                            Add category
+                                                        </button>
+                                                    </li>    
+                                                    <li class="title-menu__list-item">
+                                                        <button class="title-menu__list-button">
+                                                            Add worker
+                                                        </button>
+                                                    </li>
+                    
+                                                    <li class="title-menu__list-item">
+                                                        <button class="title-menu__list-button">
+                                                            Delete category
+                                                        </button>
+                                                    </li>
+                    
+                                                    <li class="title-menu__list-item">
+                                                        <button class="title-menu__list-button">
+                                                            Delete worker
+                                                        </button>
+                                                    </li>
+                    
+                                                    <li class="title-menu__list-item">
+                                                        <button class="title-menu__list-button">
+                                                            Rename table
+                                                        </button>
+                                                    </li>
+                                                    <li class="title-menu__list-item">
+                                                        <button class="title-menu__list-button">
+                                                            Delete table
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <table class="project-budget__table">
+                                            <tr class="project-budget__tr">
+                                                <th class="project-budget__th">
+                                                    #
+                                                </th>
+                                                <th class="project-budget__th">
+                                                    Title
+                                                </th>
+                                                <th class="project-budget__th">
+                                                    Per hour
+                                                </th>
+                                                <th class="project-budget__th">
+                                                    Hours
+                                                </th>
+                                                <th class="project-budget__th">
+                                                    Cost
+                                                </th>
                                             </tr>
-                                            <tr class="project-timeline__tr">
-                                                <td class="project-timeline__td">
-                                                    <span class="project-timeline__td-name">Just task 4</span>
+                                            <tr class="project-budget__tr">
+                                                <td class="project-budget__td">
+                                                    1
                                                 </td>
-                                                <td class="project-timeline__td">
-                                                    Jason Newstead
+                                                <td class="project-budget__td project-budget__td-category" colspan="4">
+                                                    category 1
                                                 </td>
-                                                <td class="project-timeline__td">
-                                                    Dimebag Darrell
-                                                </td>
-                                                <td class="project-timeline__td priority priority--low">
-                                                    Low
-                                                </td>
-                                                <td class="project-timeline__td">
-                                                    11 Dec 2019
-                                                </td>
-                                                <td class="project-timeline__td">
-                                                    17 Oct 2020
-                                                </td>
-                                                <td class="project-timeline__td">
-                                                    <div class="status-item">
-                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
-                                                        Complete
-                                                    </div>
-                                                </td>
-                                                <td class="project-timeline__td project-timeline__td--comments">
-                                                    11
-                                                </td>
-                                                <td class="project-timeline__td">
-                                                    
-                                                </td>
+                                                
                                             </tr>
-                                            <tr class="project-timeline__tr">
-                                                <td class="project-timeline__td">
-                                                    Simple yet effective task 7 copy
+                                            <tr class="project-budget__tr">
+                                                <td class="project-budget__td">
+                                                    1.1
                                                 </td>
-                                                <td class="project-timeline__td">
-                                                    Jason Newstead
+                                                <td class="project-budget__td">
+                                                    Worker 1
                                                 </td>
-                                                <td class="project-timeline__td">
-                                                    Dimebag Darrell
+                                                <td class="project-budget__td">
+                                                    $ 25.00
                                                 </td>
-                                                <td class="project-timeline__td priority priority--low">
-                                                    Low
+                                                <td class="project-budget__td">
+                                                    120.00
                                                 </td>
-                                                <td class="project-timeline__td">
-                                                    11 Dec 2019
-                                                </td>
-                                                <td class="project-timeline__td">
-                                                    17 Oct 2020
-                                                </td>
-                                                <td class="project-timeline__td">
-                                                    <div class="status-item">
-                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
-                                                        Complete
-                                                    </div>
-                                                </td>
-                                                <td class="project-timeline__td project-timeline__td--comments">
-                                                    178
-                                                </td>
-                                                <td class="project-timeline__td">
-                                                    
-                                                </td>
+                                                <td class="project-budget__td">
+                                                    3,000.00
+                                                </td>                                            
                                             </tr>
-                                            <tr class="project-timeline__tr">
-                                                <td class="project-timeline__td">
-                                                    <span class="project-timeline__td-name">Impossible task 2</span>
+                                            <tr class="project-budget__tr">
+                                                <td class="project-budget__td">
+                                                    1.2
                                                 </td>
-                                                <td class="project-timeline__td">
-                                                    Lars Ulrich
+                                                <td class="project-budget__td">
+                                                    Worker 2
                                                 </td>
-                                                <td class="project-timeline__td">
-                                                    Rex Brown
+                                                <td class="project-budget__td">
+                                                    $ 18.00
                                                 </td>
-                                                <td class="project-timeline__td priority priority--high">
-                                                    High
+                                                <td class="project-budget__td">
+                                                    48.00
                                                 </td>
-                                                <td class="project-timeline__td">
-                                                    24 Jan 2020
-                                                </td>
-                                                <td class="project-timeline__td">
-                                                    27 Jun 2020
-                                                </td>
-                                                <td class="project-timeline__td">
-                                                    <div class="status-item">
-                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
-                                                        Complete
-                                                    </div>
-                                                </td>
-                                                <td class="project-timeline__td project-timeline__td--comments">
-                                                    29
-                                                </td>
-                                                <td class="project-timeline__td">
-                                                    
-                                                </td>
+                                                <td class="project-budget__td">
+                                                    864.00
+                                                </td>                                            
                                             </tr>
-                                            <tr class="project-timeline__tr">
-                                                <td class="project-timeline__td">
-                                                    <span class="project-timeline__td-name">Infernous task 1</span>
+                                            <tr class="project-budget__tr">
+                                                <td class="project-budget__td">
+                                                    1.3
                                                 </td>
-                                                <td class="project-timeline__td">
-                                                    James Hetfield
+                                                <td class="project-budget__td">
+                                                    Worker 3
                                                 </td>
-                                                <td class="project-timeline__td">
-                                                    Phil Anselmo
+                                                <td class="project-budget__td">
+                                                    $ 10.00
                                                 </td>
-                                                <td class="project-timeline__td priority priority--normal">
-                                                    Normal
+                                                <td class="project-budget__td">
+                                                    15.00
                                                 </td>
-                                                <td class="project-timeline__td">
-                                                    01 Jan 2020
+                                                <td class="project-budget__td">
+                                                    150.00
+                                                </td>                                            
+                                            </tr>
+                                            <tr class="project-budget__tr">
+                                                <td class="project-budget__td">
+                                                    1.4
                                                 </td>
-                                                <td class="project-timeline__td">
-                                                    22 Mar 2020
+                                                <td class="project-budget__td">
+                                                    Worker 4
                                                 </td>
-                                                <td class="project-timeline__td">
-                                                    <div class="status-item">
-                                                        <div class="status-item__color" style="background-color: #8dd98b;"></div>
-                                                        Complete
-                                                    </div>
+                                                <td class="project-budget__td">
+                                                    $ 21.00
                                                 </td>
-                                                <td class="project-timeline__td project-timeline__td--comments">
-                                                    13
+                                                <td class="project-budget__td">
+                                                    101.50
                                                 </td>
-                                                <td class="project-timeline__td">
-                                                    
+                                                <td class="project-budget__td">
+                                                    2,131.50
+                                                </td>                                            
+                                            </tr>
+                                            <tr class="project-budget__tr">
+                                                <td class="project-budget__td">
+                                                    1.5
                                                 </td>
+                                                <td class="project-budget__td">
+                                                    Worker 5
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    $ 8.00
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    36.00
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    288.00
+                                                </td>                                            
+                                            </tr>
+                                            <tr class="project-budget__tr project-budget__tr-sub-total">
+                                                <td class="project-budget__td project-budget__tr-sub-total" colspan="4">
+                                                    Sub-total
+                                                </td>
+                                                <td class="project-budget__td project-budget__tr-sub-total">
+                                                    6,433.50
+                                                </td>                                    
                                             </tr>
                                         </table>
-                                    </div>                                   
-                                </div>                                
+                                    </div>
+                                    <div class="project-budget__table-block">
+                                        <div class="project-budget__table-title">
+                                            Units
+                                            <div class="title-menu">
+                                                <button class="title-menu__button">
+                        
+                                                </button>
+                                                <ul class="title-menu__list">
+                                                    <li class="title-menu__list-item">
+                                                        <button class="title-menu__list-button">
+                                                            Add category
+                                                        </button>
+                                                    </li>    
+                                                    <li class="title-menu__list-item">
+                                                        <button class="title-menu__list-button">
+                                                            Add worker
+                                                        </button>
+                                                    </li>
+                    
+                                                    <li class="title-menu__list-item">
+                                                        <button class="title-menu__list-button">
+                                                            Delete category
+                                                        </button>
+                                                    </li>
+                    
+                                                    <li class="title-menu__list-item">
+                                                        <button class="title-menu__list-button">
+                                                            Delete worker
+                                                        </button>
+                                                    </li>
+                    
+                                                    <li class="title-menu__list-item">
+                                                        <button class="title-menu__list-button">
+                                                            Rename table
+                                                        </button>
+                                                    </li>
+                                                    <li class="title-menu__list-item">
+                                                        <button class="title-menu__list-button">
+                                                            Delete table
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <table class="project-budget__table">
+                                            <tr class="project-budget__tr">
+                                                <th class="project-budget__th">
+                                                    #
+                                                </th>
+                                                <th class="project-budget__th">
+                                                    Title
+                                                </th>
+                                                <th class="project-budget__th">
+                                                    Per hour
+                                                </th>
+                                                <th class="project-budget__th">
+                                                    Hours
+                                                </th>
+                                                <th class="project-budget__th">
+                                                    Cost
+                                                </th>
+                                            </tr>
+                                            <tr class="project-budget__tr">
+                                                <td class="project-budget__td">
+                                                    1
+                                                </td>
+                                                <td class="project-budget__td project-budget__td-category" colspan="4">
+                                                    category 1
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr class="project-budget__tr">
+                                                <td class="project-budget__td">
+                                                    1.1
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    Printers
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    $ 180.00
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    20
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    3,600.00
+                                                </td>                                            
+                                            </tr>
+                                            <tr class="project-budget__tr">
+                                                <td class="project-budget__td">
+                                                    1.2
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    Computers
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    $ 220.00
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    20
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    864.00
+                                                </td>                                            
+                                            </tr>
+                                            <tr class="project-budget__tr">
+                                                <td class="project-budget__td">
+                                                    1.3
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    Tables
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    $ 100.00
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    10
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    1,000.00
+                                                </td>                                            
+                                            </tr>
+                                            <tr class="project-budget__tr">
+                                                <td class="project-budget__td">
+                                                    2
+                                                </td>
+                                                <td class="project-budget__td project-budget__td-category" colspan="4">
+                                                    category 2
+                                                </td>                                           
+                                            </tr>
+                                            <tr class="project-budget__tr">
+                                                <td class="project-budget__td">
+                                                    2.1
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    Software
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    $ 750.00
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    20
+                                                </td>
+                                                <td class="project-budget__td">
+                                                    15,000.00
+                                                </td>                                            
+                                            </tr>
+                                            <tr class="project-budget__tr project-budget__tr-sub-total">
+                                                <td class="project-budget__td project-budget__tr-sub-total" colspan="4">
+                                                    Sub-total
+                                                </td>
+                                                <td class="project-budget__td project-budget__tr-sub-total">
+                                                    38,000.00
+                                                </td>                                    
+                                            </tr>
+                                            <tr class="project-budget__tr project-budget__tr-total">
+                                                <td class="project-budget__td">
+                                                    
+                                                </td>  
+                                                <td class="project-budget__td">
+                                                    
+                                                </td>  
+                                                <td class="project-budget__td">
+                                                    
+                                                </td>  
+                                                <td class="project-budget__td project-budget__td-total">
+                                                    Total
+                                                </td>
+                                                <td class="project-budget__td project-budget__td-total">
+                                                    44,433.50
+                                                </td>                                    
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>

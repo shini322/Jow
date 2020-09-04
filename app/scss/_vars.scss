@@ -47,7 +47,7 @@ $orange: #c17615;
   @media (max-width: 1200px) { @content; }
 }
 @mixin for-lg {
-    @media (max-width: 1150px) { @content; }
+    @media (max-width: 1170px) { @content; }
  }
 //   @mixin for-lit-desktop {
 //     @media (max-width: 1050px) { @content; }
@@ -66,7 +66,7 @@ $orange: #c17615;
     @media (max-width: 768px) { @content; }
   }
   @mixin for-tiny-tablet {
-    @media (max-width: 650px) { @content; }
+    @media (max-width: 684px) { @content; }
   }
   @mixin for-md-mob{
     @media (max-width: 550px) { @content; }

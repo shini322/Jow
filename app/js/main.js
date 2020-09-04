@@ -6,30 +6,41 @@ $('.title-menu__button').click(function(){
         $(this).parent().parent().prev().removeClass('active');
     });
 });
+// $(document).mouseup(function (e) {
+//     var container = $(".title-menu__list");
+//     var container2 = $(".title-menu__button");
+//     if (container.has(e.target).length === 0 && container2.has(e.target).length === 0){
+//         container.slideUp(200);
+//     }
+// });
 
 $('.tab').on('click', function(e){
     e.preventDefault();  
     
-    $($(this).parent().find('.tab')).removeClass('active');
-
-    // let thistitleMenu = $($(this).find('.project-page__title-menu'));
-
-    // let titleMenu = $($(this).parent().siblings().find('.project-page__title-menu'));
-
-    // if(titleMenu.hasClass('active')){ 
-    //     titleMenu.removeClass('active');       
-    //     titleMenu.slideUp(200);        
-    // } else {
-
-    // }
+    $($(this).parent().find('.tab')).removeClass('active');   
 
     $($(this).parent().siblings().find('.tab-content')).removeClass('active');  
     $(this).addClass('active');
     $($(this).attr('href')).addClass('active');
+    if($(this).attr("href") == '#budget'){
+        $('.project-budget-calc').addClass('active');
+    } else{
+        $('.project-budget-calc').removeClass('active');
+    }
     
   });
 
+
+  $('.view__item').on('click', function(e){
+    $($(this).parent().find('.view__item')).removeClass('active'); 
+    $(this).addClass('active');   
+  });
+
   $('.project-tasks__button-toggle').click(function(){
+    $(this).toggleClass('hide');
+    $(this).parent().next().slideToggle(300);
+  });
+  $('.projects-table__button-toggle').click(function(){
     $(this).toggleClass('hide');
     $(this).parent().next().slideToggle(300);
   });
@@ -79,5 +90,20 @@ $(document).mouseup(function (e) {
 $('.nav-toggle').click(function(){
     $(this).toggleClass('opened')
     $('.menu-block').slideToggle()
+});
+
+$('.project-timeline__button-toggle-graphic').click(function(){
+    $(this).toggleClass('hide')
+    $(this).parent().parent().parent().nextAll('.project-timeline__tr-completed').slideToggle(0);
+    // $(this).parent().parent().parent().find('.project-timeline__tr-completed').each(function(){
+    //     while(false){
+    //         if($(this).hasClass('project-timeline__tr-completed')){
+    //             $(this).slideToggle();
+    //         } else{
+    //             break;
+    //         }
+    //     }
+    // });
+    
 });
 
