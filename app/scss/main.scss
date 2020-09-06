@@ -43,6 +43,36 @@ header{
     overflow-x: hidden;  
 }
 
+
+.label-checkbox-block{
+    &__label{
+        position: relative;
+        padding-left: 24px;
+        font-weight: 300;
+        cursor: pointer;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            border: 1px solid $black;
+            border-radius: 2px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 9.5px 7.5px;
+        }
+    }
+    
+    &__input:checked + &__label{
+        &:before{
+            background-image: url(../img/check.png);
+        }
+    }
+}
+
 ul{
     list-style: none;
 }
@@ -75,6 +105,10 @@ button{
     &.active{
         display: block;
     }
+}
+
+.hidden{
+    display: none;
 }
 
 .header{
@@ -152,6 +186,9 @@ button{
         background-color: #c3d5dc;
         border-radius: 0 0 16px 16px;
         z-index: 20;
+    }
+    @include for-md-mob{
+        height: 100vh;
     }
 }
 
@@ -347,28 +384,50 @@ button{
         line-height: 18px;
         font-weight: 300;
     }
+    &__check-block{
+        display: flex;
+        align-items: center;
+    }
+    &__input{
+        display: none;
+    }
+    &__label{
+        position: relative;
+        padding-left: 24px;
+        font-weight: 300;
+        cursor: pointer;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            border: 1px solid $black;
+            border-radius: 2px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 9.5px 7.5px;
+        }
+    }
+    &__input:checked + &__label{
+        &:before{
+            background-image: url(../img/check.png);
+        }
+    }
 
     
 }
 .project-page{
     &__category{
         position: relative;
-        padding-top: 25px;
+        margin-top: 25px;
         padding-left: 25px;
         font-size: 14px;
         line-height: 18px;
         text-transform: uppercase;
-        &:before, &:after{
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-            background-color: #c3a57d;
-        }
+        
     }
 
     &__tabs{
@@ -410,7 +469,7 @@ button{
         }
     }
     &__tab + &__tab{
-        margin-left: -2px;
+        margin-left: -1px;
         @include for-sm{
             margin-left: 0;
         }
@@ -615,7 +674,9 @@ button{
 }
 
 .project-tasks{
-    overflow-x: scroll;
+    @include for-lg{
+        overflow-x: scroll;
+    }
     &--completed{
         .project-tasks__tr:nth-child(2) .project-tasks__td{
             padding-top: 15px;
@@ -668,7 +729,7 @@ button{
                 background-repeat: no-repeat;
                 top: 0;
                 right: 0;
-                transform: translateY(70%);
+                transform: translateY(50%);
             }
         }
     }
@@ -712,7 +773,7 @@ button{
         display: flex;
         align-items: center;
         padding-top: 28px;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
         border-top: 1px solid #b9e0c2;
     }
     &__button-toggle{
@@ -1934,5 +1995,577 @@ button{
 
     &__title-sticker{
         right: -18px;
+    }
+}
+.category{
+    position: relative;
+    padding-left: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    &__color{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+    }
+    
+}
+.tasks{
+    &__td{
+        font-weight: 300 !important;
+        &:first-child{
+            width: 22%;
+        }
+        &:nth-child(2){
+            width: 30%;
+        }
+        &:nth-child(3){
+            width: 8%;
+        }
+        &:nth-child(4){
+            width: 11%;
+            // min-width: 139px;
+        }
+        &:nth-child(7){
+            text-align: right;
+        }
+        &:last-child{
+            text-align: right;
+            height: 37px;
+        }
+    }
+    &__tr{
+        &:last-child{
+            .tasks__td{
+                padding-bottom: 30px;
+            }
+        }
+    }
+    &__td-name{
+        font-weight: 500 !important;
+    }
+    &__title-menu{
+        padding-right: 10px;
+        margin-left: auto;
+        @include for-sm{
+            margin-top: 20px;
+        }
+    }
+    &__title-menu-list{
+        right: 0;
+        left: auto;
+        width: 157px;
+    }
+}
+.notifications{
+    &__filters-menu{
+        @include for-sm{
+            margin-top: 10px;
+        }
+    }
+    &__filters-list{
+        width: 170px;
+    }
+    &__filters-button{
+        padding-right: 27px;
+        width: auto;
+        height: auto;
+        &:before{
+            display: none;
+        }
+        &:after{
+            width: 17px;
+            height: 16.5px;
+            background-image: url(../img/filters.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            right: 0;
+            left: auto;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+    }
+    &__filters-button.active{
+        &::after{
+            transform: translateY(-50%);
+        }
+    }
+    &__title-block{
+        display: flex;
+        margin-bottom: 25px;
+        justify-content: space-between;
+        align-items: center;
+        @include for-sm{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__th{
+        &:nth-child(4){
+            padding-left: 24px;
+        }
+    }
+    &__td{
+        position: relative;
+        vertical-align: middle;
+        width: auto !important;
+        &:first-child{
+            padding-right: 15px;
+        }
+        &:nth-child(2){
+            width: 30% !important;
+        }
+        &:nth-child(4){
+            padding-left: 24px !important;
+        }
+        &:last-child{
+            width: 15% !important;
+        }
+    }
+    &__td-name{
+        font-weight: 500;
+    }
+    &__th--date{
+        padding-right: 23px;
+        &:after{
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 9px;
+            background-image: url(../img/arrow-top.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: 0;
+            right: 0;
+            transform: translateY(50%);
+        }
+    }
+    &__td-action-block{
+        position: relative;
+        &--like{
+            .notifications__td-action-img{
+                width: 21px;
+                height: 20px;
+            }
+        }
+        &--locked{
+            .notifications__td-action-img{
+                width: 13.5px;
+                height: 15.5px;
+            }
+        }
+        &--reminder{
+            .notifications__td-action-img{
+                width: 14px;
+                height: 16.5px;
+            }
+        }
+    }
+    &__td-action-img{
+        position: absolute;
+        margin-left: 8.5px;
+        margin-top: -1px;
+    }
+    &__td-task{
+        font-weight: 500 !important;
+    }
+    &__sticker{
+        position: relative;
+        width: 26px;
+        height: 14px;
+        right: auto;
+    }
+    &__category{
+        text-transform: capitalize;
+        padding-left: 0;
+    }
+    &__category-color{
+        left: -23px;
+    }
+}
+.calendar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include for-lg{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+        @include for-sm{
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    &__slider{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    &__slider-left, &__slider-right{
+        width: 9px;
+        height: 15px;
+    }
+    &__slider-img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__slider-text{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    &__slider + &__slider{
+        margin-left: 46.5px;
+        @include for-sm{
+            margin-left: 0;
+
+            margin-top: 20px;
+        }
+    }
+    &__tabs{
+        display: flex;
+        align-items: center;
+        margin-left: 25px;
+        @include for-sm{
+            margin-left: 0;
+            margin-top: 15px;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    &__tab{
+        display: block;
+        padding: 15px 32.5px 12px;
+        border: 1px solid #868e9b;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        border-radius: 4px 4px 0 0;
+        border-bottom-color: #23262b;
+        max-width: 168px;
+        width: 100%;
+        flex-shrink: 0;
+        &:first-child{
+            @include for-sm{
+                border: 1px solid #868e9b;                
+            }
+        }
+        
+        &.active{
+            position: relative;
+            background-color: #bbc2ce;
+            border-color: #23262b;
+        }
+        & + &{
+            margin-left: -1px;
+        }
+
+        @include for-sm{
+            max-width: 100%;
+            width: 100%;
+            border-top: none;
+            border-radius: 0;
+        }
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        @include for-lg{
+            margin-top: 15px;
+        }
+        @include for-sm{
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    &__select{
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 11px 90px 7px 13px;
+        height: 32px;
+        font-size: 14px;
+        line-height: 28px;
+        border: 1px solid $black;
+        border-radius: 4px;
+        @include for-lg{
+            margin-right: 36px;
+        }
+        @include for-sm{
+            margin-bottom: 20px;
+            width: 100%;
+            float: none;
+            margin-right: 0;
+        }
+        
+        &::after{
+            margin-top: -4.5px;
+            border: none;
+            background-image: url(../img/arrow-bottom.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 15px;
+            height: 9px;
+            transform: none;
+            transform-origin: center;
+            transition: .15s;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            top: 0;
+            right: 36px;
+            background-color: $black;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &.open{
+            &:after{
+                transform: rotate(-180deg);
+            }
+        }
+        .list{
+            width: 100%;
+            border: 1px solid $black;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .option{
+            font-weight: 500;
+        }
+        .option.selected{
+            font-weight: 500;
+        }
+    }
+    &__select + &__select{
+        margin-left: 36px;
+
+        @include for-lg{
+            margin-left: 0;
+        }
+    }
+    .nice-select:active, .nice-select.open, .nice-select:focus{
+        border-color: inherit;
+    }
+}
+
+.calendar-month{
+    padding-bottom: 20px;
+    @include for-lg{
+        overflow-x: scroll;
+    }
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        width: 1170px;
+    }
+    &__container{
+        width: 14.28%;
+        &:nth-child(7n){
+            .calendar-month__item{
+                border-right: 1px solid #868e9b;
+            }
+        }
+        &:nth-child(29), &:nth-child(30), &:nth-child(31), &:nth-child(32), &:nth-child(33), &:nth-child(34), &:nth-child(35){
+            border-bottom: 1px solid #868e9b;
+        }
+    }
+    
+}
+
+.calendar-item{
+    position: relative;
+    padding: 8px;
+    height: 139px;
+    border: 1px solid #868e9b;
+    border-right: none;
+    border-bottom: none;
+    &--old{
+        color: #8b8c8d;
+    }
+    &--new{
+        color: #8b8c8d;
+    }
+    &--week{
+        .calendar-item__week{
+            display: block;
+        }
+    }
+    &--weekend{
+        background-color: #dedddc;
+        .calendar-item__number{
+            font-weight: 500;
+        }
+    }
+    &__top{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-weight: 300;
+    }
+    &__number{
+        margin-left: auto;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    &__week{
+        display: none;
+        top: 8px;
+        left: 8px;
+        color: #8b8c8d;
+    }
+    
+}
+
+.calendar-project{
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    &__title{
+        position: relative; 
+        max-width: 135px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    &__color{
+        margin-left: 7px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+    &__sticker{
+        position: relative;
+        display: inline-flex;
+        width: 15px;
+        height: 8.5px;
+        font-size: 6px;
+        line-height: 6px;
+        top: -5px;
+        right: 0;
+        margin-left: 4px;
+        padding: 3px 0;
+        flex-shrink: 0;
+        border-radius: 2px;
+    }
+}
+.login{
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 80vh;
+        max-width: 315px;
+        margin: 0 auto;
+    }
+    &__title{
+        margin-bottom: 30px;
+        font-weight: 300;
+        &--big{
+            font-weight: 500;
+            font-size: 24px;
+        }
+    }
+    &__form{
+        width: 100%;
+    }
+    &__form-item{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        @include for-md-mob{
+            flex-direction: column;
+        }
+    }
+    &__form-item + &__form-item{
+        margin-top: 13.5px;
+    }
+    &__form-input{
+        padding: 10px 10px 8px;
+        border: 1px solid $black;
+        border-radius: 4px;
+        @include for-md-mob{
+            width: 100%;
+        }
+    }
+
+    &__form-label{
+        width: 30%;
+        @include for-md-mob{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    &__form-remember{
+        margin-top: 20px;
+        margin-left: 30%;
+        @include for-md-mob{
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+    &__form-input-checkbox{
+        display: none;
+    }
+    &__button{
+        margin-top: 18px;
+        margin-left: 30%;
+        max-width: 136px;
+        height: 23px;
+        width: 100%;
+        border-radius: 4px;
+        background-color: #b9e0c2;    
+        @include for-md-mob{
+            display: block;
+            margin: 10px auto 0;
+        }    
+    }
+    &__forgot{
+        margin-top: 20px;
+        margin-left: 30%;
+        font-weight: 300;
+        &:hover{
+            text-decoration: underline;
+        }
+        @include for-md-mob{
+            width: 100%;
+            margin-left: 0;
+            text-align: center;
+        } 
+    }
+    &__form-text{
+        margin-top: 16px;
+        margin-left: 30%;
+        font-weight: 300;
+        @include for-md-mob{
+            margin-top: 10px;
+            margin-left: 0;
+            text-align: center;
+        }
     }
 }

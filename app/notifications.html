@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--start header-->
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="logo header__logo" href="/">
+                        <img class="logo__img" src="images/logo.png" alt="">
+                    </a>
+                    <div class="menu-block">
+                        <nav class="menu header__menu">
+                            <ul class="menu__list">
+                                <li>
+                                    <a class="menu__list-project" href="#">
+                                        Projects
+                                        <div class="menu__list-project-total">
+                                            2
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Tasks
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Calendar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Notifications
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Messages
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Files
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Timesheets
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Search
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="search header__search">
+                            <input class="search__input input" type="text">
+                        </div>
+                        <div class="profile header__profile">
+                            <a class="profile__link " href="#">
+                                James
+                            </a>
+                        </div>
+
+                    </div>
+                    <button class="nav-toggle">
+                        <span class="bar-top"></span>
+                        <span class="bar-mid"></span>
+                        <span class="bar-bot"></span>
+                    </button>
+                </div>
+
+
+            </div>
+        </header>
+        <!--end header-->
+
+        <!--start main-->
+        <main class="main" id="main">
+            <section class="notifications">
+                <div class="container">
+                    <div class="project-page__inner">
+                        <div class="title-block notifications__title-block">
+                            <h1 class="project-page__title page-title">
+                                Notifications
+                            </h1>
+                            <div class="title-menu notifications__filters-menu">
+                                <button class="title-menu__button notifications__filters-button">
+                                    Filter notifications
+                                </button>
+                                <ul class="title-menu__list notifications__filters-list">
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="new-comments" checked>
+                                            <label class="title-menu__label" for="new-comments">
+                                                New comments
+                                            </label>
+                                        </div>
+                                    </li>    
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="likes" checked>
+                                            <label class="title-menu__label" for="likes">
+                                                Likes
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="brief-changes" checked>
+                                            <label class="title-menu__label" for="brief-changes">
+                                                Brief changes
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="files-movements" checked>
+                                            <label class="title-menu__label" for="files-movements">
+                                                Files movements
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="reminders" checked>
+                                            <label class="title-menu__label" for="reminders">
+                                                Reminders
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="team-changes" checked>
+                                            <label class="title-menu__label" for="team-changes">
+                                                Team changes
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project-tasks">
+                            <table class="project-tasks__table notifications__table">
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <th class="project-tasks__th notifications__th">
+                                        New
+                                    </th>
+                                    <th class="project-tasks__th notifications__th">
+                                        Action
+                                    </th>
+                                    <th class="project-tasks__th notifications__th">
+                                        Task
+                                    </th>
+                                    <th class="project-tasks__th notifications__th">
+                                        Project
+                                    </th>
+                                    <th class="project-tasks__th notifications__th notifications__th--date">
+                                        Date, time
+                                    </th>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        <div class="notifications__sticker sticker sticker--new">new</div>
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                Kirk Hammett
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--like">
+                                                liked your comment
+                                                <img class="notifications__td-action-img" src="images/actions/like.png" alt="">
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Task 9
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                            Category 1 
+                                        </span>
+                                        / Project 1
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        12 Feb 2020, 17:35
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        <div class="notifications__sticker sticker sticker--new">new</div>
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                James Hetfield
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--locked">
+                                                locked the task
+                                                <img class="notifications__td-action-img" src="images/actions/locked.png" alt="">
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Simple yet effective task 7
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3847d;"></span>
+                                            Category 2 
+                                        </span>
+                                        / Long project 6
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        11 Feb 2020, 15:04
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        <div class="notifications__sticker sticker sticker--new">new</div>
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                Lars Ulrich
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--posted">
+                                                posted a new comment
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Impossible task 6
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                            Category 2 
+                                        </span>
+                                        / Very bad project 3
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        10 Feb 2020, 16:08
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        <div class="notifications__sticker sticker sticker--new">new</div>
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--reminder">
+                                                Reminder for the task
+                                                <img class="notifications__td-action-img" src="images/actions/reminder.png" alt="">
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Impossible task 6
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #7dc38d;"></span>
+                                            Category 3 
+                                        </span>
+                                        / Long long name project
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        09 Feb 2020, 13:49
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        <div class="notifications__sticker sticker sticker--new">new</div>
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                Dimebag Darrell
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--removed">
+                                                removed your file
+                                                
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Long-long task 8
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #7dc38d;"></span>
+                                            Category 2 
+                                        </span>
+                                        / Long project 6
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        08 Feb 2020, 11:37
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                James Hetfield
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--like">
+                                                liked your comment
+                                                <img class="notifications__td-action-img" src="images/actions/like2.png" alt="">
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Task 9
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                            Category 1 
+                                        </span>
+                                        / Project 1
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        07 Feb 2020, 17:35
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                Kirk Hammett
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--edited">
+                                                edited own comment
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Long-long task 8
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3847d;"></span>
+                                            Category 2 
+                                        </span>
+                                        / Long project 6
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        07 Feb 2020, 17:35
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        <div class="notifications__sticker sticker sticker--new">new</div>
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                Lars Ulrich
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--changed-desc">
+                                                changed the description
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Impossible task 6
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                            Category 1 
+                                        </span>
+                                        / Very bad project 3
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        07 Feb 2020, 17:35
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        <div class="notifications__sticker sticker sticker--new">new</div>
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                Kirk Hammett
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--like">
+                                                liked your comment
+                                                <img class="notifications__td-action-img" src="images/actions/like.png" alt="">
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Task 9
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                            Category 1 
+                                        </span>
+                                        / Project 1
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        5 Feb 2020, 17:35
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                James Hetfield
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--added--col">
+                                                added collaborator
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Simple yet effective task 7
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3847d;"></span>
+                                            Category 2 
+                                        </span>
+                                        / Long project 6
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        11 Feb 2020, 15:04
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        <div class="notifications__sticker sticker sticker--new">new</div>
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                Lars Ulrich
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--posted">
+                                                posted a new comment
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Impossible task 6
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                            Category 2 
+                                        </span>
+                                        / Very bad project 3
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        10 Feb 2020, 16:08
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        <div class="notifications__sticker sticker sticker--new">new</div>
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--reminder">
+                                                Reminder for the task
+                                                <img class="notifications__td-action-img" src="images/actions/reminder.png" alt="">
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Infernous long long long name task with long long number 5
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #7dc38d;"></span>
+                                            Category 3 
+                                        </span>
+                                        / Long long long long project with long long name
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        09 Feb 2020, 13:49
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        <div class="notifications__sticker sticker sticker--new">new</div>
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                James Hetfield
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--like">
+                                                liked your comment
+                                                <img class="notifications__td-action-img" src="images/actions/like2.png" alt="">
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Task 9
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                            Category 1 
+                                        </span>
+                                        / Project 1
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        30 Jan 2020, 17:35
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                Kirk Hammett
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--like">
+                                                moved the task
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Long-long task 8
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3847d;"></span>
+                                            Category 2 
+                                        </span>
+                                        / Long project 6
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        30 Jan 2020, 17:35
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                Lars Ulrich
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--changed-desc">
+                                                changed the description
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Impossible task 6
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                            Category 1 
+                                        </span>
+                                        / Very bad project 3
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        28 Jan 2020, 16:03
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        <div class="notifications__sticker sticker sticker--new">new</div>
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                Kirk Hammett
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--like">
+                                                liked your comment
+                                                <img class="notifications__td-action-img" src="images/actions/like.png" alt="">
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Task 9
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                            Category 1 
+                                        </span>
+                                        / Project 1
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        12 Feb 2020, 17:35
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                James Hetfield
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--added--col">
+                                                added collaborator
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Simple yet effective task 7
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3847d;"></span>
+                                            Category 2 
+                                        </span>
+                                        / Long project 6
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        11 Feb 2020, 15:04
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                       
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                Lars Ulrich
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--posted">
+                                                posted a new comment
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Impossible task 6
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                            Category 2 
+                                        </span>
+                                        / Very bad project 3
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        10 Feb 2020, 16:08
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                       
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--reminder">
+                                                Reminder for the task
+                                                <img class="notifications__td-action-img" src="images/actions/reminder.png" alt="">
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Impossible task 6
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #7dc38d;"></span>
+                                            Category 3 
+                                        </span>
+                                        / Long long name project
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        09 Feb 2020, 13:49
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                Dimebag Darrell
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--removed">
+                                                removed your file
+                                                
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Long-long task 8
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #7dc38d;"></span>
+                                            Category 2 
+                                        </span>
+                                        / Long project 6
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        08 Feb 2020, 11:37
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                James Hetfield
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--like">
+                                                liked your comment
+                                                <img class="notifications__td-action-img" src="images/actions/like2.png" alt="">
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Task 9
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                            Category 1 
+                                        </span>
+                                        / Project 1
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        07 Feb 2020, 17:35
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                        
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                Kirk Hammett
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--like">
+                                                moved the task
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Long-long task 8
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3847d;"></span>
+                                            Category 2 
+                                        </span>
+                                        / Long project 6
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        30 Jan 2020, 17:35
+                                    </td>
+                                </tr>
+                                <tr class="project-tasks__tr tasks__tr">
+                                    <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                       
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td ">
+                                        <div class="notifications__td-action">
+                                            <span class="notifications__td-name">
+                                                Lars Ulrich
+                                            </span>
+                                            <span class="notifications__td-action-block notifications__td-action-block--changed-desc">
+                                                changed the description
+                                            </span> 
+                                        </div>
+                                                                               
+                                    </td>
+                                    <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                        Impossible task 6
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        <span class="category notifications__category">
+                                            <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                            Category 1 
+                                        </span>
+                                        / Very bad project 3
+                                    </td>
+                                    <td class="project-tasks__td notifications__td tasks__td">
+                                        07 Feb 2020, 17:35
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                            <div class="project-tasks__completed-counter">
+                                Old (<span class="project-tasks__completed-total">228</span> )
+                                <button class="project-tasks__button-toggle hide">
+                                    (50)
+                                </button>
+                            </div>
+                            <div class="project-tasks--completed hidden">
+                                <table class="project-tasks__table notifications__table">
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            <div class="notifications__sticker sticker sticker--new">new</div>
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    Kirk Hammett
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--like">
+                                                    liked your comment
+                                                    <img class="notifications__td-action-img" src="images/actions/like.png" alt="">
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Task 9
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                                Category 1 
+                                            </span>
+                                            / Project 1
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            12 Feb 2020, 17:35
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            <div class="notifications__sticker sticker sticker--new">new</div>
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    James Hetfield
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--locked">
+                                                    locked the task
+                                                    <img class="notifications__td-action-img" src="images/actions/locked.png" alt="">
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Simple yet effective task 7
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3847d;"></span>
+                                                Category 2 
+                                            </span>
+                                            / Long project 6
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            11 Feb 2020, 15:04
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            <div class="notifications__sticker sticker sticker--new">new</div>
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    Lars Ulrich
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--posted">
+                                                    posted a new comment
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Impossible task 6
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                                Category 2 
+                                            </span>
+                                            / Very bad project 3
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            10 Feb 2020, 16:08
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            <div class="notifications__sticker sticker sticker--new">new</div>
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--reminder">
+                                                    Reminder for the task
+                                                    <img class="notifications__td-action-img" src="images/actions/reminder.png" alt="">
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Impossible task 6
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #7dc38d;"></span>
+                                                Category 3 
+                                            </span>
+                                            / Long long name project
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            09 Feb 2020, 13:49
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            <div class="notifications__sticker sticker sticker--new">new</div>
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    Dimebag Darrell
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--removed">
+                                                    removed your file
+                                                    
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Long-long task 8
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #7dc38d;"></span>
+                                                Category 2 
+                                            </span>
+                                            / Long project 6
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            08 Feb 2020, 11:37
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    James Hetfield
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--like">
+                                                    liked your comment
+                                                    <img class="notifications__td-action-img" src="images/actions/like2.png" alt="">
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Task 9
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                                Category 1 
+                                            </span>
+                                            / Project 1
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            07 Feb 2020, 17:35
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    Kirk Hammett
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--edited">
+                                                    edited own comment
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Long-long task 8
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3847d;"></span>
+                                                Category 2 
+                                            </span>
+                                            / Long project 6
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            07 Feb 2020, 17:35
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            <div class="notifications__sticker sticker sticker--new">new</div>
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    Lars Ulrich
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--changed-desc">
+                                                    changed the description
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Impossible task 6
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                                Category 1 
+                                            </span>
+                                            / Very bad project 3
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            07 Feb 2020, 17:35
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            <div class="notifications__sticker sticker sticker--new">new</div>
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    Kirk Hammett
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--like">
+                                                    liked your comment
+                                                    <img class="notifications__td-action-img" src="images/actions/like.png" alt="">
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Task 9
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                                Category 1 
+                                            </span>
+                                            / Project 1
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            5 Feb 2020, 17:35
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    James Hetfield
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--added--col">
+                                                    added collaborator
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Simple yet effective task 7
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3847d;"></span>
+                                                Category 2 
+                                            </span>
+                                            / Long project 6
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            11 Feb 2020, 15:04
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            <div class="notifications__sticker sticker sticker--new">new</div>
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    Lars Ulrich
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--posted">
+                                                    posted a new comment
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Impossible task 6
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                                Category 2 
+                                            </span>
+                                            / Very bad project 3
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            10 Feb 2020, 16:08
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            <div class="notifications__sticker sticker sticker--new">new</div>
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--reminder">
+                                                    Reminder for the task
+                                                    <img class="notifications__td-action-img" src="images/actions/reminder.png" alt="">
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Infernous long long long name task with long long number 5
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #7dc38d;"></span>
+                                                Category 3 
+                                            </span>
+                                            / Long long long long project with long long name
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            09 Feb 2020, 13:49
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            <div class="notifications__sticker sticker sticker--new">new</div>
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    James Hetfield
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--like">
+                                                    liked your comment
+                                                    <img class="notifications__td-action-img" src="images/actions/like2.png" alt="">
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Task 9
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                                Category 1 
+                                            </span>
+                                            / Project 1
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            30 Jan 2020, 17:35
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    Kirk Hammett
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--like">
+                                                    moved the task
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Long-long task 8
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3847d;"></span>
+                                                Category 2 
+                                            </span>
+                                            / Long project 6
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            30 Jan 2020, 17:35
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    Lars Ulrich
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--changed-desc">
+                                                    changed the description
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Impossible task 6
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                                Category 1 
+                                            </span>
+                                            / Very bad project 3
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            28 Jan 2020, 16:03
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            <div class="notifications__sticker sticker sticker--new">new</div>
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    Kirk Hammett
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--like">
+                                                    liked your comment
+                                                    <img class="notifications__td-action-img" src="images/actions/like.png" alt="">
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Task 9
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                                Category 1 
+                                            </span>
+                                            / Project 1
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            12 Feb 2020, 17:35
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    James Hetfield
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--added--col">
+                                                    added collaborator
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Simple yet effective task 7
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3847d;"></span>
+                                                Category 2 
+                                            </span>
+                                            / Long project 6
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            11 Feb 2020, 15:04
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                           
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    Lars Ulrich
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--posted">
+                                                    posted a new comment
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Impossible task 6
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                                Category 2 
+                                            </span>
+                                            / Very bad project 3
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            10 Feb 2020, 16:08
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                           
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--reminder">
+                                                    Reminder for the task
+                                                    <img class="notifications__td-action-img" src="images/actions/reminder.png" alt="">
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Impossible task 6
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #7dc38d;"></span>
+                                                Category 3 
+                                            </span>
+                                            / Long long name project
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            09 Feb 2020, 13:49
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    Dimebag Darrell
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--removed">
+                                                    removed your file
+                                                    
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Long-long task 8
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #7dc38d;"></span>
+                                                Category 2 
+                                            </span>
+                                            / Long project 6
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            08 Feb 2020, 11:37
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    James Hetfield
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--like">
+                                                    liked your comment
+                                                    <img class="notifications__td-action-img" src="images/actions/like2.png" alt="">
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Task 9
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                                Category 1 
+                                            </span>
+                                            / Project 1
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            07 Feb 2020, 17:35
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                            
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    Kirk Hammett
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--like">
+                                                    moved the task
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Long-long task 8
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3847d;"></span>
+                                                Category 2 
+                                            </span>
+                                            / Long project 6
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            30 Jan 2020, 17:35
+                                        </td>
+                                    </tr>
+                                    <tr class="project-tasks__tr tasks__tr">
+                                        <td class="project-tasks__td notifications__td tasks__td tasks__td-name">
+                                           
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td ">
+                                            <div class="notifications__td-action">
+                                                <span class="notifications__td-name">
+                                                    Lars Ulrich
+                                                </span>
+                                                <span class="notifications__td-action-block notifications__td-action-block--changed-desc">
+                                                    changed the description
+                                                </span> 
+                                            </div>
+                                                                                   
+                                        </td>
+                                        <td class="project-tasks__td notifications__td notifications__td-task tasks__td">
+                                            Impossible task 6
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            <span class="category notifications__category">
+                                                <span class="category__color notifications__category-color" style="background-color: #c3a57d;"></span>
+                                                Category 1 
+                                            </span>
+                                            / Very bad project 3
+                                        </td>
+                                        <td class="project-tasks__td notifications__td tasks__td">
+                                            07 Feb 2020, 17:35
+                                        </td>
+                                    </tr>
+                                    
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--end main-->
+
+        <!--start footer-->
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__copy footer__link" href="#">
+                        © Jow, 2020.
+                    </a>
+                    <div class="footer__right-links">
+                        <a class="footer__link" href="#">
+                            Legal Disclaimer
+                        </a>
+                        <a class="footer__link" href="#">
+                            Privacy Policy
+                        </a>
+                        <a class="footer__link" href="#">
+                            Cookies
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--end footer-->
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

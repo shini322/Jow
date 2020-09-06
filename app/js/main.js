@@ -18,7 +18,7 @@ $('.tab').on('click', function(e){
     e.preventDefault();  
     
     $($(this).parent().find('.tab')).removeClass('active');   
-
+    $(this).find('.title-menu__list').slideUp();
     $($(this).parent().siblings().find('.tab-content')).removeClass('active');  
     $(this).addClass('active');
     $($(this).attr('href')).addClass('active');
@@ -29,6 +29,19 @@ $('.tab').on('click', function(e){
     }
     
   });
+
+
+  $('.calendar-nav__tab').on('click', function(e){
+    e.preventDefault();  
+    
+    $($(this).parent().find('.tab')).removeClass('active');
+    $($(this).parent().parent().parent().siblings().find('.tab-content')).removeClass('active');  
+    $(this).addClass('active');
+    $($(this).attr('href')).addClass('active');
+    
+  });
+
+
 
 
   $('.view__item').on('click', function(e){
@@ -95,15 +108,10 @@ $('.nav-toggle').click(function(){
 $('.project-timeline__button-toggle-graphic').click(function(){
     $(this).toggleClass('hide')
     $(this).parent().parent().parent().nextAll('.project-timeline__tr-completed').slideToggle(0);
-    // $(this).parent().parent().parent().find('.project-timeline__tr-completed').each(function(){
-    //     while(false){
-    //         if($(this).hasClass('project-timeline__tr-completed')){
-    //             $(this).slideToggle();
-    //         } else{
-    //             break;
-    //         }
-    //     }
-    // });
+   
     
 });
+
+
+$('.select').niceSelect();
 

@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--start header-->
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="logo header__logo" href="/">
+                        <img class="logo__img" src="images/logo.png" alt="">
+                    </a>
+                    <div class="menu-block">
+                        <nav class="menu header__menu">
+                            <ul class="menu__list">
+                                <li>
+                                    <a class="menu__list-project" href="#">
+                                        Projects
+                                        <div class="menu__list-project-total">
+                                            2
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Tasks
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Calendar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Notifications
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Messages
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Files
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Timesheets
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Search
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="search header__search">
+                            <input class="search__input input" type="text">
+                        </div>
+                        <div class="profile header__profile">
+                            <a class="profile__link " href="#">
+                                James
+                            </a>
+                        </div>
+
+                    </div>
+                    <button class="nav-toggle">
+                        <span class="bar-top"></span>
+                        <span class="bar-mid"></span>
+                        <span class="bar-bot"></span>
+                    </button>
+                </div>
+
+
+            </div>
+        </header>
+        <!--end header-->
+
+        <!--start main-->
+        <main class="main" id="main">
+            <section class="calendar-page">
+                <div class="container">
+                    <div class="calendar__inner">
+                        <div class="title-block">
+                            <h1 class="project-page__title page-title">
+                                Calendar
+                            </h1>
+                        </div>
+                        <div class="calendar-nav">
+                            <div class="calendar-nav__left">
+                                <div class="calendar-nav__slider calendar-nav__slider--year">
+                                    <button class="calendar-nav__slider-left">
+                                        <img class="calendar-nav__slider-img" src="img/calendar-prev.png" alt="">
+                                    </button>
+                                    <span class="calendar-nav__slider-text">2020</span> 
+                                    <button class="calendar-nav__slider-right">
+                                        <img class="calendar-nav__slider-img" src="img/calendar-next.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="calendar-nav__slider calendar-nav__slider--mouth">
+                                    <button class="calendar-nav__slider-left">
+                                        <img class="calendar-nav__slider-img" src="img/calendar-prev.png" alt="">
+                                    </button>
+                                    <span class="calendar-nav__slider-text">January</span> 
+                                    <button class="calendar-nav__slider-right">
+                                        <img class="calendar-nav__slider-img" src="img/calendar-next.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="calendar-nav__tabs">
+                                    <a class="calendar-nav__tab tab active" href="#month">
+                                        Month
+                                    </a>
+                                    <a class="calendar-nav__tab tab" href="#year">
+                                        Year
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="calendar-nav__right">
+                                <select class="calendar-nav__select select">
+                                    <option class="calendar-nav__option">All categories</option>
+                                    <option class="calendar-nav__option">All categories</option>
+                                    <option class="calendar-nav__option">All categories</option>
+                                </select>
+                                <select class="calendar-nav__select select">
+                                    <option class="calendar-nav__option">All projects</option>
+                                    <option class="calendar-nav__option">All projects</option>
+                                    <option class="calendar-nav__option">All projects</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="calndar-page__tabs-content">
+                            <div class="calndar-page__tab-content tab-content active" id="month">
+                                <div class="calendar-month">
+                                    <div class="calendar-month__row">
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item--week calendar-item--old">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Mo
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        31
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item--week">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Tu
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        1
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item--week">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        We
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Task 9
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3a57d;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Long-long task 8
+                                                            <span class="calendar-project__sticker sticker sticker--new">new</span>
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #7d85c3;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Simple yet effective ttttttttttt
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3847d;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Impossible task 6
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3847d;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item--week">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Th
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        3
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Infernous task 5
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3a57d;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Task 11
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #7d85c3;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Long-long task 12
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3847d;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Simple yet effective t...
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3847d;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Impossible task 60
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #7dc38d;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Infernous task 24
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #7dc38d;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item--week">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Fr
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        4
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item--week calendar-item--weekend">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Sa
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        5
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item--week calendar-item--weekend">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Su
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        6
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item--old">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Mo
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        7
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Tu
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        8
+                                                    </div>
+                                                </div>
+        
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Task 9
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3a57d;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Long-long task 8
+                                                            <span class="calendar-project__sticker sticker sticker--new">new</span>
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #7d85c3;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Simple yet effective ttttttttttt
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3847d;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        We
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        9
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Th
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        10
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Simple yet effective...
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3847d;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item ">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Fr
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        11
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Infernous task 5
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #7d85c3;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item--weekend">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Sa
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        12
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item--weekend">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Su
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        13
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item--old">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Mo
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        14
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Tu
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        15
+                                                    </div>
+                                                </div>
+        
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        We
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        16
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Infernous task 5
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3a57d;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Task 11
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #7d85c3;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Long-long task 12
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3847d;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Simple yet effective t...
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3847d;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Impossible task 60
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #7dc38d;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Infernous task 24
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #7dc38d;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Th
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        17
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item ">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Fr
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        18
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Infernous task 5
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3a57d;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Task 11
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #7d85c3;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Long-long task 12
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3847d;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Simple yet effective t...
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3847d;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item--weekend">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Sa
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        19
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item--weekend">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Su
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        20
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item calendar-month__item--active calendar-item--old">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Mo
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        21
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Infernous task 5
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3a57d;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Task 11
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #7d85c3;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Long-long task 12
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3847d;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-project calendar-item__item-project">
+                                                    <div class="calendar-project__inner">
+                                                        <span class="calendar-project__title">
+                                                            Simple yet effective t...
+                                                        </span>
+                                                        <div class="calendar-project__color" style="background-color: #c3847d;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Tu
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        22
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        We
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        23
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Th
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        24
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item ">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Fr
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        25
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item--weekend">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Sa
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        26
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item--weekend">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Su
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        27
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item calendar-month__item--active calendar-item--old">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Mo
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        28
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Tu
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        29
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        We
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        30
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Th
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        31
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item ">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Fr
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        1
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item calendar-item--new calendar-item--weekend">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Sa
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        2
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-month__container">
+                                            <div class="calendar-item calendar-month__item  calendar-item--new calendar-item--weekend">
+                                                <div class="calendar-item__top">
+                                                    <div class="calendar-item__week">
+                                                        Su
+                                                    </div>
+                                                    <div class="calendar-item__number">
+                                                        3
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calndar-page__tab-content tab-content" id="year">
+                                
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--end main-->
+
+        <!--start footer-->
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__copy footer__link" href="#">
+                        © Jow, 2020.
+                    </a>
+                    <div class="footer__right-links">
+                        <a class="footer__link" href="#">
+                            Legal Disclaimer
+                        </a>
+                        <a class="footer__link" href="#">
+                            Privacy Policy
+                        </a>
+                        <a class="footer__link" href="#">
+                            Cookies
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--end footer-->
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

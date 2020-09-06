@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--start header-->
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="logo header__logo" href="/">
+                        <img class="logo__img" src="images/logo.png" alt="">
+                    </a>
+                    <div class="menu-block">
+                        <nav class="menu header__menu">
+                            <ul class="menu__list">
+                                <li>
+                                    <a class="menu__list-project" href="#">
+                                        Projects
+                                        <div class="menu__list-project-total">
+                                            2
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Tasks
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Calendar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Notifications
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Messages
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Files
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Timesheets
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Search
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="search header__search">
+                            <input class="search__input input" type="text">
+                        </div>
+                        <div class="profile header__profile">
+                            <a class="profile__link " href="#">
+                                James
+                            </a>
+                        </div>
+
+                    </div>
+                    <button class="nav-toggle">
+                        <span class="bar-top"></span>
+                        <span class="bar-mid"></span>
+                        <span class="bar-bot"></span>
+                    </button>
+                </div>
+
+
+            </div>
+        </header>
+        <!--end header-->
+
+        <!--start main-->
+        <main class="main" id="main">
+            <section class="tasks-page">
+                <div class="container">
+                    <div class="project-page__inner">
+                        <div class="title-block">
+                            <h1 class="project-page__title page-title">
+                                Tasks
+                            </h1>
+                        </div>
+                        <div class="project-page__tabs">
+                            <a class="project-page__tab tab active" href="#assigned">
+                                Assigned <sup>10</sup>
+                            </a>
+                            <a class="project-page__tab tab" href="#flagged">
+                                Flagged <sup>8 </sup>
+                            </a>
+                            <a class="project-page__tab tab" href="#collaborated">
+                                Collaborated <sup>12</sup>
+                            </a>
+                            <div class="title-menu tasks__title-menu">
+                                <button class="title-menu__button ">
+        
+                                </button>
+                                <ul class="title-menu__list tasks__title-menu-list">
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="name" checked>
+                                            <label class="title-menu__label" for="name">
+                                                Name
+                                            </label>
+                                        </div>
+                                    </li>    
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="project" checked>
+                                            <label class="title-menu__label" for="project">
+                                                Project
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="priority" checked>
+                                            <label class="title-menu__label" for="priority">
+                                                Priority
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="start-date" checked>
+                                            <label class="title-menu__label" for="start-date">
+                                                Start date
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="end-date" checked>
+                                            <label class="title-menu__label" for="end-date">
+                                                End date
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="started-by">
+                                            <label class="title-menu__label" for="started-by">
+                                                Started by
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="assigned-to">
+                                            <label class="title-menu__label" for="assigned-to">
+                                                Assigned to
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="collaborators">
+                                            <label class="title-menu__label" for="collaborators">
+                                                Collaborators
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="job-number">
+                                            <label class="title-menu__label" for="job-number">
+                                                Job number
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="status" checked>
+                                            <label class="title-menu__label" for="status">
+                                                Status
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="comments">
+                                            <label class="title-menu__label" for="comments">
+                                                Comments
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="title-menu__list-item">
+                                        <div class="title-menu__check-block">
+                                            <input class="title-menu__input" type="checkbox" id="flag">
+                                            <label class="title-menu__label" for="flag">
+                                                Flag
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project-page__tabs-content">
+                            <div class="project-page__tab-content tab-content active" id="assigned">
+                                <div class="project-tasks">
+                                    <table class="project-tasks__table">
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <th class="project-tasks__th">
+                                                Name
+                                            </th>
+
+                                            <th class="project-tasks__th">
+                                                Project
+                                            </th>
+                                            <th class="project-tasks__th">
+                                                Priority
+                                            </th>
+                                            <th class="project-tasks__th">
+                                                Start date
+                                            </th>
+                                            <th class="project-tasks__th ">
+                                                <span class="project-tasks__th--end-date">End date</span>
+
+                                            </th>
+                                            <th class="project-tasks__th">
+                                                Status
+                                            </th>
+                                            <th class="project-tasks__th project-tasks__th--comments">
+                                                <img class="project-tasks__th-img" src="images/comments.png" alt="">
+                                            </th>
+                                            <th class="project-tasks__th">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </th>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td tasks__td-name">
+                                                Task 9
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                    Category 1 
+                                                </span>
+                                                / Project 1
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--high">High</span>
+
+                                            </td>
+
+                                            <td class="project-tasks__td tasks__td">
+                                                01 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                22 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #818dc1;">
+                                                    </div>
+                                                    Correction
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                23
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td tasks__td-name">
+                                                <span class="project-tasks__td tasks__td-name">Long-long task 8</span>
+                                            </td>
+
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3847d;"></span>
+                                                    Category 2 
+                                                </span>
+                                                / Long project 6
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--high">High</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                24 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                21 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #ce82d7;">
+                                                    </div>
+                                                    QA
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                12
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Simple yet effective task 7 with
+                                                    long long long long long name</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3847d;"></span>
+                                                    Category 2 
+                                                </span>
+                                                / Project 2 and subproject
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--normal">Normal</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                11 Dec 2019
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                19 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #818dc1;">
+                                                    </div>
+                                                    Correction
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                9
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+
+                                            </td>
+                                        </tr>
+
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Impossible task 6
+                                                    <span class="project-tasks__sticker sticker sticker--new">new</span>
+                                                </span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                    Category 1 
+                                                </span>
+                                                / Very bad project 3
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--normal">Normal</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                24 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                18 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #7ed5c8;">
+                                                    </div>
+                                                    Design
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                109
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Infernous task 5</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #7dc38d;"></span>
+                                                    Category 3 
+                                                </span>
+                                                / Long long name project 5
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--low">Low</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                01 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                17 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #db8686;">
+                                                    </div>
+                                                    Copywrite
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                54
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </td>
+                                        </tr>
+
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">
+                                                    Task 11
+                                                    <span class="project-tasks__sticker sticker sticker--new">new</span>
+                                                </span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                    Category 1 
+                                                </span>
+                                                / Project 1
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--high">High</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                01 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                22 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #818dc1;">
+                                                    </div>
+                                                    Correction
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                8
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Long-long task 12</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3847d;"></span>
+                                                    Category 2 
+                                                </span>
+                                                / Long project 6
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--low">Low</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                24 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                28 Feb 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #dad078;">
+                                                    </div>
+                                                    Development
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                45
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Simple yet effective task 31 with very very long long long name</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3847d;"></span>
+                                                    Category 2 
+                                                </span>
+                                                / Project 2 and subproject
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--high">High</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                11 Dec 2019
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                23 Feb 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #ce82d7;">
+                                                    </div>
+                                                    QA
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                72
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Impossible task 60</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                    Category 1 
+                                                </span>
+                                                / Very bad project 3    
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--normal">Normal</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                24 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                21 Feb 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #7ed5c8;">
+                                                    </div>
+                                                    Design
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                25
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Infernous task 24</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #7dc38d;"></span>
+                                                    Category 3 
+                                                </span>  
+                                                / Long long name project 5
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--low">Low</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                01 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                14 Feb 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #db8686;">
+                                                    </div>
+                                                    Copywrite
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                28
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="project-tasks__completed-counter">
+                                        Completed (<span class="project-tasks__completed-total">22</span> )
+                                        <button class="project-tasks__button-toggle hide">
+
+                                        </button>
+                                    </div>
+                                    <div class="project-tasks--completed hidden">
+                                        <table class="project-tasks__table ">
+                                            <tr class="project-tasks__tr tasks__tr">
+                                                <td class="project-tasks__td tasks__td">
+
+                                                </td>
+                                            </tr>
+                                            <tr class="project-tasks__tr tasks__tr">
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="project-tasks__td tasks__td-name">Just task 4</span>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="category">
+                                                        <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                        Category 1 
+                                                    </span>
+                                                    / Very bad project 3 
+                                                </td>
+                                                <td class="project-tasks__td tasks__td priority priority--low">
+                                                    Low
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    11 Dec 2019
+
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    17 Oct 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color"
+                                                            style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </div>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                    11
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+
+                                                </td>
+                                            </tr>
+                                            <tr class="project-tasks__tr tasks__tr">
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="project-tasks__td tasks__td-name">Simple yet effective task 7
+                                                        copy</span>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="category">
+                                                        <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                        Category 1 
+                                                    </span>
+                                                    / Very bad project 3 
+                                                </td>
+                                                <td class="project-tasks__td tasks__td priority priority--low">
+                                                    Low
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    11 Dec 2019
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    17 Oct 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color"
+                                                            style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </div>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                    178
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+
+                                                </td>
+                                            </tr>
+                                            <tr class="project-tasks__tr tasks__tr">
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="project-tasks__td tasks__td-name">Impossible task 2</span>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="category">
+                                                        <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                        Category 1 
+                                                    </span>
+                                                    / Very bad project 3 
+                                                </td>
+                                                <td class="project-tasks__td tasks__td priority priority--high">
+                                                    High
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    24 Jan 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    27 Jun 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color"
+                                                            style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </div>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                    29
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+
+                                                </td>
+                                            </tr>
+                                            <tr class="project-tasks__tr tasks__tr">
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="project-tasks__td tasks__td-name">Infernous task 1</span>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="category">
+                                                        <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                        Category 1 
+                                                    </span>
+                                                    / Very bad project 3 
+                                                </td>
+                                                <td class="project-tasks__td tasks__td priority priority--normal">
+                                                    Normal
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    01 Jan 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    22 Mar 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color"
+                                                            style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </div>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                    13
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-page__tab-content tab-content" id="flagged">
+                                <div class="project-tasks flagged">
+                                    <table class="project-tasks__table">
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <th class="project-tasks__th">
+                                                Name
+                                            </th>
+
+                                            <th class="project-tasks__th">
+                                                Project
+                                            </th>
+                                            <th class="project-tasks__th">
+                                                Priority
+                                            </th>
+                                            <th class="project-tasks__th">
+                                                Start date
+                                            </th>
+                                            <th class="project-tasks__th ">
+                                                <span class="project-tasks__th--end-date">End date</span>
+
+                                            </th>
+                                            <th class="project-tasks__th">
+                                                Status
+                                            </th>
+                                            <th class="project-tasks__th project-tasks__th--comments">
+                                                <img class="project-tasks__th-img" src="images/comments.png" alt="">
+                                            </th>
+                                            <th class="project-tasks__th">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </th>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td tasks__td-name">
+                                                Task 9
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                    Category 1 
+                                                </span>
+                                                / Project 1
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--high">High</span>
+
+                                            </td>
+
+                                            <td class="project-tasks__td tasks__td">
+                                                01 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                22 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #818dc1;">
+                                                    </div>
+                                                    Correction
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                23
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td tasks__td-name">
+                                                <span class="project-tasks__td tasks__td-name">Long-long task 8</span>
+                                            </td>
+
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3847d;"></span>
+                                                    Category 2 
+                                                </span>
+                                                / Long project 6
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--high">High</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                24 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                21 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #ce82d7;">
+                                                    </div>
+                                                    QA
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                12
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Simple yet effective task 7 with
+                                                    long long long long long name</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3847d;"></span>
+                                                    Category 2 
+                                                </span>
+                                                / Project 2 and subproject
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--normal">Normal</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                11 Dec 2019
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                19 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #818dc1;">
+                                                    </div>
+                                                    Correction
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                9
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </td>
+                                        </tr>
+
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Impossible task 6
+                                                    <span class="project-tasks__sticker sticker sticker--new">new</span>
+                                                </span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                    Category 1 
+                                                </span>
+                                                / Very bad project 3
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--normal">Normal</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                24 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                18 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #7ed5c8;">
+                                                    </div>
+                                                    Design
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                109
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Infernous task 5</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #7dc38d;"></span>
+                                                    Category 3 
+                                                </span>
+                                                / Long long name project 5
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--low">Low</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                01 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                17 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #db8686;">
+                                                    </div>
+                                                    Copywrite
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                54
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </td>
+                                        </tr>
+
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">
+                                                    Task 11
+                                                    <span class="project-tasks__sticker sticker sticker--new">new</span>
+                                                </span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                    Category 1 
+                                                </span>
+                                                / Project 1
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--high">High</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                01 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                22 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #818dc1;">
+                                                    </div>
+                                                    Correction
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                8
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Long-long task 12</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3847d;"></span>
+                                                    Category 2 
+                                                </span>
+                                                / Long project 6
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--low">Low</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                24 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                28 Feb 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #dad078;">
+                                                    </div>
+                                                    Development
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                45
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Simple yet effective task 31 with very very long long long name</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3847d;"></span>
+                                                    Category 2 
+                                                </span>
+                                                / Project 2 and subproject
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--high">High</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                11 Dec 2019
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                23 Feb 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #ce82d7;">
+                                                    </div>
+                                                    QA
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                72
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Impossible task 60</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                    Category 1 
+                                                </span>
+                                                / Very bad project 3    
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--normal">Normal</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                24 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                21 Feb 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #7ed5c8;">
+                                                    </div>
+                                                    Design
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                25
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Infernous task 24</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #7dc38d;"></span>
+                                                    Category 3 
+                                                </span>  
+                                                / Long long name project 5
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--low">Low</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                01 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                14 Feb 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #db8686;">
+                                                    </div>
+                                                    Copywrite
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                28
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="project-tasks__completed-counter">
+                                        Completed (<span class="project-tasks__completed-total">22</span> )
+                                        <button class="project-tasks__button-toggle hide">
+
+                                        </button>
+                                    </div>
+                                    <div class="project-tasks--completed hidden">
+                                        <table class="project-tasks__table ">
+                                            <tr class="project-tasks__tr tasks__tr">
+                                                <td class="project-tasks__td tasks__td">
+
+                                                </td>
+                                            </tr>
+                                            <tr class="project-tasks__tr tasks__tr">
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="project-tasks__td tasks__td-name">Just task 4</span>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="category">
+                                                        <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                        Category 1 
+                                                    </span>
+                                                    / Very bad project 3 
+                                                </td>
+                                                <td class="project-tasks__td tasks__td priority priority--low">
+                                                    Low
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    11 Dec 2019
+
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    17 Oct 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color"
+                                                            style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </div>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                    11
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                                </td>
+                                            </tr>
+                                            <tr class="project-tasks__tr tasks__tr">
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="project-tasks__td tasks__td-name">Simple yet effective task 7
+                                                        copy</span>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="category">
+                                                        <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                        Category 1 
+                                                    </span>
+                                                    / Very bad project 3 
+                                                </td>
+                                                <td class="project-tasks__td tasks__td priority priority--low">
+                                                    Low
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    11 Dec 2019
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    17 Oct 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color"
+                                                            style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </div>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                    178
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                                </td>
+                                            </tr>
+                                            <tr class="project-tasks__tr tasks__tr">
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="project-tasks__td tasks__td-name">Impossible task 2</span>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="category">
+                                                        <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                        Category 1 
+                                                    </span>
+                                                    / Very bad project 3 
+                                                </td>
+                                                <td class="project-tasks__td tasks__td priority priority--high">
+                                                    High
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    24 Jan 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    27 Jun 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color"
+                                                            style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </div>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                    29
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                                </td>
+                                            </tr>
+                                            <tr class="project-tasks__tr tasks__tr">
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="project-tasks__td tasks__td-name">Infernous task 1</span>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="category">
+                                                        <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                        Category 1 
+                                                    </span>
+                                                    / Very bad project 3 
+                                                </td>
+                                                <td class="project-tasks__td tasks__td priority priority--normal">
+                                                    Normal
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    01 Jan 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    22 Mar 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color"
+                                                            style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </div>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                    13
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-page__tab-content tab-content" id="collaborated">
+                                <div class="project-tasks">
+                                    <table class="project-tasks__table">
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <th class="project-tasks__th">
+                                                Name
+                                            </th>
+
+                                            <th class="project-tasks__th">
+                                                Project
+                                            </th>
+                                            <th class="project-tasks__th">
+                                                Priority
+                                            </th>
+                                            <th class="project-tasks__th">
+                                                Start date
+                                            </th>
+                                            <th class="project-tasks__th ">
+                                                <span class="project-tasks__th--end-date">End date</span>
+
+                                            </th>
+                                            <th class="project-tasks__th">
+                                                Status
+                                            </th>
+                                            <th class="project-tasks__th project-tasks__th--comments">
+                                                <img class="project-tasks__th-img" src="images/comments.png" alt="">
+                                            </th>
+                                            <th class="project-tasks__th">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </th>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td tasks__td-name">
+                                                Task 9
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                    Category 1 
+                                                </span>
+                                                / Project 1
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--high">High</span>
+
+                                            </td>
+
+                                            <td class="project-tasks__td tasks__td">
+                                                01 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                22 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #818dc1;">
+                                                    </div>
+                                                    Correction
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                23
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td tasks__td-name">
+                                                <span class="project-tasks__td tasks__td-name">Long-long task 8</span>
+                                            </td>
+
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3847d;"></span>
+                                                    Category 2 
+                                                </span>
+                                                / Long project 6
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--high">High</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                24 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                21 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #ce82d7;">
+                                                    </div>
+                                                    QA
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                12
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Simple yet effective task 7 with
+                                                    long long long long long name</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3847d;"></span>
+                                                    Category 2 
+                                                </span>
+                                                / Project 2 and subproject
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--normal">Normal</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                11 Dec 2019
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                19 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #818dc1;">
+                                                    </div>
+                                                    Correction
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                9
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+
+                                            </td>
+                                        </tr>
+
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Impossible task 6
+                                                    <span class="project-tasks__sticker sticker sticker--new">new</span>
+                                                </span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                    Category 1 
+                                                </span>
+                                                / Very bad project 3
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--normal">Normal</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                24 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                18 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #7ed5c8;">
+                                                    </div>
+                                                    Design
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                109
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Infernous task 5</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #7dc38d;"></span>
+                                                    Category 3 
+                                                </span>
+                                                / Long long name project 5
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--low">Low</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                01 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                17 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #db8686;">
+                                                    </div>
+                                                    Copywrite
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                54
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </td>
+                                        </tr>
+
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">
+                                                    Task 11
+                                                    <span class="project-tasks__sticker sticker sticker--new">new</span>
+                                                </span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                    Category 1 
+                                                </span>
+                                                / Project 1
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--high">High</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                01 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                22 Mar 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #818dc1;">
+                                                    </div>
+                                                    Correction
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                8
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <img class="project-tasks__th-img" src="images/flag.png" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Long-long task 12</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3847d;"></span>
+                                                    Category 2 
+                                                </span>
+                                                / Long project 6
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--low">Low</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                24 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                28 Feb 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #dad078;">
+                                                    </div>
+                                                    Development
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                45
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Simple yet effective task 31 with very very long long long name</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3847d;"></span>
+                                                    Category 2 
+                                                </span>
+                                                / Project 2 and subproject
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--high">High</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                11 Dec 2019
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                23 Feb 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #ce82d7;">
+                                                    </div>
+                                                    QA
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                72
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Impossible task 60</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                    Category 1 
+                                                </span>
+                                                / Very bad project 3    
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--normal">Normal</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                24 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                21 Feb 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #7ed5c8;">
+                                                    </div>
+                                                    Design
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                25
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr class="project-tasks__tr tasks__tr">
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="project-tasks__td tasks__td-name">Infernous task 24</span>
+                                            </td>
+                                            <td class="project-tasks__td tasks__td ">
+                                                <span class="category">
+                                                    <span class="category__color" style="background-color: #7dc38d;"></span>
+                                                    Category 3 
+                                                </span>  
+                                                / Long long name project 5
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <span class="  priority priority--low">Low</span>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                01 Jan 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                14 Feb 2020
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                <div class="tasks__td-status status-item">
+                                                    <div class="status-item__color" style="background-color: #db8686;">
+                                                    </div>
+                                                    Copywrite
+                                                </div>
+
+                                            </td>
+                                            <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                28
+                                            </td>
+                                            <td class="project-tasks__td tasks__td">
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="project-tasks__completed-counter">
+                                        Completed (<span class="project-tasks__completed-total">22</span> )
+                                        <button class="project-tasks__button-toggle hide">
+
+                                        </button>
+                                    </div>
+                                    <div class="project-tasks--completed hidden">
+                                        <table class="project-tasks__table ">
+                                            <tr class="project-tasks__tr tasks__tr">
+                                                <td class="project-tasks__td tasks__td">
+
+                                                </td>
+                                            </tr>
+                                            <tr class="project-tasks__tr tasks__tr">
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="project-tasks__td tasks__td-name">Just task 4</span>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="category">
+                                                        <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                        Category 1 
+                                                    </span>
+                                                    / Very bad project 3 
+                                                </td>
+                                                <td class="project-tasks__td tasks__td priority priority--low">
+                                                    Low
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    11 Dec 2019
+
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    17 Oct 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color"
+                                                            style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </div>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                    11
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+
+                                                </td>
+                                            </tr>
+                                            <tr class="project-tasks__tr tasks__tr">
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="project-tasks__td tasks__td-name">Simple yet effective task 7
+                                                        copy</span>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="category">
+                                                        <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                        Category 1 
+                                                    </span>
+                                                    / Very bad project 3 
+                                                </td>
+                                                <td class="project-tasks__td tasks__td priority priority--low">
+                                                    Low
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    11 Dec 2019
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    17 Oct 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color"
+                                                            style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </div>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                    178
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+
+                                                </td>
+                                            </tr>
+                                            <tr class="project-tasks__tr tasks__tr">
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="project-tasks__td tasks__td-name">Impossible task 2</span>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="category">
+                                                        <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                        Category 1 
+                                                    </span>
+                                                    / Very bad project 3 
+                                                </td>
+                                                <td class="project-tasks__td tasks__td priority priority--high">
+                                                    High
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    24 Jan 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    27 Jun 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color"
+                                                            style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </div>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                    29
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+
+                                                </td>
+                                            </tr>
+                                            <tr class="project-tasks__tr tasks__tr">
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="project-tasks__td tasks__td-name">Infernous task 1</span>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <span class="category">
+                                                        <span class="category__color" style="background-color: #c3a57d;"></span>
+                                                        Category 1 
+                                                    </span>
+                                                    / Very bad project 3 
+                                                </td>
+                                                <td class="project-tasks__td tasks__td priority priority--normal">
+                                                    Normal
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    01 Jan 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    22 Mar 2020
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+                                                    <div class="status-item">
+                                                        <div class="status-item__color"
+                                                            style="background-color: #8dd98b;"></div>
+                                                        Complete
+                                                    </div>
+                                                </td>
+                                                <td class="project-tasks__td tasks__td project-tasks__td tasks__td--comments">
+                                                    13
+                                                </td>
+                                                <td class="project-tasks__td tasks__td">
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--end main-->
+
+        <!--start footer-->
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__copy footer__link" href="#">
+                        © Jow, 2020.
+                    </a>
+                    <div class="footer__right-links">
+                        <a class="footer__link" href="#">
+                            Legal Disclaimer
+                        </a>
+                        <a class="footer__link" href="#">
+                            Privacy Policy
+                        </a>
+                        <a class="footer__link" href="#">
+                            Cookies
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--end footer-->
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
