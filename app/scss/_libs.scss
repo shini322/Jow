@@ -1387,6 +1387,24 @@ body.compensate-for-scrollbar {
 .no-csspointerevents .nice-select.open .list {
   display: block; }
 
+form{width:320px}
+
+input{
+	border:1px solid #000;
+	float:right
+}
+
+textarea{border:1px solid #000}
+input.error, textarea.error{border:1px solid #f00}
+
+label.error{
+	font-size:12px;
+	font-style:italic;
+	color:#f00;
+	padding-bottom:5px
+}
+
+label.error{display:block}
 .jq-checkbox,
 .jq-radio {
 	position: relative;

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--start header-->
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="logo header__logo" href="/">
+                        <img class="logo__img" src="images/logo.png" alt="">
+                    </a>
+                    <div class="menu-block">
+                        <nav class="menu header__menu">
+                            <ul class="menu__list">
+                                <li>
+                                    <a class="menu__list-project" href="#">
+                                        Projects
+                                        <div class="menu__list-project-total">
+                                            2
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Tasks
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Calendar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Notifications
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Messages
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Files
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Timesheets
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Search
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="search header__search">
+                            <input class="search__input input" type="text">
+                        </div>
+                        <div class="profile header__profile">
+                            <a class="profile__link " href="#">
+                                James
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <button class="nav-toggle">
+                        <span class="bar-top"></span>
+                        <span class="bar-mid"></span>
+                        <span class="bar-bot"></span>
+                    </button>
+                </div>
+                
+                
+            </div>
+        </header>
+        <!--end header-->
+
+        <!--start main-->
+        <main class="main" id="main">
+            <secion class="search-page">
+                <div class="container">
+                    <div class="title-block ">
+                        <div class="title-block__container">
+                            <h1 class="page-title">
+                                Search           
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="search-page__inner">
+                        <div class="search-filters">
+                            <div class="search-filters__inner">
+                                <input class="search-filters__input" type="text">
+                                <p class="search-filters__text">
+                                    in
+                                </p>
+                                <select class="search-filters__select select">
+                                    <option class="search-filters__option">Projects</option>
+                                </select>
+                                <p class="search-filters__text">
+                                    by
+                                </p>
+                                <select class="search-filters__select select">
+                                    <option class="search-filters__option">James Hetfield</option>
+                                </select>
+                                <p class="search-filters__text">
+                                    dated
+                                </p>
+                                <select class="search-filters__select select">
+                                    <option class="search-filters__option">earlier than</option>
+                                </select>
+                                <select class="search-filters__select select">
+                                    <option class="search-filters__option">20 Nov 2019</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="search-page__condition">
+                            <span class="search-page__condition-plus table-scale__button table-scale__plus"></span>
+                            Add condition
+                            <div class="title-menu search-page__condition-title-menu">
+                                <button class=" search-page__condition-button"></button>
+                                <ul class="title-menu__list">
+                                    <li class="title-menu__list-item">
+                                        <button class="title-menu__list-button">
+                                            Add category
+                                        </button>
+                                    </li>    
+                                    <li class="title-menu__list-item">
+                                        <button class="title-menu__list-button">
+                                            Add project
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="search-results">
+                            <div class="search-results__inner">
+                                <h2 class="search-results__title">
+                                    Results (4)
+                                </h2>
+                                <ul class="search-results__list">
+                                    <li class="search-results__list-item">
+                                        Long name  <span class="search-results__list-find">proj</span>ect 5
+                                    </li>
+                                    <li class="search-results__list-item">
+                                        Short <span class="search-results__list-find">proj</span>ect 15
+                                    </li>
+                                    <li class="search-results__list-item">
+                                        <span class="search-results__list-find">Proj</span>ect 29
+                                    </li>
+                                    <li class="search-results__list-item">
+                                        <span class="search-results__list-find">Proj</span>ect 2 and subproject
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="search-page__table-block">
+                            <div class="search-page__table-container">
+                                <table class="search-table">
+                                    <tr class="search-table__tr">
+                                        <th class="search-table__th" colspan="2">
+                                            Conditions:
+                                        </th>
+                                        <th class="search-table__th" colspan="2">
+                                            Choices:
+                                        </th>
+                                    </tr>
+                                    <tr class="search-table__tr">
+                                        <td class="search-table__td">
+                                            Assigned to
+                                        </td>
+                                        <td class="search-table__td">
+                                            <div class="search-table__conditions">
+                                                <input class="search-table__td-input" type="text" placeholder="Kirk Hammett">
+                                            </div>
+                                        </td>
+                                        <td class="search-table__td">
+                                                                                  
+                                        </td>
+                                        <td class="search-table__td">
+                                                                                  
+                                        </td>
+                                    </tr>
+                                    <tr class="search-table__tr">
+                                        <td class="search-table__td">
+                                            Collaborator
+                                        </td>
+                                        <td class="search-table__td">
+                                            <div class="search-table__conditions">
+                                                <input class="search-table__td-input" type="text" placeholder="Vinnie Paul">
+                                            </div>                                       
+                                        </td>
+                                        <td class="search-table__td">
+                                                                                  
+                                        </td>
+                                        <td class="search-table__td">
+                                                                                  
+                                        </td>
+                                    </tr>
+                                    <tr class="search-table__tr">
+                                        <td class="search-table__td">
+                                            Size
+                                        </td>
+                                        <td class="search-table__td">
+                                            <div class="search-table__conditions">
+                                                <select class="search-table__select select">
+                                                    <option class="search-table__option">bigger than</option>
+                                                </select>  
+                                                <input class="search-table__td-input search-table__td-input--number" type="text" placeholder="12">  
+                                                <select class="search-table__select select">
+                                                    <option class="search-table__option">Mb</option>
+                                                </select>  
+                                            </div>                                        
+                                        </td>
+                                        <td class="search-table__td">
+                                            smaller than, bigger than, equals to, is, is not        
+                                        </td>
+                                        <td class="search-table__td">
+                                            b, Kb, Mb, Gb, Tb                                  
+                                        </td>
+                                    </tr>
+                                    <tr class="search-table__tr">
+                                        <td class="search-table__td">
+                                            Job number
+                                        </td>
+                                        <td class="search-table__td">
+                                            <div class="search-table__conditions">
+                                                <input class="search-table__td-input" type="text" placeholder="PRJ-123-23456"> 
+                                            </div>                                        
+                                        </td>
+                                        <td class="search-table__td">
+                                           
+                                        </td>
+                                        <td class="search-table__td">
+                                                                
+                                        </td>
+                                    </tr>
+                                    <tr class="search-table__tr">
+                                        <td class="search-table__td">
+                                            Job number
+                                        </td>
+                                        <td class="search-table__td">
+                                            <div class="search-table__conditions">
+                                                <select class="search-table__select select">
+                                                    <option class="search-table__option">later than</option>
+                                                </select>  
+                                                
+                                                <select class="search-table__select select">
+                                                    <option class="search-table__option">11 Jan 2020</option>
+                                                </select>  
+                                            </div>                                        
+                                        </td>
+                                        <td class="search-table__td">
+                                            earlier than, later than, is, is not
+                                        </td>
+                                        <td class="search-table__td">
+                                                                            
+                                        </td>
+                                    </tr>
+                                    <tr class="search-table__tr">
+                                        <td class="search-table__td">
+                                            Job number
+                                        </td>
+                                        <td class="search-table__td">
+                                            <div class="search-table__conditions">
+                                                <select class="search-table__select select">
+                                                    <option class="search-table__option">High</option>
+                                                </select>
+                                            </div>                                        
+                                        </td>
+                                        <td class="search-table__td">
+                                            High, Normal, Low       
+                                        </td>
+                                        <td class="search-table__td">
+                                                                           
+                                        </td>
+                                    </tr>
+                                    <tr class="search-table__tr">
+                                        <td class="search-table__td">
+                                            Status
+                                        </td>
+                                        <td class="search-table__td">
+                                            <div class="search-table__conditions">
+                                                <select class="search-table__select select">
+                                                    <option class="search-table__option">Copywrite</option>
+                                                </select>
+                                            </div>                                        
+                                        </td>
+                                        <td class="search-table__td">
+                                               
+                                        </td>
+                                        <td class="search-table__td">
+                                                                           
+                                        </td>
+                                    </tr>
+                                    <tr class="search-table__tr">
+                                        <td class="search-table__td">
+                                            Category
+                                        </td>
+                                        <td class="search-table__td">
+                                            <div class="search-table__conditions">
+                                                <select class="search-table__select search-table__select--category select">
+                                                    <option class="search-table__option">Category 1</option>
+                                                </select>
+                                            </div>                                        
+                                        </td>
+                                        <td class="search-table__td">
+                                               
+                                        </td>
+                                        <td class="search-table__td">
+                                                                           
+                                        </td>
+                                    </tr>
+                                    <tr class="search-table__tr">
+                                        <td class="search-table__td">
+                                            Flag
+                                        </td>
+                                        <td class="search-table__td">
+                                            <div class="search-table__conditions">
+                                                <select class="search-table__select  select">
+                                                    <option class="search-table__option">Yes</option>
+                                                </select>
+                                            </div>                                        
+                                        </td>
+                                        <td class="search-table__td">
+                                            Yes, no
+                                        </td>
+                                        <td class="search-table__td">
+                                                                           
+                                        </td>
+                                    </tr>
+                                    <tr class="search-table__tr">
+                                        <td class="search-table__td">
+                                            Comments
+                                        </td>
+                                        <td class="search-table__td">
+                                            <div class="search-table__conditions">
+                                                <select class="search-table__select  select">
+                                                    <option class="search-table__option">more than</option>
+                                                </select>
+                                                <input class="search-table__td-input search-table__td-input--number" type="text" placeholder="12">
+                                            </div>                                        
+                                        </td>
+                                        <td class="search-table__td">
+                                            less than, more than, equals to
+                                        </td>
+                                        <td class="search-table__td">
+                                                                           
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </secion>
+        </main>
+        <!--end main-->
+
+        <!--start footer-->
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__copy footer__link" href="#">
+                        © Jow, 2020.
+                    </a>
+                    <div class="footer__right-links">
+                        <a class="footer__link" href="#">
+                            Legal Disclaimer
+                        </a>
+                        <a class="footer__link" href="#">
+                            Privacy Policy
+                        </a>
+                        <a class="footer__link" href="#">
+                            Cookies
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--end footer-->
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
