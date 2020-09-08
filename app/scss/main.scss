@@ -119,6 +119,22 @@ button{
     }
 }
 
+.button{
+    max-width: 136px;
+    height: 23px;
+    width: 100%;
+    border-radius: 4px;
+    &--green{
+        background-color: $light-green;
+    }
+    &--red{
+        background-color: $light-red;
+    }
+    @include for-md-mob{
+        max-width: 100%;
+    }
+}
+
 .hidden{
     display: none;
 }
@@ -535,19 +551,27 @@ button{
     }
     &__text-block{
         width: 100%;
+        padding-right: 57px;
+        @include for-md{
+            padding-right: 0;
+        }
     }
     &__item{
         display: flex;
+        padding: 4px 8px;
         align-items: center;
         min-height: 18px;
-        margin-bottom: 16px;
+        margin-bottom: 6px;
         @include for-sm{
+            padding-left: 0;
+            padding-right: 0;
             flex-direction: column;
             align-items: flex-start;
         }
         &--date{
            .project-desc__item-desc{
                width: 200px;
+               margin-right: 38px;
            } 
         }
         &--repeat{
@@ -606,24 +630,28 @@ button{
         }
     }
     &__item-title{
-        width: 15%;
+        width: 20%;
         @include for-sm{
             width: 100%;
+            margin-bottom: 3px;
         }
     }
     &__item-desc{
         display: flex;
+        padding-right: 57px;
         align-items: center;
-        width: 85%;
+        width: 80%;
         flex-wrap: wrap;
         font-size: 16px;
         line-height: 20px;
         font-weight: 300;
         .participant-item{
             margin-right: 10px;
+            margin-bottom: 2px;
         }
         .team-item{
             margin-right: 10px;
+            margin-bottom: 2px;
         }
         @include for-sm{
             width: 100%;
@@ -658,7 +686,7 @@ button{
     display: flex;
     align-items: center;
     font-size: 16px;
-    line-height: 36px;
+    line-height: 20px;
     font-weight: 500;
     transition: .3s;
     
@@ -2608,10 +2636,6 @@ button{
         margin-top: 18px;
         margin-left: 40%;
         max-width: 136px;
-        height: 23px;
-        width: 100%;
-        border-radius: 4px;
-        background-color: #b9e0c2;    
         @include for-md{
             display: block;
             margin: 10px auto 0;
@@ -3674,4 +3698,248 @@ button{
         width: 100%;
         height: 100%;
     }
+}
+.project-edit{
+    &__item-desc{
+        position: relative;
+        padding: 4px 8px;
+        border: 1px solid $black;
+        border-radius: 4px;
+        min-height: 33px;
+        &::before{
+            left: -23px !important;
+        }
+        &--repeat{
+            .project-edit__item-title{
+                width: 100px;
+            }
+        }
+        &--max-width{
+            max-width: 168px;
+            @include for-sm{
+                max-width: 100%;
+                width: 100% !important;
+            }
+        }
+    }
+    &__item{
+        margin-bottom: 0;
+        &--repeat{
+            .project-edit__item-title{
+                width: 100px;
+            }
+            .project-edit__item-desc{
+                padding-left: 8px;
+            }
+            @include for-sm{
+                width: 100%;
+            }
+        }
+        &--reminder{
+            .project-edit__item-title{
+                width: 100px;
+            }
+            .project-edit__item-desc{
+                padding-left: 8px;
+            }
+            @include for-sm{
+                width: 100%;
+            }
+        }
+        &--date{
+            padding-left: 8;
+            @include for-md{
+                margin-right: 0;
+            }
+        }
+    }
+    &__select{
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 11px 13px 7px 13px;
+        height: 32px;
+        width: 175px;
+        font-size: 14px;
+        line-height: 28px;
+        border: 1px solid $black;
+        border-radius: 4px;
+        
+        @include for-md{
+            // width: 95%;
+            margin-left: auto;
+            
+        }
+        @include for-sm{
+            width: calc(100% - 23px);
+            margin-left: 23px;
+            margin-bottom: 20px;
+            float: none;
+        }
+        
+        &::after{
+            margin-top: -4.5px;
+            border: none;
+            background-image: url(../img/arrow-bottom.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 15px;
+            height: 9px;
+            transform: none;
+            transform-origin: center;
+            transition: .15s;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 16.5px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            left: -23px;
+        }
+        &--repeat{
+            &::before{
+                background-image: url(../img/repeat.png);
+            }
+        }
+        &--reminder{
+            &::before{
+                background-image: url(../img/reminder.png);
+            }
+        }
+
+        &.open{
+            &:after{
+                transform: rotate(-180deg);
+            }
+        }
+        .list{
+            width: 100%;
+            border: 1px solid $black;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .option{
+            font-weight: 500;
+        }
+        .option.selected{
+            font-weight: 500;
+        }
+    }
+    &__img-buttons{
+        margin-top: 22px;
+        .project-edit__button + .project-edit__button{
+            margin-top: 11px;
+            @include for-md{
+                margin-left: 10px;
+                margin-top: 0;
+            }
+            @include for-md-mob{
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+        @include for-md{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        @include for-md-mob{
+            flex-direction: column;
+        }
+    }
+    &__desc-buttons{
+        display: flex;
+        margin-left: 20%;
+        margin-top: 11px;
+        .project-edit__button + .project-edit__button{
+            margin-left: 15px;
+            @include for-md-mob{
+                margin-left: 0;
+                margin-top: 15px;
+            }
+        }
+        .project-edit__button{
+            height: 33px;
+        }
+        @include for-sm{
+            justify-content: center;
+            margin-left: 0;
+        }
+        @include for-md-mob{
+            flex-direction: column;
+        }
+    }
+    &__dropdown{
+        width: 100%;
+        border: 1px solid #23262b;
+        font-size: 14px;
+        line-height: 22px;
+        position: absolute;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 0 1px rgba(68,68,68,0.11);
+        box-sizing: border-box;
+        margin-top: 4px;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0;
+        pointer-events: none;
+        top: 100%;
+        left: 0;    
+        z-index: 9;
+        transform-origin: 50% 0;
+        transform: scale(0.75) translateY(-21px);
+        transition: all 0.2s;
+        &.open{
+            opacity: 1;
+            pointer-events: auto;
+            transform: scale(1) translateY(0);
+        }
+    }
+    &__dropdown-item{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        list-style: none;
+        min-height: 40px;
+        outline: none;
+        padding-left: 18px;
+        padding-right: 29px;
+        text-align: left;        
+    }
+    &__dropdown-button{
+        position: relative;
+        cursor: pointer;
+        &:after{
+            content: '';
+            position: absolute;
+            margin-top: -4.5px;
+            background-image: url(../img/arrow-bottom.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 15px;
+            height: 9px;
+            transform-origin: center;
+            transition: .15s;
+            right: 12px;
+            top: 50%;
+        }
+        &.open{
+            &:after{
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+.nice-select:hover{
+    background-color: $white;
 }

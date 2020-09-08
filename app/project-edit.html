@@ -146,14 +146,14 @@
                             </div>
                             
                         </div> 
-                        <div class="project-desc">
+                        <div class="project-desc project-edit">
                             <div class="project-desc__inner">
                                 <div class="project-desc__text-block">
-                                    <div class="project-desc__item">
-                                        <div class="project-desc__item-title">
+                                    <div class="project-desc__item project-edit__item">
+                                        <div class="project-desc__item-title project-edit__item-title">
                                             Started by
                                         </div>
-                                        <div class="project-desc__item-desc">
+                                        <div class="project-desc__item-desc project-edit__item-desc">
                                             <div class="project-desc__select">
                                                 <ul class="project-desc__list">
                                                     <li class="project-desc__select-list-item">
@@ -172,11 +172,11 @@
                                             
                                         </div>
                                     </div> 
-                                    <div class="project-desc__item">
-                                        <div class="project-desc__item-title">
+                                    <div class="project-desc__item project-edit__item">
+                                        <div class="project-desc__item-title project-edit__item-title">
                                             Assigned to
                                         </div>
-                                        <div class="project-desc__item-desc">
+                                        <div class="project-desc__item-desc project-edit__item-desc">
                                             <a class="participant-item" href="#">
                                                 <span class="participant-item__avatar-block">
                                                     <img class="participant-item__avatar" src="images/participant/2.jpg" alt="">
@@ -187,11 +187,11 @@
                                             </a>                                            
                                         </div>
                                     </div> 
-                                    <div class="project-desc__item">
-                                        <div class="project-desc__item-title">
+                                    <div class="project-desc__item project-edit__item">
+                                        <div class="project-desc__item-title project-edit__item-title">
                                             Collaborators
                                         </div>
-                                        <div class="project-desc__item-desc">
+                                        <div class="project-desc__item-desc project-edit__item-desc">
                                             <a class="participant-item" href="#">
                                                 <span class="participant-item__avatar-block">
                                                     <img class="participant-item__avatar" src="images/participant/3.jpg" alt="">
@@ -234,80 +234,118 @@
                                             </a>                                          
                                         </div>
                                     </div> 
-                                    <div class="project-desc__item">
-                                        <div class="project-desc__item-title">
+                                    <div class="project-desc__item project-edit__item">
+                                        <div class="project-desc__item-title project-edit__item-title">
                                             Assigned to
                                         </div>
-                                        <div class="project-desc__item-desc">
+                                        <div class="project-desc__item-desc project-edit__item-desc">
                                             PRJ-003-09873                                         
                                         </div>
                                     </div>
-                                    <div class="project-desc__item project-desc__item--date">
-                                        <div class="project-desc__item-title">
+                                    <div class="project-desc__item project-edit__item project-desc__item--date  project-edit__item--date">
+                                        <div class="project-desc__item-title project-edit__item-title">
                                             Assigned to
                                         </div>
-                                        <div class="project-desc__item-desc">
+                                        <div class="project-desc__item-desc project-edit__item-desc project-edit__item-desc--max-width">
                                             24 Jan 2020                                                                                    
                                         </div>
-                                        <div class="project-desc__item project-desc__item--repeat">
-                                            <div class="project-desc__item-title">
+                                        <div class="project-desc__item project-edit__item project-desc__item--repeat project-edit__item--repeat">
+                                            <div class="project-desc__item-title project-edit__item-title">
                                                 Repeat
                                             </div>
-                                            <div class="project-desc__item-desc">
-                                                Every month                                                                                    
-                                            </div>
+                                            <select class="project-edit__select project-edit__select--repeat select">
+                                                <option class="project-edit__option">Every month</option>
+                                                <option class="project-edit__option">Every month</option>
+                                                <option class="project-edit__option">Every month</option>
+                                            </select>
                                         </div>                                        
                                     </div>
-                                    <div class="project-desc__item project-desc__item--date">
-                                        <div class="project-desc__item-title">
+                                    <div class="project-desc__item project-edit__item project-desc__item--date  project-edit__item--date">
+                                        <div class="project-desc__item-title project-edit__item-title">
                                             Assigned to
                                         </div>
-                                        <div class="project-desc__item-desc">
+                                        <div class="project-desc__item-desc project-edit__item-desc project-edit__item-desc--max-width">
                                             24 Jan 2020                                                                                    
                                         </div>
                                          
-                                        <div class="project-desc__item project-desc__item--reminder">
-                                            <div class="project-desc__item-title">
+                                        <div class="project-desc__item project-edit__item project-desc__item--reminder project-edit__item--reminder">
+                                            <div class="project-desc__item-title project-edit__item-title">
                                                 Reminder
                                             </div>
-                                            <div class="project-desc__item-desc">
-                                                1 day before                                                                                    
-                                            </div>
+                                            <select class="project-edit__select project-edit__select--reminder select">
+                                                <option class="project-edit__option">1 day before</option>
+                                                <option class="project-edit__option">1 day before</option>
+                                                <option class="project-edit__option">1 day before</option>
+                                            </select>
                                         </div>
                                     </div>                                    
-                                    <div class="project-desc__item">
-                                        <div class="project-desc__item-title">
+                                    <div class="project-desc__item project-edit__item">
+                                        <div class="project-desc__item-title project-edit__item-title">
                                             Priority
                                         </div>
-                                        <div class="project-desc__item-desc priority priority--normal">
-                                            Normal                                         
+                                        <div class="project-desc__item-desc project-edit__item-desc project-edit__dropdown-button priority priority--normal project-edit__item-desc--max-width">
+                                            Normal
+                                            <ul class="project-edit__dropdown">
+                                                <li class="project-edit__dropdown-item priority priority--normal">                                                   
+                                                    Normal  
+                                                </li>
+                                                <li class="project-edit__dropdown-item priority priority--normal">                                                    
+                                                    Normal  
+                                                </li>
+                                                <li class="project-edit__dropdown-item priority priority--normal">                                                    
+                                                    Normal  
+                                                </li>
+                                            </ul>                                    
                                         </div>
                                     </div>
-                                    <div class="project-desc__item">
-                                        <div class="project-desc__item-title">
+                                    <div class="project-desc__item project-edit__item">
+                                        <div class="project-desc__item-title project-edit__item-title">
                                             Status
                                         </div>
-                                        <div class="project-desc__item-desc status-item">
+                                        <div class="project-desc__item-desc project-edit__item-desc project-edit__dropdown-button status-item project-edit__item-desc--max-width">
                                             <div class="status-item__color" style="background-color: #7ed5c8;"></div>
-                                            Copywrite                                         
+                                            Copywrite       
+                                            <ul class="project-edit__dropdown">
+                                                <li class="project-edit__dropdown-item">
+                                                    <span class="status-item__color" style="background-color: #7ed5c8;"></span>
+                                                    Copywrite  
+                                                </li>
+                                                <li class="project-edit__dropdown-item">
+                                                    <span class="status-item__color" style="background-color: #7ed5c8;"></span>
+                                                    Copywrite  
+                                                </li>
+                                                <li class="project-edit__dropdown-item">
+                                                    <span class="status-item__color" style="background-color: #7ed5c8;"></span>
+                                                    Copywrite  
+                                                </li>
+                                            </ul>                                                                       
                                         </div>
                                     </div>
 
-                                    <div class="project-desc__item project-desc__item--budget">
-                                        <div class="project-desc__item-title">
+                                    <div class="project-desc__item project-edit__item project-desc__item--budget">
+                                        <div class="project-desc__item-title project-edit__item-title">
                                             Budget
                                         </div>
-                                        <div class="project-desc__item-desc">
+                                        <div class="project-desc__item-desc project-edit__item-desc project-edit__item-desc--max-width">
                                             $ 44,433.50                                         
                                         </div>
                                     </div>
-                                    <div class="project-desc__item project-desc__item--desc">
-                                        <div class="project-desc__item-title">
+                                    <div class="project-desc__item project-edit__item project-desc__item--desc">
+                                        <div class="project-desc__item-title project-edit__item-title">
                                             Description
                                         </div>
-                                        <div class="project-desc__item-desc">
+                                        <div class="project-desc__item-desc project-edit__item-desc">
                                             Long description of the project.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec arcu maximus, semper ex sed, accumsan eros. Suspendisse molestie ultricies nulla, vel mollis enim pulvinar id. Vivamus metus eros, blandit auctor accumsan et, iaculis id quam. Mauris vel ex quis magna auctor hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.                                         
                                         </div>
+                                        
+                                    </div>
+                                    <div class="project-edit__desc-buttons">
+                                        <button class="button button--green project-edit__button">
+                                            Save
+                                        </button>
+                                        <button class="button button--red project-edit__button">
+                                            Discard
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="project-desc__img-container">
@@ -316,7 +354,15 @@
                                     </div>
                                     <div class="project-desc__img-title">
                                         Thumbnail
-                                    </div>                                   
+                                    </div>   
+                                    <div class="project-edit__img-buttons">
+                                        <button class="button button--green project-edit__button">
+                                            Upload image
+                                        </button>
+                                        <button class="button button--red project-edit__button">
+                                            Delete
+                                        </button>
+                                    </div>                                
                                 </div>
                             </div>
                         </div>                        

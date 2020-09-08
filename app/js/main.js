@@ -6,6 +6,15 @@ $('.title-menu__button').click(function(){
         $(this).parent().parent().prev().removeClass('active');
     });
 });
+
+$(document).mouseup(function (e) {
+    var container = $(".title-menu__list");
+    if (container.has(e.target).length === 0){
+        container.slideUp(200);
+        container.prev().removeClass('active');
+    }
+});
+
 $('.search-page__condition').click(function(){
     $(this).find('.search-page__condition-button').toggleClass('active');
     $(this).parent().find('.title-menu__list').slideToggle(200).toggleClass('active');
@@ -25,13 +34,13 @@ $('.search-page__condition').click(function(){
 $('.tab').on('click', function(e){
     e.preventDefault();  
     
-    $($(this).parent().find('.tab')).removeClass('active');   
+    $($(this).parent().find('.tab')).removeClass('active');
     
     $($(this).parent().siblings().find('.tab-content')).removeClass('active');  
     $(this).addClass('active');
-    if($(this).hasClass("active")){
-        $(this).find('.title-menu__list').slideUp();
-    }
+    // if($(this).hasClass("active")){
+    //     $(this).find('.title-menu__list').slideUp();
+    // }
     $($(this).attr('href')).addClass('active');
     if($(this).attr("href") == '#budget'){
         $('.project-budget-calc').addClass('active');
@@ -141,18 +150,9 @@ $('.login__form').validate({
 }
 );
 
+$('.project-edit__dropdown-button').click(function (){
+    $(this).toggleClass('open')
+    $(this).find('.project-edit__dropdown').toggleClass('open');
+});
 
-// function formatState (state) {
-//     if (!state.id) {
-//       return state.text;
-//     }
-//     var baseUrl = "images/participant";
-//     var $state = $(
-//       '<span><img src="' + baseUrl + '/' + state.element.value.toLowerCase() + '.jpg" class="project-desc__select__avatar" /> ' + state.text + '</span>'
-//     );
-//     return $state;
-//   };
-  
-//   $(".project-desc__select").select2({
-//     templateResult: formatState
-//   });
+
