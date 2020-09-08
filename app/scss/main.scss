@@ -2542,9 +2542,14 @@ button{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: 90vh;
         max-width: 315px;
-        margin: 0 auto;
+        margin: 112px auto 0;
+        @include for-md{
+            margin-top: 60px;
+        }
+        @include for-md-mob{
+            margin-top: 30px;
+        }
     }
     &__title{
         margin-bottom: 30px;
