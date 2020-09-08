@@ -35,7 +35,7 @@ gulp.task('css', function(){
     // 'node_modules/rateyo/lib/es/rateyo.css',
     // 'node_modules/ion-rangeslider/css/ion.rangeSlider.min.css',
     'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
-    // 'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css',
+    'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css',
   ])
     .pipe(concat('_libs.scss'))
     .pipe(gulp.dest('app/scss'))

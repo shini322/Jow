@@ -26,9 +26,12 @@ $('.tab').on('click', function(e){
     e.preventDefault();  
     
     $($(this).parent().find('.tab')).removeClass('active');   
-    $(this).find('.title-menu__list').slideUp();
+    
     $($(this).parent().siblings().find('.tab-content')).removeClass('active');  
     $(this).addClass('active');
+    if($(this).hasClass("active")){
+        $(this).find('.title-menu__list').slideUp();
+    }
     $($(this).attr('href')).addClass('active');
     if($(this).attr("href") == '#budget'){
         $('.project-budget-calc').addClass('active');
@@ -137,3 +140,19 @@ $('.login__form').validate({
 
 }
 );
+
+
+// function formatState (state) {
+//     if (!state.id) {
+//       return state.text;
+//     }
+//     var baseUrl = "images/participant";
+//     var $state = $(
+//       '<span><img src="' + baseUrl + '/' + state.element.value.toLowerCase() + '.jpg" class="project-desc__select__avatar" /> ' + state.text + '</span>'
+//     );
+//     return $state;
+//   };
+  
+//   $(".project-desc__select").select2({
+//     templateResult: formatState
+//   });

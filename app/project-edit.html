@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -92,15 +93,9 @@
             <section class="project-page">
                 <div class="container">
                     <div class="project-page__inner">
-                        <div class="breadcrumbs">
-                            <ul class="breadcrumbs__list">
-                                <li class="breadcrumbs__list-item">
-                                    <a class="category" href="#">
-                                        <span class="category__color" style="background-color: #c3a57d;"></span>
-                                        Category 1
-                                    </a>
-                                </li>
-                            </ul>                            
+                        <div class="project-page__category category">
+                            <div class="category__color" style="background-color: #c3a57d;"></div>
+                            Category 1
                         </div>
                         <div class="title-block">
                             <h1 class="project-page__title page-title">
@@ -159,14 +154,22 @@
                                             Started by
                                         </div>
                                         <div class="project-desc__item-desc">
-                                            <a class="participant-item" href="#">
-                                                <span class="participant-item__avatar-block">
-                                                    <img class="participant-item__avatar" src="images/participant/1.jpg" alt="">
-                                                </span>
-                                                <span class="participant-item__name">
-                                                    James Hetfield
-                                                </span>
-                                            </a>
+                                            <div class="project-desc__select">
+                                                <ul class="project-desc__list">
+                                                    <li class="project-desc__select-list-item">
+                                                        <span class="participant-item" href="#">
+                                                            <span class="participant-item__avatar-block">
+                                                                <img class="participant-item__avatar" src="images/participant/1.jpg" alt="">
+                                                            </span>
+                                                            <span class="participant-item__name">
+                                                                James Hetfield
+                                                            </span>
+                                                            <ul class="participant-item__list"></ul>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
                                         </div>
                                     </div> 
                                     <div class="project-desc__item">
@@ -2561,6 +2564,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
