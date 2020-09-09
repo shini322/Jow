@@ -1,25 +1,35 @@
 $('.title-menu__button').click(function(){
     $(this).toggleClass('active');
-    $(this).parent().find('.title-menu__list').slideToggle(200).toggleClass('active');
+    $(this).parent().find('.title-menu__list').toggleClass('active');
     $(this).next().find('.title-menu__list-button').click(function(){
-        $(this).parent().parent().slideUp(200).removeClass('active');
+        $(this).parent().parent().removeClass('active');
         $(this).parent().parent().prev().removeClass('active');
     });
 });
 
-$(document).mouseup(function (e) {
-    var container = $(".title-menu__list");
-    if (container.has(e.target).length === 0){
-        container.slideUp(200);
-        container.prev().removeClass('active');
+$(document).mouseup(function (e){ 
+    var div = $(".title-menu"); 
+    if (!div.is(e.target) 
+        && div.has(e.target).length === 0) { 
+        div.removeClass('active'); 
+        div.find('.title-menu__list').removeClass('active'); 
+        div.find('.title-menu__button').removeClass('active');
     }
 });
 
+// $(document).mouseup(function (e) {
+//     var container = $(".project-page__title-menu");
+//     if (container.has(e.target).length === 0){
+//         container.removeClass('active');
+//         container.prev().removeClass('active');
+//     }
+// });
+
 $('.search-page__condition').click(function(){
     $(this).find('.search-page__condition-button').toggleClass('active');
-    $(this).parent().find('.title-menu__list').slideToggle(200).toggleClass('active');
+    $(this).parent().find('.title-menu__list').slideToggle(0).toggleClass('active');
     $(this).next().find('.title-menu__list-button').click(function(){
-        $(this).parent().parent().slideUp(200).removeClass('active');
+        $(this).parent().parent().slideUp(0).removeClass('active');
         $(this).parent().parent().prev().removeClass('active');
     });
 });
@@ -151,8 +161,26 @@ $('.login__form').validate({
 );
 
 $('.project-edit__dropdown-button').click(function (){
-    $(this).toggleClass('open')
+    $(this).toggleClass('open');
     $(this).find('.project-edit__dropdown').toggleClass('open');
 });
 
+const notificationNew = document.querySelectorAll('.notifications__sticker');
+
+notificationNew.forEach((item) => {
+    item.addEventListener('click', (e)=>{
+        e.target.remove();
+    });
+});
+
+$('.files-table__tr').click(function(e){
+    let x = e.pageX;
+    let y = e.pageY;
+    $(this).find('.title-menu').toggleClass('active').css({top:y, left:x}).dblclick();
+    
+});
+
+$('.projects-table__th').click(function(){
+    $(this).toggleClass('active');
+});
 
