@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--start header-->
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="logo header__logo" href="/">
+                        <img class="logo__img" src="images/logo.png" alt="">
+                    </a>
+                    <div class="menu-block">
+                        <nav class="menu header__menu">
+                            <ul class="menu__list">
+                                <li>
+                                    <a class="menu__list-project" href="#">
+                                        Projects
+                                        <div class="menu__list-project-total">
+                                            2
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Tasks
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Calendar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Notifications
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Messages
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Files
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Timesheets
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Search
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="search header__search">
+                            <input class="search__input input" type="text">
+                        </div>
+                        <div class="profile header__profile">
+                            <a class="profile__link " href="#">
+                                James
+                            </a>
+                        </div>
+
+                    </div>
+                    <button class="nav-toggle">
+                        <span class="bar-top"></span>
+                        <span class="bar-mid"></span>
+                        <span class="bar-bot"></span>
+                    </button>
+                </div>
+
+
+            </div>
+        </header>
+        <!--end header-->
+
+        <!--start main-->
+        <main class="main" id="main">
+            <section class="chat-page">
+                <div class="container">
+                    <div class="chat__inner">
+                        <div class="title-block">
+                            <h1 class="chat__title page-title">
+                                Messages
+                            </h1>
+                            <div class="title-menu files__title-menu">
+                                <button class="title-menu__button ">
+        
+                                </button>
+                                <ul class="title-menu__list">
+                                    <li class="title-menu__list-item">
+                                        <button class="title-menu__list-button">
+                                            New chat
+                                        </button>
+                                    </li>    
+                                    <li class="title-menu__list-item">
+                                        <button class="title-menu__list-button">
+                                            Create a group
+                                        </button>
+                                    </li>
+                                    <li class="title-menu__list-item">
+                                        <button class="title-menu__list-button">
+                                            Mark all as read
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chat__row">
+                            <div class="chat__users-preview users-preview">
+                                <div class="users-preview__container">
+                                    <div class="users-preview__item current">
+                                        <div class="users-preview__image-container">
+                                            <img src="images/avatars/1.jpg" alt="" class="users-preview__image">
+                                        </div>
+                                        <div class="users-preview__info">
+                                            <div class="users-preview__status">
+                                                new
+                                            </div>
+                                            <div class="users-preview__name">
+                                                Kirk Hammett
+                                            </div>
+                                            <div class="users-preview__position">
+                                                Senior Developer
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="users-preview__item">
+                                        <div class="users-preview__image-container">
+                                            <img src="images/avatars/2.jpg" alt="" class="users-preview__image">
+                                        </div>
+                                        <div class="users-preview__info">
+                                            <!-- <div class="users-preview__status">
+                                                new
+                                            </div> -->
+                                            <div class="users-preview__name">
+                                                James Hetfield
+                                            </div>
+                                            <div class="users-preview__position">
+                                                Team Lead
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="users-preview__item">
+                                        <div class="users-preview__image-container">
+                                            <img src="images/avatars/3.jpg" alt="" class="users-preview__image">
+                                        </div>
+                                        <div class="users-preview__info">
+                                            <div class="users-preview__status">
+                                                new
+                                            </div>
+                                            <div class="users-preview__name">
+                                                Vinnie Paul
+                                            </div>
+                                            <div class="users-preview__position">
+                                                Junior Painter
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="users-preview__item">
+                                        <div class="users-preview__image-container">
+                                            <img src="images/avatars/4.jpg" alt="" class="users-preview__image">
+                                        </div>
+                                        <div class="users-preview__info">
+                                            <div class="users-preview__status">
+                                                new
+                                            </div>
+                                            <div class="users-preview__name">
+                                                Dimebag Darrell
+                                            </div>
+                                            <div class="users-preview__position">
+                                                Digital Director
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="users-preview__item">
+                                        <div class="users-preview__image-container">
+                                            Group
+                                        </div>
+                                        <div class="users-preview__info">
+                                            <div class="users-preview__status">
+                                                new
+                                            </div>
+                                            <div class="users-preview__name users-preview__name--group">
+                                                Rex Brown, Aaron
+                                                Stainthorpe, Andrew
+                                                Craighan,... (19)
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="users-preview__item">
+                                        <div class="users-preview__image-container">
+                                            <img src="images/avatars/5.jpg" alt="" class="users-preview__image">
+                                        </div>
+                                        <div class="users-preview__info">
+                                            <!-- <div class="users-preview__status">
+                                                new
+                                            </div> -->
+                                            <div class="users-preview__name">
+                                                Rex Brown
+                                            </div>
+                                            <div class="users-preview__position">
+                                                Senior Manager
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="users-preview__item">
+                                        <div class="users-preview__image-container">
+                                            <img src="images/avatars/6.jpg" alt="" class="users-preview__image">
+                                        </div>
+                                        <div class="users-preview__info">
+                                           
+                                            <div class="users-preview__name">
+                                                Phil Anselmo
+                                            </div>
+                                            <div class="users-preview__position">
+                                                Freelance QA
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="users-preview__item">
+                                        <div class="users-preview__image-container">
+                                            <img src="images/avatars/7.jpg" alt="" class="users-preview__image">
+                                        </div>
+                                        <div class="users-preview__info">
+                                           
+                                            <div class="users-preview__name">
+                                                T. Rex
+                                            </div>
+                                            <div class="users-preview__position">
+                                                Producer
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="users-preview__buttons">
+                                    <button class="users-preview__button">Old (94)</button>
+                                    <button class="users-preview__button">Show (50)</button>
+                                </div>
+                            </div>
+                            <div class="chat__right">
+                                <div class="messages">
+                                   <div class="messages__item messages__item--left">
+                                     
+                                       <div class="messages__item-mes">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Donec nec arcu maximus, semper ex sed, spendisse 
+                                        molestie ultricies nulla, vel mollis.
+                                        </p>
+                                        <a href="#" class="messages__item-image">
+                                            <img src="images/chat-image.jpg" alt="">
+                                            <span class="messages__item-image-name">my_favourite_place.jpg</span>
+                                        </a>
+                                       </div>
+                                       <div class="messages__item-date">
+                                        01 Jan 2020, 17:36
+                                        </div>
+                                   </div>
+                                   <div class="messages__item messages__item--right">
+                                    <div class="messages__item-date">
+                                        01 Jan 2020, 17:36
+                                        </div>
+                                    <div class="messages__item-mes">
+                                     <p>
+                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                     Donec nec arcu maximus, semper ex sed, spendisse 
+                                     molestie ultricies nulla, vel mollis.
+                                     </p>
+                                    
+                                    </div>
+                                    
+                                    </div>
+                                    <div class="messages__item">
+                                        New messages (1)
+                                        
+                                    </div>
+                                    <div class="messages__item messages__item--left">
+                                     
+                                        <div class="messages__item-mes">
+                                         <p>
+                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                         Donec nec arcu maximus, semper ex sed, spendisse 
+                                         molestie ultricies nulla, vel mollis.
+                                         </p>
+                                        
+                                        </div>
+                                        <div class="messages__item-date">
+                                         01 Jan 2020, 17:36
+                                         </div>
+                                    </div>
+                                </div>
+                                <form class="new-message">
+                                   <div class="new-message__container">
+                                    <div class="new-message__header">
+                                        <div class="new-message__header-buttons-left">
+                                            <button class="new-message__header-item">
+                                                <b> B</b>
+                                            </button>
+                                           
+                                            <button class="new-message__header-item">
+                                                <i>I</i>
+                                            </button>
+                                            <button class="new-message__header-item">
+                                              <span style="text-decoration: underline;"> U</span>
+                                            </button>
+                                            <button class="new-message__header-item">
+                                               
+                                               <span style="text-decoration:line-through;"> S</span>
+                                            </button>
+                                            <button class="new-message__header-item">
+                                               aA
+                                            </button>
+                                           
+                                             <button class="new-message__header-item">
+                                                „  “
+                                             </button>
+                                             <button class="new-message__header-item">
+                                               <img src="images/link-icon.png" alt="">
+                                             </button>
+                                             <button class="new-message__header-item">
+                                                ©
+                                             </button>
+                                             <button class="new-message__header-item">
+                                                <img src="images/color-icon.png" alt="">
+                                             </button>
+                                             <button class="new-message__header-item">
+                                                <img src="images/actions/like.png" alt="">
+                                             </button>
+                                             <button class="new-message__header-item">
+                                                <img src="images/linked.png" alt="">
+                                             </button>
+                                        </div>
+                                        <span class="new-message__status">
+                                            Draft saved
+                                        </span>
+                                        <div class="new-message__header-buttons-right">
+                                            <button class="new-message__header-button-right disabled">Redo</button>
+                                            <button class="new-message__header-button-right">Undo</button>
+                                        </div>
+                                    </div>
+                                    <textarea class="new-message__textarea">
+
+                                    </textarea>
+                                   </div>
+                                    <button class="new-message__button">
+                                        Reply
+                                    </button>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--end main-->
+
+        <!--start footer-->
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__copy footer__link" href="#">
+                        © Jow, 2020.
+                    </a>
+                    <div class="footer__right-links">
+                        <a class="footer__link" href="#">
+                            Legal Disclaimer
+                        </a>
+                        <a class="footer__link" href="#">
+                            Privacy Policy
+                        </a>
+                        <a class="footer__link" href="#">
+                            Cookies
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--end footer-->
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
