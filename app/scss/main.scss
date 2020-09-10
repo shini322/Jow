@@ -15,7 +15,7 @@ h1,h2,h3,h4,h5,h6{
 }
 body{
     font-family: 'Geometria', sans-serif;
-    color: $black;
+    // color: $black;
     height: 100vh;
     font-weight: 500;
     font-size: 14px;
@@ -55,7 +55,7 @@ header{
             position: absolute;
             width: 13px;
             height: 13px;
-            border: 1px solid $black;
+            border: 1px solid transparent;
             border-radius: 2px;
             left: 0;
             top: 0;
@@ -72,7 +72,7 @@ header{
     }
     &__input:disabled + &__label{
         &:before{
-            border-color: #c3c4dc;
+            // border-color: #c3c4dc;
         }
     }
     &__input:disabled:checked + &__label{
@@ -106,7 +106,7 @@ button{
 
 .input{
     padding: 0 10px;
-    border: 1px solid $black;
+    border: 1px solid transparent;
     border-radius: 4px;
     height: 23px;
     background-color: transparent;
@@ -147,7 +147,7 @@ button{
         display: flex;
         padding: 15px 36px;
         align-items: center;
-        background-color: #c3d5dc;
+        // background-color: #c3d5dc;
         border-radius: 0 0 16px 16px;
         @include for-lg{
             padding: 15px 20px;
@@ -236,13 +236,13 @@ button{
         position: absolute;
         display: none;
         flex-direction: column;
-        background-color: $white;
+        // background-color: $white;
         padding: 20px 15px;
         width: 100%;
         height: 50vh;
         left: 0;
         top: 0;
-        background-color: #c3d5dc;
+        // background-color: #c3d5dc;
         border-radius: 0 0 16px 16px;
         z-index: 30;
     }
@@ -265,7 +265,7 @@ button{
 }
 
 .nav-toggle [class*='bar-'] {
-    background: $black;
+    // background: $black;
     display: block;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -283,7 +283,7 @@ button{
 
 
 .opened .bar-top {
-    background-color: $black;
+    // background-color: $black;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     -webkit-transform-origin: 0% 50%;
@@ -295,10 +295,8 @@ button{
 }
 
 .opened .bar-bot {
-    background-color: $black;
-    -webkit-transform: rotate(45deg);
+    // background-color: $black;
     transform: rotate(-45deg);
-    -webkit-transform-origin: 0% 50%;
     transform-origin: 10% 50%;
 }
 
@@ -329,10 +327,7 @@ button{
         border-radius: 50%;
         width: 18px;
         height: 18px;
-        background-color: #d4c460;
-    }
-    a{
-        
+        // background-color: #d4c460;
     }
     li + li{
         @include for-md{
@@ -351,7 +346,7 @@ button{
     &__link{
         border-bottom: 1px solid transparent;
         &:hover{
-            border-color: $black;
+            // border-color: $black;
         }
     }
     
@@ -388,7 +383,7 @@ button{
     right: -32px;
     top: -2px;
     &--new{
-        background-color: #d4c460;
+        // background-color: #d4c460;
     }
 }
 .title-menu{
@@ -407,7 +402,7 @@ button{
                 left: 0;
                 width: 12px;
                 height: 3px;
-                background-color: $black;
+                // background-color: $black;
             }
             &::before{
                 top: 0;
@@ -432,12 +427,12 @@ button{
     &__list{
         position: absolute;
         display: none;
-        border: 2px solid $black;
+        border: 1px solid transparent;
         border-radius: 4px;
         top: -5px;
         left: 0;
         padding: 25px 8px 14px;
-        background-color: $white;
+        // background-color: $white;
         // width: 119px;
         &.active{
             display: block;
@@ -452,7 +447,7 @@ button{
         border-bottom: 1px solid transparent;
         transition: .3s;
         &:hover{
-            border-color: $black;
+            // border-color: $black;
         }
     }
     &__check-block{
@@ -472,7 +467,7 @@ button{
             position: absolute;
             width: 13px;
             height: 13px;
-            border: 1px solid $black;
+            border: 1px solid transparent;
             border-radius: 2px;
             left: 0;
             top: 50%;
@@ -513,24 +508,24 @@ button{
 
     &__tab{
         padding: 15px 0 12px;
-        border: 1px solid #868e9b;
+        border: 1px solid transparent;
         // border-right: none;
         font-size: 16px;
         line-height: 20px;
         text-align: center;
         border-radius: 4px 4px 0 0;
-        border-bottom-color: $black;
+        // border-bottom-color: $black;
         max-width: 131px;
         width: 100%;
         &:first-child{
             @include for-sm{
-                border: 1px solid #868e9b;                
+                border: 1px solid transparent;                
             }
         }
         &.active{
             position: relative;
-            background-color: #bbc2ce;
-            border-color: $black;
+            // background-color: #bbc2ce;
+            // border-color: $black;
             .project-page__title-menu-button{
                 display: inline-block;
             }
@@ -724,7 +719,7 @@ button{
         margin-right: 9px;
         // width: 18px;
         // height: 18px;
-        border: 1px solid $black;
+        border: 1px solid transparent;
         border-radius: 4px;
     }
 
@@ -732,7 +727,7 @@ button{
         display: block;
         width: 18px;
         height: 18px;
-        border: 1px solid $black;
+        border: 1px solid transparent;
         border-radius: 4px;
     }    
 
@@ -756,29 +751,29 @@ button{
     }  
     &--1{
         .team-item__logo-block{
-            background-color: #59bec2;
+            // background-color: #59bec2;
         }
     }
     &--2{
         .team-item__logo-block{
-            background-color: #ad4da5;
+            // background-color: #ad4da5;
         }
     }
     &--4{
         .team-item__logo-block{
-            background-color: #b6b54b;
+            // background-color: #b6b54b;
         }
     }
 }
 .priority{
     &--normal{
-        color: $green;
+        // color: $green;
     }
     &--high{
-        color: $red;
+        // color: $red;
     }
     &--low{
-        color: $orange;
+        // color: $orange;
     }
 }
 
@@ -809,7 +804,7 @@ button{
     &__tr{
         &:nth-child(2){
             .project-tasks__td{
-                border-top: 1px solid $black;
+                border-top: 1px solid transparent;
                 padding-top: 15px;
             }
         }
@@ -885,7 +880,8 @@ button{
         display: flex;
         align-items: center;
         padding: 28px 0;
-        border-top: 1px solid #b9e0c2;
+        // border-top: 1px solid #b9e0c2;
+        border-top: 1px solid transparent;
     }
     &__button-toggle{
         margin-left: 36px;
@@ -894,7 +890,7 @@ button{
         min-height: 23px;
         text-align: center;
         border-radius: 4px;
-        background-color: #b9e0c2;
+        // background-color: #b9e0c2;
         &::before{
             content: 'Hide';
         }
@@ -924,8 +920,8 @@ button{
         margin-top: 4px;
         padding: 10px 0;
         display: none;
-        background-color: $white;
-        border: 1px solid $black;
+        // background-color: $white;
+        border: 1px solid transparent;
         border-radius: 4px;
     }
     &__priority-list-item{
@@ -946,8 +942,8 @@ button{
         margin-top: 4px;
         padding: 10px 8px;
         display: none;
-        background-color: $white;
-        border: 1px solid $black;
+        // background-color: $white;
+        border: 1px solid transparent;
         border-radius: 4px;
         z-index: 10;
     }
@@ -975,7 +971,7 @@ button{
         width: 100%;
         height: 33px;
         border-radius: 4px;
-        border: 1px solid $black;        
+        border: 1px solid transparent;        
     }
     &__assigned-to-button{
         cursor: pointer;
@@ -1012,7 +1008,7 @@ button{
             bottom: -2px;
             width: 100%;
             height: 23.5px;
-            background-color: $white;
+            // background-color: $white;
             z-index: 38;
         }
 
@@ -1024,7 +1020,6 @@ button{
         text-align: left;
         vertical-align: bottom;
         border-spacing: 0;
-        
         &--border-bottom{
             &::after{
                 content: '';
@@ -1050,7 +1045,7 @@ button{
     &__th{
         font-weight: 500;
         padding-bottom: 10px;
-        border-bottom: 1px solid $black;
+        border-bottom: 1px solid transparent;
         height: 34px;
         &:last-child{
             text-align: right;
@@ -1096,13 +1091,13 @@ button{
 
     }
     &__td-graphic-name{
-        background-color: #fff;
+        // background-color: #fff;
         z-index: 12;
     }
 
     &__td-graphic-title{
         padding-top: 35px;
-        border-top: 1px solid $black;
+        border-top: 1px solid transparent;
     }
     &__td-grahic{
         position: relative;
@@ -1127,7 +1122,7 @@ button{
         min-height: 23px;
         text-align: center;
         border-radius: 4px;
-        background-color: #b9e0c2;
+        // background-color: #b9e0c2;
         &::before{
             content: 'Hide';
         }
@@ -1147,8 +1142,8 @@ button{
         margin-top: 4px;
         padding: 10px 8px;
         display: none;
-        background-color: $white;
-        border: 1px solid $black;
+        // background-color: $white;
+        border: 1px solid transparent;
         border-radius: 4px;
         z-index: 10;
     }
@@ -1163,7 +1158,7 @@ button{
         margin-left: 300px;
         align-items: center;
         justify-content: space-between;
-        border-bottom: 1px solid $black;
+        border-bottom: 1px solid transparent;
         z-index: 15;
     }
     &__td-filters{
@@ -1279,7 +1274,7 @@ button{
     &__graphic-line{
         position: relative;
         height: 2px;
-        background-color: $black;
+        // background-color: $black;
         margin-right: 10px;
         &::before, &::after{
             content: '';
@@ -1288,7 +1283,7 @@ button{
             height: 13px;
             top: 50%;
             transform: translateY(-50%);
-            background-color: $black;
+            // background-color: $black;
             
         }
         &::before{
@@ -1321,13 +1316,13 @@ button{
        
     }
     &__td-completed{
-        border-top: 1px solid #b9e0c2;
+        border-top: 1px solid transparent;
     }
     &__today-line{
         position: absolute;
         height: calc(100% - 168px);
         width: 1px;
-        background-color: $black;
+        // background-color: $black;
         z-index: 30;
         bottom: 0;
         &:before{
@@ -1353,7 +1348,7 @@ button{
     &__bottom{
         position: relative;
         width: 1170px;
-        background-color: $white;
+        // background-color: $white;
         min-height: 22.5px;
         z-index: 20;
     }
@@ -1383,7 +1378,7 @@ button{
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            background-color: $black;
+            // background-color: $black;
         }
     }
     &__minus{
@@ -1400,7 +1395,7 @@ button{
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%) rotate(90deg);
-            background-color: $black;
+            // background-color: $black;
         }
     }
 }
@@ -1424,7 +1419,7 @@ button{
     position: absolute;
     height: 35px;
     width: 1px;
-    background-color: $black;
+    // background-color: $black;
     left: -4px;
     &__img-block{
         position: absolute;
@@ -1453,7 +1448,7 @@ button{
         width: 17px;
         height: 17px;
         border-radius: 50%;
-        background-color: $black;
+        // background-color: $black;
     }
     &__img{
         width: 13px;
@@ -1517,7 +1512,7 @@ button{
         padding: 7px 36px;
         align-items: center;
         justify-content: space-between;
-        background-color: #c3d5dc;
+        // background-color: #c3d5dc;
         border-radius: 16px 16px 0 0;
         font-weight: 300;
         @include for-md-mob{
@@ -1535,7 +1530,7 @@ button{
         border-bottom: 1px solid transparent;
         transition: .3s;
         &:hover{
-            border-color: $black;
+            // border-color: $black;
         }
     }
     &__link + &__link{
@@ -1568,7 +1563,7 @@ button{
     height: 22px;
 }
 .ui-state-active{
-    background-color: #758eb8 !important;
+    // background-color: #758eb8 !important;
 }
 .ui-datepicker td{
     text-align: right;
@@ -1579,7 +1574,7 @@ button{
 }
 .ui-widget.ui-widget-content{
     padding: 8px 13px;
-    border: 1px solid $black;
+    border: 1px solid transparent;
     border-radius: 4px;
     max-width: 230px;
     width: 100%;
@@ -1588,7 +1583,7 @@ button{
     display: none;
 }
 .ui-widget-header{
-    background-color: $white;
+    // background-color: $white;
     border: none;
 }
 .ui-datepicker{
@@ -1625,7 +1620,7 @@ button{
     
 }
 .ui-datepicker-week-end {
-    background-color: #dddedd;
+    // background-color: #dddedd;
 }
 .ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled{
     opacity: 1;
@@ -1658,7 +1653,7 @@ button{
     }
     &__th{
         padding-bottom: 22px;
-        border-bottom: 1px solid $black;
+        border-bottom: 1px solid transparent;
         font-weight: 500;
         text-align: right;
         &:first-child, &:nth-child(2){
@@ -1687,7 +1682,7 @@ button{
     }
     &__tr-sub-total{
         padding-top: 20px;
-        border-top: 1px solid $black;
+        border-top: 1px solid transparent;
         font-weight: 500;
         .project-budget__td{
             text-align: right;
@@ -1714,7 +1709,7 @@ button{
         position: relative;
         padding-top: 20px;
         font-weight: 500;
-        border-top: 1px solid $black;
+        border-top: 1px solid transparent;
         
     }
 }
@@ -1740,7 +1735,7 @@ button{
         max-width: 250px;
         height: 40px;
         width: 100%;
-        border: 1px solid $black;
+        border: 1px solid transparent;
         border-radius: 4px;
         font-size: 16px;
         font-weight: 300;
@@ -1883,7 +1878,7 @@ button{
     &__tr{
         &:first-child{
             .projects-table__th{
-                border-bottom: 1px solid $black;
+                border-bottom: 1px solid transparent;
                 padding-bottom: 15px;
             }
         }
@@ -1976,7 +1971,7 @@ button{
         min-height: 23px;
         text-align: center;
         border-radius: 4px;
-        background-color: #b9e0c2;
+        // background-color: #b9e0c2;
         &::before{
             content: 'Hide';
         }
@@ -1990,7 +1985,7 @@ button{
         display: flex;
         align-items: center;
         padding-top: 28px;
-        border-top: 1px solid #b9e0c2;
+        border-top: 1px solid transparent;
     }
     &--closed{
         .projects-table__tr:nth-child(2) .projects-table__td{
@@ -2074,7 +2069,7 @@ button{
     padding: 20px 0 10px;
     flex-direction: column;
     align-items: flex-start;
-    border: 1px solid #868e9b;
+    border: 1px solid transparent;
     border-radius: 4px;
     font-weight: 300;
     &__title{
@@ -2384,25 +2379,25 @@ button{
     &__tab{
         display: block;
         padding: 15px 32.5px 12px;
-        border: 1px solid #868e9b;
+        border: 1px solid transparent;
         font-size: 16px;
         line-height: 20px;
         text-align: center;
         border-radius: 4px 4px 0 0;
-        border-bottom-color: #23262b;
+        // border-bottom-color: #23262b;
         max-width: 168px;
         width: 100%;
         flex-shrink: 0;
         &:first-child{
             @include for-sm{
-                border: 1px solid #868e9b;                
+                border: 1px solid transparent;                
             }
         }
         
         &.active{
             position: relative;
-            background-color: #bbc2ce;
-            border-color: #23262b;
+            // background-color: #bbc2ce;
+            // border-color: #23262b;
         }
         & + &{
             margin-left: -1px;
@@ -2436,7 +2431,7 @@ button{
         height: 32px;
         font-size: 14px;
         line-height: 28px;
-        border: 1px solid $black;
+        border: 1px solid transparent;
         border-radius: 4px;
         @include for-lg{
             margin-right: 36px;
@@ -2469,17 +2464,17 @@ button{
         }
         .list{
             width: 100%;
-            border: 1px solid $black;
+            border: 1px solid transparent;
             font-size: 14px;
             line-height: 22px;
         }
         .option{
             font-weight: 500;
             &.focus{
-                background-color: #868e9b !important;
+                // background-color: #868e9b !important;
             }
             &:hover{
-                background-color: #868e9b !important;
+                // background-color: #868e9b !important;
             }
         }
         .option.selected{
@@ -2514,11 +2509,11 @@ button{
         width: 14.28%;
         &:nth-child(7n){
             .calendar-month__item{
-                border-right: 1px solid #868e9b;
+                border-right: 1px solid transparent;
             }
         }
         &:nth-child(29), &:nth-child(30), &:nth-child(31), &:nth-child(32), &:nth-child(33), &:nth-child(34), &:nth-child(35){
-            border-bottom: 1px solid #868e9b;
+            border-bottom: 1px solid transparent;
         }
     }
     
@@ -2529,14 +2524,14 @@ button{
     position: relative;
     padding: 8px;
     height: 139px;
-    border: 1px solid #868e9b;
+    border: 1px solid transparent;
     border-right: none;
     border-bottom: none;
     &--old{
-        color: #8b8c8d;
+        // color: #8b8c8d;
     }
     &--new{
-        color: #8b8c8d;
+        // color: #8b8c8d;
     }
     &--week{
         .calendar-item__week{
@@ -2544,7 +2539,7 @@ button{
         }
     }
     &--weekend{
-        background-color: #dedddc;
+        // background-color: #dedddc;
         .calendar-item__number{
             font-weight: 500;
         }
@@ -2553,8 +2548,8 @@ button{
         padding: 2px 8px 8px;
         .calendar-item__number{
             padding: 7px;
-            background-color: #bc82bd;
-            color: $white;
+            // background-color: #bc82bd;
+            // color: $white;
             border-radius: 50%;
         }
     }
@@ -2573,7 +2568,7 @@ button{
         display: none;
         top: 8px;
         left: 8px;
-        color: #8b8c8d;
+        // color: #8b8c8d;
     }
     
 }
@@ -2633,10 +2628,15 @@ button{
     }
     &__title{
         margin-bottom: 30px;
+        padding-left: 40%;
         font-weight: 300;
+        width: 100%;
         &--big{
             font-weight: 500;
             font-size: 24px;
+        }
+        @include for-md{
+            padding-left: 0;
         }
     }
     &__form{
@@ -2658,7 +2658,7 @@ button{
     }
     &__form-input{
         padding: 10px 10px 8px;
-        border: 1px solid $black;
+        border: 1px solid transparent;
         border-radius: 4px;
         @include for-md{
             width: 100%;
@@ -2852,7 +2852,7 @@ button{
         margin-top: 10px;
         padding: 17.5px 0;
         font-weight: 300;
-        border-top: 1px solid $black;
+        border-top: 1px solid transparent;
     }
 
     &__title{
@@ -2907,7 +2907,7 @@ button{
         position: relative;
         cursor: pointer;
         &:hover{
-            background-color: #dbe3e6;
+            // background-color: #dbe3e6;
         }
         &:first-child{
             &:hover{
@@ -2999,7 +2999,7 @@ button{
         font-size: 18px;
         line-height: 22px;
         text-align: left;
-        border-bottom: 1px solid $black;
+        border-bottom: 1px solid transparent;
     }
     &__tr{
         &:last-child{
@@ -3038,7 +3038,7 @@ button{
 .files-thumbs{
     padding-bottom: 17px;
     width: 1170px;
-    border-bottom: 1px solid $black;
+    border-bottom: 1px solid transparent;
     &__row{
         display: flex;
         margin: 21px -27px 0;
@@ -3093,7 +3093,7 @@ button{
         width: 15px;
         height: 15px;
         border-radius: 2px;
-        background-color: #9bb6d8;
+        // background-color: #9bb6d8;
         left: 0;
         top: 50%;
         transform: translateY(-50%);
@@ -3129,11 +3129,11 @@ button{
     &__condition-button.active{
         &::before{
             transform: rotate(45deg) translate(10%, 100%);
-            background-color: $black;
+            // background-color: $black;
         }
         &:after{
             transform: rotate(-45deg) translate(6%, -100%);
-            background-color: $black;
+            // background-color: $black;
 
         }
     }
@@ -3178,7 +3178,7 @@ button{
         height: 32px;
         font-size: 14px;
         line-height: 28px;
-        border: 1px solid #23262b;
+        border: 1px solid transparent;
         border-radius: 4px;
         &:after{
             margin-top: -4.5px;
@@ -3200,17 +3200,17 @@ button{
         }
         .list{
             width: 100%;
-            border: 1px solid #23262b;
+            border: 1px solid transparent;
             font-size: 14px;
             line-height: 22px;
         }
         .option{
             font-weight: 500 !important;
             &.focus{
-                background-color: #868e9b !important;
+                // background-color: #868e9b !important;
             }
             &:hover{
-                background-color: #868e9b !important;
+                // background-color: #868e9b !important;
             }
         }
         @include for-md{
@@ -3224,7 +3224,7 @@ button{
         height: 32px;
         font-size: 14px;
         line-height: 28px;
-        border: 1px solid #23262b;
+        border: 1px solid transparent;
         border-radius: 4px;
         @include for-md{
             width: 100%;
@@ -3244,7 +3244,7 @@ button{
         padding-bottom: 18px;
         font-size: 18px;
         line-height: 22px;
-        border-bottom: 1px solid $black;
+        border-bottom: 1px solid transparent;
     }
     &__list{
         margin-top: 18px;
@@ -3259,7 +3259,7 @@ button{
     }
     &__list-find{
         padding: 2px 0;
-        background-color: #ded2a6;
+        // background-color: #ded2a6;
     }
 }
 .search-table{
@@ -3304,7 +3304,7 @@ button{
         height: 32px;
         font-size: 14px;
         line-height: 28px;
-        border: 1px solid #23262b;
+        border: 1px solid transparent;
         border-radius: 4px;
         width: auto;
         &--number{
@@ -3333,7 +3333,7 @@ button{
         height: 32px;
         font-size: 14px;
         line-height: 28px;
-        border: 1px solid #23262b;
+        border: 1px solid transparent;
         border-radius: 4px;
         font-weight: 300;
         &:after{
@@ -3356,17 +3356,17 @@ button{
         }
         .list{
             width: 100%;
-            border: 1px solid #23262b;
+            border: 1px solid transparent;
             font-size: 14px;
             line-height: 22px;
         }
         .option{
             font-weight: 500 !important;
             &.focus{
-                background-color: #868e9b !important;
+                // background-color: #868e9b !important;
             }
             &:hover{
-                background-color: #868e9b !important;
+                // background-color: #868e9b !important;
             }
         }
         &--category{
@@ -3404,15 +3404,14 @@ button{
     }
     &__th{
         padding: 8px 4px 18px;
-        border-bottom: 1px solid $black;
+        border-bottom: 1px solid transparent;
         &--week{
             &:nth-child(11){
                 padding-left: 18px;
             }
         }
         &--weekend{
-            background-color: #dad9d8;
-            
+            // background-color: #dad9d8;            
         }
     }
     &__tr{
@@ -3449,7 +3448,7 @@ button{
                 .timesheets__td{
                     font-weight: 500;
                     padding-top: 20px;
-                    border-top: 1px solid #b9e0c2;
+                    border-top: 1px solid transparent;
                     font-size: 16px;
                     &--week{
                         padding-bottom: 0 !important;
@@ -3501,7 +3500,7 @@ button{
             min-width: 48px;
         }
         &--weekend{
-            background-color: #dad9d8;
+            // background-color: #dad9d8;
             &:nth-child(8){
                 padding-left: 18px;
             }
@@ -3519,9 +3518,9 @@ button{
         height: 26px;
         width: 40px;
         &:disabled{
-            border-color: #c3c4dc;
-            background-color: $white;
-            color: $black;
+            // border-color: #c3c4dc;
+            // background-color: $white;
+            // color: $black;
         }
     }
     &__sup{
@@ -3542,7 +3541,7 @@ button{
 .task-images{
     position: relative;
     padding: 26px 150px 23px 20px;
-    background-color: #ecebe2;
+    // background-color: #ecebe2;
     @include for-md{
         display: flex;
         align-items: center;
@@ -3641,7 +3640,7 @@ button{
         font-size: 16px;
         font-weight: 500;
         line-height: 20px;
-        border-bottom: 1px solid $black;
+        border-bottom: 1px solid transparent;
     }
 }
 .comments-item{
@@ -3755,7 +3754,7 @@ button{
         font-weight: 300;
         font-size: 14px;
         line-height: 18px;
-        color: #983333;
+        // color: #983333;
     }
     &__text{
         font-weight: 300;
@@ -3810,7 +3809,7 @@ button{
     &__item-desc{
         position: relative;
         padding: 4px 8px;
-        border: 1px solid $black;
+        border: 1px solid transparent;
         border-radius: 4px;
         min-height: 33px;
         &::before{
@@ -3873,7 +3872,7 @@ button{
         width: 175px;
         font-size: 14px;
         line-height: 28px;
-        border: 1px solid $black;
+        border: 1px solid transparent;
         border-radius: 4px;
         
         @include for-md{
@@ -3929,17 +3928,17 @@ button{
         }
         .list{
             width: 100%;
-            border: 1px solid $black;
+            border: 1px solid transparent;
             font-size: 14px;
             line-height: 22px;
         }
         .option{
             font-weight: 500;
             &.focus{
-                background-color: #868e9b !important;
+                // background-color: #868e9b !important;
             }
             &:hover{
-                background-color: #868e9b !important;
+                // background-color: #868e9b !important;
             }
         }
         .option.selected{
@@ -3993,11 +3992,11 @@ button{
     }
     &__dropdown{
         width: 100%;
-        border: 1px solid #23262b;
+        border: 1px solid transparent;
         font-size: 14px;
         line-height: 22px;
         position: absolute;
-        background-color: #fff;
+        // background-color: #fff;
         border-radius: 5px;
         box-shadow: 0 0 0 1px rgba(68,68,68,0.11);
         box-sizing: border-box;
@@ -4058,7 +4057,7 @@ button{
     }
 }
 .nice-select:hover{
-    background-color: $white;
+    // background-color: $white;
 }
 .chat{
     &__row{
@@ -4074,7 +4073,7 @@ button{
         box-sizing: border-box;
         padding-right: 32px;
         margin-right: 32px;
-        border-right: 1px solid $black;
+        border-right: 1px solid transparent;
         @include for-md(){
             width: 100%;
             padding-right: 0;
@@ -4082,7 +4081,7 @@ button{
             padding-bottom: 20px;
             margin-bottom: 20px;
             border-right: 0;
-            border-bottom: 1px solid $black;
+            border-bottom: 1px solid transparent;
         }
     }
     &__right{
@@ -4100,7 +4099,7 @@ button{
         transition: .3s;
         cursor: pointer;
         &.current,&:hover{
-            background-color: #dbe3e6;
+            // background-color: #dbe3e6;
         }
         @include for-md(){
             position: relative;
@@ -4125,7 +4124,7 @@ button{
         width: 100px;
         flex-shrink: 0;
         margin-right: 22px;
-        border: 1px solid $black;
+        border: 1px solid transparent;
         border-radius: 10px;
         font-weight: 500;
         @include for-md(){
@@ -4156,7 +4155,7 @@ button{
         position: absolute;
         top: 0;
         left: 0;
-        background-color: #d4c460;
+        // background-color: #d4c460;
         padding: 2px 5px;
         border-radius: 5px;
         box-sizing: border-box;
@@ -4189,7 +4188,7 @@ button{
         transition: .3s;
         font-weight: 400;
         &:hover{
-            background-color: #b9e0c2;
+            // background-color: #b9e0c2;
         }
     }
     
@@ -4288,7 +4287,7 @@ button{
     width: 100%;
     flex-shrink: 0;
    &__container{
-    border: 1px solid $black;
+    border: 1px solid transparent;
     border-radius: 10px;
     width: 100%;
    }
@@ -4298,7 +4297,7 @@ button{
         align-items: center;
         padding: 5px 20px 5px 15px;
         box-sizing: border-box;
-        border-bottom: 1px solid $black;
+        border-bottom: 1px solid transparent;
         flex-wrap: wrap;
         &-item{
             display: flex;
@@ -4366,7 +4365,7 @@ button{
         line-height: 20px;
         padding: 10px 35px;
         box-sizing: border-box;
-        background-color: #b9e0c2;
+        // background-color: #b9e0c2;
         border-radius: 5px;
         margin-top: 20px;
         transition: .3s;
@@ -4391,7 +4390,7 @@ button{
         height: 32px;
         font-size: 14px;
         line-height: 28px;
-        border: 1px solid #23262b;
+        border: 1px solid transparent;
         border-radius: 4px;
         @include for-md-mob{
             margin-left: 0;
@@ -4403,7 +4402,7 @@ button{
             width: 1px;
             top: 0;
             right: 36px;
-            background-color: #23262b;
+            // background-color: #23262b;
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -4422,7 +4421,7 @@ button{
         }
         .list{
             width: 100%;
-            border: 1px solid #23262b;
+            border: 1px solid transparent;
             font-size: 14px;
             line-height: 22px;
         }
@@ -4521,7 +4520,7 @@ button{
             position: absolute;
             width: 13px;
             height: 13px;
-            border: 1px solid $black;
+            border: 1px solid transparent;
             border-radius: 2px;
             left: 0;
             top: 50%;
@@ -4553,5 +4552,5 @@ button{
     transition: none;
 }
 .nice-select:hover{
-    border-color: $black;
+    // border-color: $black;
 }

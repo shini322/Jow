@@ -1,0 +1,169 @@
+.button--green, .project-tasks__button-toggle, 
+.project-timeline__button-toggle, .projects-table__button-toggle,
+ .users-preview__button:hover,
+.new-message__button{
+    background-color: #b9e0c2;
+}
+.project-tasks__priority-list, .project-tasks__td-list, .project-timeline__inner:after,
+.project-timeline__td-list, .project-timeline__bottom, .ui-widget-header, .timesheets__input:disabled, .nice-select:hover,
+.title-menu__list, .project-timeline__td-graphic-name, .project-edit__dropdown{
+    background-color: #fff;
+}
+
+.calendar-item--pink .calendar-item__number, .calendar-year__td-circle--pink a{
+    color: #fff !important;
+}
+
+body, .timesheets__input:disabled {
+    color: #23262b;
+}
+
+.opened .bar-top, .nav-toggle [class*='bar-'], .opened .bar-bot, .title-menu__button::before,
+ .project-timeline__graphic-line, .project-timeline__graphic-line::before, .project-timeline__graphic-line::after,
+.project-timeline__today-line, .table-scale__button::before, .table-scale__plus::after,
+.link-grahic, .key-point__img-block, .search-page__condition-button.active::before, .search-page__condition-button.active::after,
+.title-menu__button::after, .new-message__select:before{
+    background-color: #23262b;
+}
+
+.label-checkbox-block__label:before, .input, .opened .bar-bot:hover, .title-menu__list, .title-menu__list-button:hover,
+.title-menu__label::before, .project-page__tab.active, .participant-item__avatar-block, .participant-item__avatar,
+.project-tasks__priority-list, .project-tasks__td-list, .project-tasks__td-list,
+.project-timeline__th, .project-timeline__td-graphic-title, .project-timeline__td-list,
+.footer__link:hover, .ui-widget.ui-widget-content, .project-budget-calc__input, .calendar-nav__select,
+.calendar-nav__select .list, .project-edit__item-desc, .project-edit__select,
+.project-edit__select .list, .users-preview__image-container, .new-message__container,
+.profile-item__label::before, .nice-select:hover, .login__form-input,
+.project-edit__dropdown, .search-filters__select .list, .project-timeline__table--border-bottom,
+.search-filters__input, .search-table__td-input, .search-table__select, .search-table__select .list,
+.new-message__select, .new-message__select .list{
+    border-color: #23262b;
+}
+.project-page__tab, .project-timeline__filters, .project-timeline__today-line::after, .project-budget__th,
+.projects-table__tr:first-child .projects-table__th, .files-table-action__caption, .files-thumbs,
+.search-results__title, .comments__title, .timesheets__th, .new-message__header, .calendar-nav__tab, .calendar-nav__tab.active,
+.project-timeline__table{
+    border-bottom-color: #23262b;
+}
+.project-tasks__tr:nth-child(2) .project-tasks__td, .project-budget__tr-sub-total,
+.project-budget__td-total, .files-page__info{
+    border-top-color: #23262b;
+}
+.chat__users-preview{
+    border-right-color: #23262b;
+}
+
+.label-checkbox-block__input:disabled + .label-checkbox-block__label:before, .timesheets__input:disabled{
+    border-color: #c3c4dc;
+}
+.header__inner, .footer__inner{
+    background-color: #c3d5dc;
+}
+
+.calendar-item--pink .calendar-item__number{
+    background-color: #bc82bd;
+}
+.task-images{
+    background-color: #ecebe2;
+}
+.project-page__tab, .projects-thumb-item, .calendar-nav__tab, .calendar-nav__tab .option,
+.calendar-month__container:nth-child(29),
+.calendar-month__container:nth-child(30),
+.calendar-month__container:nth-child(31),
+.calendar-month__container:nth-child(32),
+.calendar-month__container:nth-child(33),
+.calendar-month__container:nth-child(34),
+.calendar-month__container:nth-child(35),
+.calendar-month__container:nth-child(7n) .calendar-month__item,
+.calendar-item{
+    border-color: #868e9b;   
+}
+.calendar-nav__tab .option.focus, .calendar-nav__tab .option:hover,
+.search-filters__select .option.focus, .search-filters__select .option:hover,
+.search-table__select .option.focus, .search-table__select .option:hover,
+.project-edit__select .option.focus, .project-edit__select .option:hover{
+    background-color: #868e9b !important;
+}
+
+.project-page__tab.active, .calendar-nav__tab.active{
+    background-color: #bbc2ce;
+}
+.calendar-item--old, .calendar-item--new, .calendar-item__week{
+    color: #8b8c8d;
+}
+.calendar-item--weekend{
+    background-color: #dedddc;
+}
+
+.files-table__tr:hover, .users-preview__item.current, .users-preview__item:hover{
+    background-color: #dbe3e6;
+}
+
+.search-page__condition-plus{
+    background-color: #9bb6d8;
+}
+
+
+.project-tasks__completed-counter, .project-timeline__td-completed, .projects-table__closed-counter, 
+.timesheets__tr--week:last-child .timesheets__td{
+    border-color: #b9e0c2;
+}
+.priority--normal{
+    color: #25a32e;
+}
+.priority--high{
+    color: #bc1616;
+}
+.priority--low{
+    color: #c17615;
+}
+.menu__list-project-total, .sticker--new, .users-preview__status{
+    background-color: #d4c460;
+}
+.team-item--1 .team-item__logo-block{
+    background-color: #59bec2;
+}
+.team-item--2 .team-item__logo-block{
+    background-color: #ad4da5;
+}
+.team-item--4 .team-item__logo-block{
+    background-color: #b6b54b;
+}
+
+.ui-state-active{
+    background-color: #758eb8 !important;
+}
+
+.ui-datepicker-week-end{
+    background-color: #dddedd;
+}
+
+.search-results__list-find{
+    background-color: #ded2a6;
+}
+
+.timesheets__th--weekend, .timesheets__td--weekend{
+    background-color: #dad9d8;
+}
+
+.comments-item__vacation{
+    color: #983333;
+}
+
+@media screen and (max-width: 1024px){
+    .menu-block{
+        background-color: #fff;
+    }
+    .chat__users-preview{
+        border-bottom-color: #23262b;
+    }
+    .menu-block{
+        background-color: #c3d5dc;
+    }
+}
+@media screen and (max-width: 768px){
+    .project-page__tab:first-child, .calendar-nav__tab:first-child{
+        border-color: #868e9b;
+    }
+}
+

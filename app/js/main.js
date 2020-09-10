@@ -41,6 +41,16 @@ $('.search-page__condition').click(function(){
 //     }
 // });
 
+
+$('.view__item').on('click', function(e){
+    e.preventDefault();  
+    $($(this).parent().find('.tab')).removeClass('active');    
+    $($(this).parent().parent().parent().next().find('.tab-content')).removeClass('active');  
+    $(this).addClass('active');
+    $($(this).attr('href')).addClass('active');    
+  });
+
+
 $('.tab').on('click', function(e){
     e.preventDefault();  
     
