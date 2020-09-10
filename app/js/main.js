@@ -67,6 +67,11 @@ $('.tab').on('click', function(e){
     } else{
         $('.project-budget-calc').removeClass('active');
     }
+    if($(this).attr("href") == '#weeks'){
+        $('.timesheets__weeks-start').addClass('active');
+    } else{
+        $('.timesheets__weeks-start').removeClass('active');
+    }
     
   });
 
@@ -194,3 +199,48 @@ $('.projects-table__th').click(function(){
     $(this).toggleClass('active');
 });
 
+
+$('.search-filters__input').keyup(function(){
+    var $page = $('.search-results__list-item');
+    $page.each(function(i,a){
+          $a = $(a);
+        $a.html($a.html().replace(/<span>/g,"").replace(/\<\/span\>/g,""));
+      });
+    var searchedText = $('.search-filters__input').val();
+    
+    if(searchedText != ""){
+      $page.each(function(i,a){
+        $a = $(a);
+        var html = $a.text().replace(new RegExp("("+searchedText+")", "igm"), "<span>$1</span>");
+        $a.html(html);
+      });
+  
+    }
+  });
+
+  $('.search__input').keyup(function(){
+    var $page = $('.search__list-link');
+    $page.each(function(i,a){
+          $a = $(a);
+        $a.html($a.html().replace(/<span>/g,"").replace(/\<\/span\>/g,""));
+      });
+    var searchedText = $('.search__input').val();
+    
+    if(searchedText != ""){
+      $page.each(function(i,a){
+        $a = $(a);
+        var html = $a.text().replace(new RegExp("("+searchedText+")", "igm"), "<span>$1</span>");
+        $a.html(html);
+      });
+  
+    }
+  });
+
+  $('.search__input').focus(function(){
+    $(this).addClass('active');
+    $(this).next().addClass('active');
+  });
+  $('.search__input').blur(function(){
+    $(this).removeClass('active');
+    $(this).next().removeClass('active');
+  });

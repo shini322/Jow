@@ -6,7 +6,7 @@
 }
 .project-tasks__priority-list, .project-tasks__td-list, .project-timeline__inner:after,
 .project-timeline__td-list, .project-timeline__bottom, .ui-widget-header, .timesheets__input:disabled, .nice-select:hover,
-.title-menu__list, .project-timeline__td-graphic-name, .project-edit__dropdown{
+.title-menu__list, .project-timeline__td-graphic-name, .project-edit__dropdown, .search__list{
     background-color: #fff;
 }
 
@@ -36,7 +36,7 @@ body, .timesheets__input:disabled {
 .profile-item__label::before, .nice-select:hover, .login__form-input,
 .project-edit__dropdown, .search-filters__select .list, .project-timeline__table--border-bottom,
 .search-filters__input, .search-table__td-input, .search-table__select, .search-table__select .list,
-.new-message__select, .new-message__select .list{
+.new-message__select, .new-message__select .list, .search-filters__select, .search__list{
     border-color: #23262b;
 }
 .project-page__tab, .project-timeline__filters, .project-timeline__today-line::after, .project-budget__th,
@@ -138,7 +138,7 @@ body, .timesheets__input:disabled {
     background-color: #dddedd;
 }
 
-.search-results__list-find{
+.search-results__list span, .search__list-link span{
     background-color: #ded2a6;
 }
 

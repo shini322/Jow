@@ -584,7 +584,7 @@
                                                     
                                                 </div>
                                                 <div class="today-coord">
-                                                    <div class="project-timeline__today-line today-coord">
+                                                    <div class="project-timeline__today-line projects-page__today-line today-coord">
                                                         
                                                     </div>
                                                     <div class="today__text today-coord">
@@ -592,13 +592,11 @@
                                                     </div>
                                                 </div>
                                                 
-                                                <table class="project-timeline__table project-timeline__table-border-bottom">
+                                                <table class="project-timeline__table project-timeline__table--border-bottom">
                                                     
                                                     <tr class="project-timeline__tr">
                                                         <th class="project-timeline__th">
-                                                            <span class="projects-table__th--name">
-                                                                Name
-                                                           </span> 
+                                                            Name
                                                         </th>
                                                         <th class="project-timeline__th">
                                                             Started by
@@ -613,12 +611,18 @@
                                                             Start date
                                                         </th>
                                                         <th class="project-timeline__th ">
-                                                            End date
+                                                            <span class="project-timeline__th--end-date">End date</span>
+                                                            
                                                         </th>
                                                         <th class="project-timeline__th">
                                                             Status 
                                                         </th>
-                                                        
+                                                        <th class="project-timeline__th project-timeline__th--comments">
+                                                            <img class="project-timeline__th-img" src="images/comments.png" alt="">
+                                                        </th>
+                                                        <th class="project-timeline__th">
+                                                            <img class="project-timeline__th-img" src="images/flag.png" alt="">
+                                                        </th>
                                                     </tr>
             
                                                     <tr class="project-timeline__tr">
@@ -645,24 +649,24 @@
                                                                     <span class="project-timeline__show-text">
                                                                         Show:
                                                                     </span>
-                                                                    <button class="project-timeline__show-button">
+                                                                    <button class="project-timeline__show-button active">
                                                                         Assigned to
                                                                     </button>
-                                                                    <button class="project-timeline__show-button active">
+                                                                    <button class="project-timeline__show-button">
                                                                         Status
                                                                     </button>
                                                                     <button class="project-timeline__show-button">
-                                                                        Budget
+                                                                        Priority
                                                                     </button>
                                                                     <button class="project-timeline__show-button">
-                                                                        Priority
+                                                                        Comments
                                                                     </button>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr class="project-timeline__tr">
-                                                        <td class="project-timeline__td project-timeline__td-dates" colspan="9">
+                                                        <td class="project-timeline__td projects-page__timeline-td project-timeline__td-dates" colspan="9">
                                                             <div class="project-timeline__dates">                                                
                                                                 <div class="project-timeline__month">
                                                                     <div class="project-timeline__month-name">
@@ -813,18 +817,15 @@
                                                             </div>
                                                         </td>
                                                     </tr>
-                                                    
                                                     <tr class="project-timeline__tr">
-                                                        <td class="project-timeline__td project-timeline__td-graphic-name">
-                                                            <div class="project-timeline__graphic-item-name">
-                                                                <span class="projects-table__td-name">
-                                                                    Indispensable project 8
-                                                                </span> 
+                                                        <td class="project-timeline__td projects-page__timeline-td project-timeline__td-graphic-name">
+                                                            <div class="project-timeline__graphic-item-name projects-page__timeline-item-name">
+                                                                Task 9
                                                             </div>
                                                         </td>
-                                                        <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                        <td class="project-timeline__td projects-page__timeline-td project-timeline__td-grahic" colspan="8">
                                                             <div class="project-timeline__graphic-item" style="margin-left: 33%;">
-                                                                <div class="project-timeline__graphic-line projects-page__timeline-item-line" style="width: 460px;">
+                                                                <div class="project-timeline__graphic-line projects-page__timeline-graphic-line" style="width: 460px;">
                                                                 
                                                                 </div>
                                                                 <div class="project-timeline__graphic-name">
@@ -834,17 +835,15 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="project-timeline__tr">
-                                                        <td class="project-timeline__td project-timeline__td-graphic-name">
-                                                            <div class="project-timeline__graphic-item-name">
-                                                                <span class="projects-table__td-name">
-                                                                    Long long name project 5
-                                                                </span> 
+                                                        <td class="project-timeline__td projects-page__timeline-td project-timeline__td-graphic-name">
+                                                            <div class="project-timeline__graphic-item-name projects-page__timeline-item-name">
+                                                                Long-long task 8
                                                             </div>
                                                         </td>
-                                                        <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                        <td class="project-timeline__td projects-page__timeline-td project-timeline__td-grahic" colspan="8">
                                                             <div class="project-timeline__graphic-item" style="margin-left: 26%;">
-                                                                <div class="project-timeline__graphic-line projects-page__timeline-item-line" style="width: 460px;">
-                                                                    <div class="key-point" style="left: 50%;">
+                                                                <div class="project-timeline__graphic-line projects-page__timeline-graphic-line" style="width: 460px;">
+                                                                    <div class="key-point projects-page__key-point" style="left: 50%;">
                                                                         <div class="key-point__text">
                                                                             Key point 1
                                                                         </div>
@@ -860,17 +859,15 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="project-timeline__tr">
-                                                        <td class="project-timeline__td project-timeline__td-graphic-name">
-                                                            <div class="project-timeline__graphic-item-name">
-                                                                <span class="projects-table__td-name">
-                                                                    Long project 6
-                                                                </span> 
+                                                        <td class="project-timeline__td projects-page__timeline-td project-timeline__td-graphic-name">
+                                                            <div class="project-timeline__graphic-item-name projects-page__timeline-item-name">
+                                                                Simple yet effective task 7
                                                             </div>
                                                         </td>
-                                                        <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                        <td class="project-timeline__td projects-page__timeline-td project-timeline__td-grahic" colspan="8">
                                                             <div class="project-timeline__graphic-item" style="margin-left: 50%;">
-                                                                <div class="project-timeline__graphic-line projects-page__timeline-item-line" style="width: 170px;">
-                                                                    <div class="key-point" style="left: 41%;">
+                                                                <div class="project-timeline__graphic-line projects-page__timeline-graphic-line" style="width: 170px;">
+                                                                    <div class="key-point projects-page__key-point" style="left: 41%;">
                                                                         <div class="key-point__text">
                                                                             Key point 1
                                                                         </div>
@@ -878,7 +875,7 @@
                                                                             <img class="key-point__img" src="images/key-point-star.png" alt="">
                                                                         </div>
                                                                     </div>
-                                                                    <div class="link-grahic">
+                                                                    <div class="link-grahic projects-page__link-grahic">
                                                                         <div class="link-grahic__img-block">
                                                                             <img class="link-grahic__img" src="images/link-icon.png" alt="">
                                                                         </div>
@@ -891,17 +888,15 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="project-timeline__tr">
-                                                        <td class="project-timeline__td project-timeline__td-graphic-name">
-                                                            <div class="project-timeline__graphic-item-name">
-                                                                <span class="projects-table__td-name">
-                                                                    Nice project 7
-                                                                </span> 
+                                                        <td class="project-timeline__td projects-page__timeline-td project-timeline__td-graphic-name">
+                                                            <div class="project-timeline__graphic-item-name projects-page__timeline-item-name">
+                                                                Impossible task 6
                                                             </div>
                                                         </td>
-                                                        <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                        <td class="project-timeline__td projects-page__timeline-td project-timeline__td-grahic" colspan="8">
                                                             <div class="project-timeline__graphic-item" style="margin-left: 34%;">
-                                                                <div class="project-timeline__graphic-line projects-page__timeline-item-line" style="width: 250px;">
-                                                                    <div class="link-grahic">
+                                                                <div class="project-timeline__graphic-line projects-page__timeline-graphic-line" style="width: 250px;">
+                                                                    <div class="link-grahic projects-page__link-grahic">
                                                                         <div class="link-grahic__img-block">
                                                                             <img class="link-grahic__img" src="images/link-icon.png" alt="">
                                                                         </div>
@@ -914,19 +909,14 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="project-timeline__tr">
-                                                        <td class="project-timeline__td project-timeline__td-graphic-name">
-                                                            <div class="project-timeline__graphic-item-name">
-                                                                <span class="projects-table__td-name">
-                                                                    Project 1
-                                                                    <span class="sticker sticker--new">
-                                                                        new
-                                                                    </span>
-                                                                </span> 
+                                                        <td class="project-timeline__td projects-page__timeline-td project-timeline__td-graphic-name">
+                                                            <div class="project-timeline__graphic-item-name projects-page__timeline-item-name">
+                                                                Infernous task 5
                                                             </div>
                                                         </td>
-                                                        <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                        <td class="project-timeline__td projects-page__timeline-td project-timeline__td-grahic" colspan="8">
                                                             <div class="project-timeline__graphic-item" style="margin-left: 21%;">
-                                                                <div class="project-timeline__graphic-line projects-page__timeline-item-line" style="width: 326px;">
+                                                                <div class="project-timeline__graphic-line projects-page__timeline-graphic-line" style="width: 326px;">
                                                                     
                                                                 </div>
                                                                 <div class="project-timeline__graphic-name">
@@ -935,92 +925,32 @@
                                                             </div>
                                                         </td>
                                                     </tr>
+        
+        
                                                     <tr class="project-timeline__tr">
-                                                        <td class="project-timeline__td project-timeline__td-graphic-name">
-                                                            <div class="project-timeline__graphic-item-name">
-                                                                <span class="projects-table__td-name">
-                                                                    Project 2 and subproject
-                                                                </span> 
-                                                            </div>
-                                                        </td>
-                                                        <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
-                                                            <div class="project-timeline__graphic-item" style="margin-left: 21%;">
-                                                                <div class="project-timeline__graphic-line projects-page__timeline-item-line" style="width: 326px;">
-                                                                    
-                                                                </div>
-                                                                <div class="project-timeline__graphic-name">
-                                                                    Planning
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="project-timeline__tr">
-                                                        <td class="project-timeline__td project-timeline__td-graphic-name">
-                                                            <div class="project-timeline__graphic-item-name">
-                                                                <span class="projects-table__td-name">
-                                                                    Simply project 4
-                                                                    <span class="sticker sticker--new">
-                                                                        new
-                                                                    </span>
-                                                                </span> 
-                                                            </div>
-                                                        </td>
-                                                        <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
-                                                            <div class="project-timeline__graphic-item" style="margin-left: 21%;">
-                                                                <div class="project-timeline__graphic-line projects-page__timeline-item-line" style="width: 326px;">
-                                                                    
-                                                                </div>
-                                                                <div class="project-timeline__graphic-name">
-                                                                    Development
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="project-timeline__tr">
-                                                        <td class="project-timeline__td project-timeline__td-graphic-name">
-                                                            <div class="project-timeline__graphic-item-name">
-                                                                <span class="projects-table__td-name">
-                                                                    Very bad project 3
-                                                                </span> 
-                                                            </div>
-                                                        </td>
-                                                        <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
-                                                            <div class="project-timeline__graphic-item" style="margin-left: 21%;">
-                                                                <div class="project-timeline__graphic-line projects-page__timeline-item-line" style="width: 326px;">
-                                                                    
-                                                                </div>
-                                                                <div class="project-timeline__graphic-name">
-                                                                    Production
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="project-timeline__tr">
-                                                        <td class="project-timeline__td project-timeline__td-completed">
+                                                        <td class="project-timeline__td projects-page__timeline-td project-timeline__td-completed">
                                                             <div class="project-timeline__completed-counter">
-                                                                Closed (<span class="project-timeline__completed-total">94</span> )
-                                                                <button class="project-timeline__button-toggle project-timeline__button-toggle-graphic hide">
+                                                                Completed (<span class="project-timeline__completed-total">4</span> )
+                                                                <button class="project-timeline__button-toggle project-timeline__button-toggle-graphic">
                                                                     (50)
                                                                 </button>
                                                             </div>
                                                         </td>
-                                                        <td class="project-timeline__td project-timeline__td-completed" colspan="8">
+                                                        <td class="project-timeline__td projects-page__timeline-td project-timeline__td-completed" colspan="8">
                                                             
                                                         </td>
                                                     </tr>
-                                                    <div class="project-timeline__completed-block projects-page__table-block--hidden">
-                                                        <tr class="project-timeline__tr project-timeline__tr-completed projects-page__table-block--hidden">
-                                                            <td class="project-timeline__td project-timeline__td-graphic-name">
-                                                                <div class="project-timeline__graphic-item-name">
-                                                                    <span class="projects-table__td-name">
-                                                                        Just task 4
-                                                                    </span> 
+                                                    <div class="project-timeline__completed-block">
+                                                        <tr class="project-timeline__tr project-timeline__tr-completed">
+                                                            <td class="project-timeline__td projects-page__timeline-td project-timeline__td-graphic-name">
+                                                                <div class="project-timeline__graphic-item-name projects-page__timeline-item-name">
+                                                                    Just task 4
                                                                 </div>
                                                             </td>
-                                                            <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                            <td class="project-timeline__td projects-page__timeline-td project-timeline__td-grahic" colspan="8">
                                                                 <div class="project-timeline__graphic-item" style="margin-left: 13%;">
-                                                                    <div class="project-timeline__graphic-line projects-page__timeline-item-line" style="width: 465px;">
-                                                                        <div class="key-point" style="left: 41%;">
+                                                                    <div class="project-timeline__graphic-line projects-page__timeline-graphic-line" style="width: 465px;">
+                                                                        <div class="key-point projects-page__key-point" style="left: 41%;">
                                                                             <div class="key-point__text">
                                                                                 Key point 1
                                                                             </div>
@@ -1030,70 +960,67 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="project-timeline__graphic-name">
-                                                                        Dimebag Darrell
+                                                                        Planning
                                                                     </div>
                                                                 </div>
                                                             </td>
                                                         </tr>
-                                                        <tr class="project-timeline__tr project-timeline__tr-completed projects-page__table-block--hidden">
-                                                            <td class="project-timeline__td project-timeline__td-graphic-name">
-                                                                <div class="project-timeline__graphic-item-name">
-                                                                    <span class="projects-table__td-name">
-                                                                        Simple yet effective task 7
-                                                                    </span> 
+                                                        <tr class="project-timeline__tr project-timeline__tr-completed ">
+                                                            <td class="project-timeline__td projects-page__timeline-td project-timeline__td-graphic-name">
+                                                                <div class="project-timeline__graphic-item-name projects-page__timeline-item-name">
+                                                                    Simple yet effective task 7
                                                                 </div>
                                                             </td>
-                                                            <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                            <td class="project-timeline__td projects-page__timeline-td project-timeline__td-grahic" colspan="8">
                                                                 <div class="project-timeline__graphic-item" style="margin-left: -6%;">
-                                                                    <div class="project-timeline__graphic-line projects-page__timeline-item-line" style="width: 326px;">
+                                                                    <div class="project-timeline__graphic-line projects-page__timeline-graphic-line" style="width: 326px;">
                                                                         
                                                                     </div>
                                                                     <div class="project-timeline__graphic-name">
-                                                                        Dimebag Darrell
+                                                                        Development
                                                                     </div>
                                                                 </div>
                                                             </td>
                                                         </tr>
-                                                        <tr class="project-timeline__tr project-timeline__tr-completed projects-page__table-block--hidden">
-                                                            <td class="project-timeline__td project-timeline__td-graphic-name">
-                                                                <div class="project-timeline__graphic-item-name">
-                                                                    <span class="projects-table__td-name">
-                                                                        Impossible task 2
-                                                                    </span> 
+                                                        <tr class="project-timeline__tr project-timeline__tr-completed ">
+                                                            <td class="project-timeline__td projects-page__timeline-td project-timeline__td-graphic-name">
+                                                                <div class="project-timeline__graphic-item-name projects-page__timeline-item-name">
+                                                                    Impossible task 2
                                                                 </div>
                                                             </td>
-                                                            <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                            <td class="project-timeline__td projects-page__timeline-td project-timeline__td-grahic" colspan="8">
                                                                 <div class="project-timeline__graphic-item" style="margin-left: -14%;">
-                                                                    <div class="project-timeline__graphic-line projects-page__timeline-item-line" style="width: 326px;">
+                                                                    <div class="project-timeline__graphic-line projects-page__timeline-graphic-line" style="width: 326px;">
                                                                         
                                                                     </div>
                                                                     <div class="project-timeline__graphic-name">
-                                                                        Rex Brown
+                                                                        Production
                                                                     </div>
                                                                 </div>
                                                             </td>
                                                         </tr>
-                                                        <tr class="project-timeline__tr project-timeline__tr-completed projects-page__table-block--hidden">
-                                                            <td class="project-timeline__td project-timeline__td-graphic-name">
-                                                                <div class="project-timeline__graphic-item-name">
-                                                                    <span class="projects-table__td-name">
-                                                                        Infernous task 1
-                                                                    </span> 
+                                                        <tr class="project-timeline__tr project-timeline__tr-completed ">
+                                                            <td class="project-timeline__td projects-page__timeline-td project-timeline__td-graphic-name">
+                                                                <div class="project-timeline__graphic-item-name projects-page__timeline-item-name">
+                                                                    Infernous task 1
                                                                 </div>
                                                             </td>
-                                                            <td class="project-timeline__td project-timeline__td-grahic" colspan="8">
+                                                            <td class="project-timeline__td projects-page__timeline-td project-timeline__td-grahic" colspan="8">
                                                                 <div class="project-timeline__graphic-item" style="margin-left: -26%;">
-                                                                    <div class="project-timeline__graphic-line projects-page__timeline-item-line" style="width: 326px;">
+                                                                    <div class="project-timeline__graphic-line projects-page__timeline-graphic-line" style="width: 326px;">
                                                                         
                                                                     </div>
                                                                     <div class="project-timeline__graphic-name">
-                                                                        Phil Anselmo
+                                                                        Correction
                                                                     </div>
                                                                 </div>
                                                             </td>
                                                         </tr>
                                                     </div>
+            
+                                                       
                                                 </table>
+                                                
                                             </div>
         
                                             <div class="table-scale">

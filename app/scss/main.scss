@@ -13,10 +13,14 @@
 h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
+html{
+    height: 100%;
+}
 body{
     font-family: 'Geometria', sans-serif;
     // color: $black;
-    height: 100vh;
+    height: 100%;
+    min-height: 100%;
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -40,7 +44,7 @@ header{
     min-height: 100%;
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden;  
+    overflow-x: hidden;
 }
 
 
@@ -195,8 +199,38 @@ button{
 }
 
 .search{
+    position: relative;
+    max-width: 150px;
     &__input{
         max-width: 150px;
+        &.active{
+            border-radius: 4px 4px 0 0;
+        }
+    }
+    &__list{
+        position: absolute;
+        display: none;
+        padding: 10px;
+        border: 1px solid transparent;
+        border-radius: 0 0 4px 4px;
+        top: 22px;
+        left: 0;
+        z-index: 40;
+        &.active{
+            display: block;
+        }
+        @include for-md{
+            text-align: left;
+        }
+    }
+    &__list-item + &__list-item{
+        margin-top: 5px;
+    }
+    &__list-link{
+        font-weight: 500;
+    }
+    span{
+        padding: 2px 0;
     }
 }
 
@@ -445,7 +479,6 @@ button{
         font-weight: 300;
         white-space: nowrap;
         border-bottom: 1px solid transparent;
-        transition: .3s;
         &:hover{
             // border-color: $black;
         }
@@ -983,7 +1016,9 @@ button{
 }
 
 .project-timeline{
-    // overflow-x: scroll;
+    @include for-lg{
+        overflow-x: scroll;
+    }
     // overflow-y: hidden;
     &--completed{
         .project-timeline__tr:nth-child(2) .project-timeline__td{
@@ -1020,6 +1055,7 @@ button{
         text-align: left;
         vertical-align: bottom;
         border-spacing: 0;
+        // border-bottom: 1px solid transparent;
         &--border-bottom{
             &::after{
                 content: '';
@@ -1095,6 +1131,11 @@ button{
         z-index: 12;
     }
 
+    &__graphic-item-name{
+        font-weight: 500;
+        font-size: 16px;
+    }
+
     &__td-graphic-title{
         padding-top: 35px;
         border-top: 1px solid transparent;
@@ -1113,6 +1154,7 @@ button{
         align-items: center;
         padding-top: 28px;
         padding-bottom: 10px;
+        font-weight: 500;
     }
     &__button-toggle{
         font-weight: 300;
@@ -1795,6 +1837,28 @@ button{
 
     &__timeline-item-line{
         // height: 13px;
+    }
+    &__timeline-item-name{
+        font-size: 18px;
+    }
+    &__timeline-graphic-line{
+        height: 13px;
+        &::before, &::after{
+            display: none;
+        }
+    }
+    &__timeline-td{
+        padding-bottom: 25px;
+    }
+    &__key-point{
+        top: -1.5px;
+    }
+    &__link-grahic{
+        height: 44px;
+        left: 0;
+    }
+    &__today-line{
+        height: calc(100% - 79px);
     }
     
 }
@@ -3257,7 +3321,7 @@ button{
     &__list-item + &__list-item{
         margin-top: 15px;
     }
-    &__list-find{
+    span{
         padding: 2px 0;
         // background-color: #ded2a6;
     }
@@ -3533,8 +3597,29 @@ button{
     }
     &__completed-counter{
         position: relative;
+        padding-bottom: 15px;
         margin-top: -66px;
         border: none;
+    }
+    &__weeks-start{
+        display: none;
+        align-items: center;
+        margin-left: 31px;
+        &.active{
+            display: flex;
+        }
+        @include for-sm{
+            margin-left: 0;
+            margin-top: 10px;
+            flex-direction: column;
+        }
+    }
+    &__weeks-select{
+        margin-left: 18px;
+        @include for-sm{
+            margin-left: 0;
+            margin-top: 10px;
+        }
     }
 }
 
