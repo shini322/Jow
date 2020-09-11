@@ -175,6 +175,16 @@ $('.login__form').validate({
 }
 );
 
+$('.register__form').validate({
+  messages:{
+      email: {
+          required: "Please, enter valid e-mail.",
+      }
+  }
+
+}
+);
+
 $('.project-edit__dropdown-button').click(function (){
     $(this).toggleClass('open');
     $(this).find('.project-edit__dropdown').toggleClass('open');
@@ -243,4 +253,35 @@ $('.search-filters__input').keyup(function(){
   $('.search__input').blur(function(){
     $(this).removeClass('active');
     $(this).next().removeClass('active');
+  });
+
+  $( '.projects-page__timeline-td' ).sortable({
+    // handle: '.handle'
+  });
+
+  // const loginTab = document.querySelectorAll('.login__title-tab'),
+  //       loginTitle = document.querySelectorAll('.login__title');
+  
+  // loginTitle.forEach((item) =>{
+  //   item.addEventListener('click', (e)=>{
+  //     e.preventDefault();
+  //     if(e.target && e.target.matches('.login__title-tab[href="#signup"]')){
+  //       let login = document.querySelector('.login__title-tab--active[href="#login"]');
+  //       let text = e.target.textContent;
+  //       e.target.textContent = login.textContent;
+  //       login.textContent = text;
+  //     }
+  //     if(e.target && e.target.matches('.login__title-tab[href="#login"]') && e.target.classList.contains('active')){
+  //       let signup = document.querySelector('.login__title-tab--active[href="#signup"]');
+  //       let text = e.target.textContent;
+  //       e.target.textContent = signup.textContent;
+  //       signup.textContent = text;
+  //     }
+  //   });
+  // });
+
+  $('.login__title').on('click', 'span:not(.active)', function() {
+    $(this)
+      .addClass('active').siblings().removeClass('active')
+      .closest('.login__tabs-container').find('.login__tab-container').removeClass('active').eq($(this).index()).addClass('active');
   });

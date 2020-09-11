@@ -37,6 +37,9 @@ header{
     /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
     flex: 0 0 auto;
  }
+ textarea{
+     overflow-x: hidden ;
+ }
  .wrapper{
     position: relative;
     display: flex;
@@ -44,7 +47,7 @@ header{
     min-height: 100%;
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 
@@ -394,7 +397,7 @@ button{
     }
     &__container{
         display: flex;
-        align-items: flex-end;
+        align-items: center;
     }
 }
 .page-title{
@@ -605,9 +608,9 @@ button{
     }
     &__item{
         display: flex;
+        min-height: 30px;
         padding: 4px 8px;
         align-items: flex-start;
-        min-height: 18px;
         margin-bottom: 6px;
         @include for-sm{
             padding-left: 0;
@@ -623,6 +626,8 @@ button{
         }
         &--repeat{
             margin-bottom: 0;
+            min-height: 1px;
+            padding: 0 8px;
             .project-desc__item-title{
                 width: 85px;                
             }
@@ -644,10 +649,13 @@ button{
             }
             @include for-sm{
                 margin-top: 16px;
+                padding: 0;
             }
         }
         &--reminder{
             margin-bottom: 0;
+            min-height: 1px;
+            padding: 0 8px;
             .project-desc__item-title{
                 width: 85px;                
             }
@@ -669,6 +677,7 @@ button{
             }
             @include for-sm{
                 margin-top: 16px;
+                padding: 0;
             }
             
         }
@@ -1348,7 +1357,7 @@ button{
 
     &__td-dates{
         padding-right: 0;
-        padding-bottom: 0;
+        padding-bottom: 0 !important;
     }
     &__dates{
         display: flex;
@@ -1399,10 +1408,14 @@ button{
     }
 }
 .table-scale{
+    position: absolute;
     margin-left: auto;
+    // margin-top: -16px;  
+    z-index: 40;
+    bottom: 0;
+    right: 0;
     &__inner{
         display: flex;
-        margin-top: 9px;
         align-items: center;
         justify-content: flex-end;
     }
@@ -1818,9 +1831,9 @@ button{
             overflow-x: scroll;
         }
     }
-    &__title-menu{
-        margin-bottom: 3px;
-    }
+    // &__title-menu{
+    //     margin-bottom: 3px;
+    // }
 
     &__title-block{
         display: flex; 
@@ -1856,9 +1869,6 @@ button{
     &__link-grahic{
         height: 44px;
         left: 0;
-    }
-    &__today-line{
-        height: calc(100% - 79px);
     }
     
 }
@@ -1998,7 +2008,7 @@ button{
         }
         &:first-child{
             width: 30%;
-            font-size: 18px;
+            font-size: 16px;
         }
         &:last-child{
             padding-right: 0;
@@ -2050,6 +2060,9 @@ button{
         align-items: center;
         padding-top: 28px;
         border-top: 1px solid transparent;
+    }
+    &__button-toggle{
+        font-weight: 500;
     }
     &--closed{
         .projects-table__tr:nth-child(2) .projects-table__td{
@@ -2634,6 +2647,11 @@ button{
         left: 8px;
         // color: #8b8c8d;
     }
+    &__item-project{
+        & + &{
+            margin-top: 1px;
+        }
+    }
     
 }
 
@@ -2691,22 +2709,39 @@ button{
         }
     }
     &__title{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
         margin-bottom: 30px;
         padding-left: 40%;
         font-weight: 300;
         width: 100%;
-        &--big{
-            font-weight: 500;
-            font-size: 24px;
-        }
         @include for-md{
             padding-left: 0;
+        }
+        
+    }
+    &__title-tab{
+        cursor: pointer;
+        &:not(.active){
+            margin-bottom: -3px;
+            order: 2;
+            &::before{
+                content: '/';
+                margin: 0 5px;
+            }
+        }
+        &.active{
+            font-weight: 500;
+            font-size: 24px;
+            order: 1;
         }
     }
     &__form{
         width: 100%;
     }
     &__form-item{
+        position: relative;
         display: flex;
         align-items: center;
         width: 100%;
@@ -2732,6 +2767,7 @@ button{
     &__form-label{
         width: 40%;
         flex-shrink: 0;
+        min-width: 128px;
         @include for-md{
             width: 100%;
             margin-bottom: 10px;
@@ -2788,16 +2824,29 @@ button{
         }
     }
     label.error{
+        position: absolute;
+        left: 320px;
         white-space: nowrap;
         margin-left: 13px;
         font-size: 14px;
         line-height: 16px;
         font-weight: 500;
         font-style: normal;
+        padding-bottom: 0;
+        text-align: left;
         @include for-md{
+            position: relative;
             margin-top: 10px;
             margin-left: 0;
+            padding-bottom: 5px;
+            left: auto;
         }
+    }
+}
+
+.register{
+    &__form{
+        width: 100%;
     }
 }
 
@@ -2941,7 +2990,7 @@ button{
             
         }
         &:nth-child(2){
-            width: auto;
+            width: 4%;
             font-size: 14px;
             font-weight: 300;
             text-align: right;
@@ -2955,13 +3004,19 @@ button{
         &:nth-child(4){
             text-align: center;
             padding-left: 40px;
-            width: auto;
+            width: 10%;
             font-size: 14px;
             font-weight: 300;
         }
         &:nth-child(5){
             padding-left: 40px;
-            width: auto;
+            width: 17%;
+        }
+        &:nth-child(7){
+            width: 13%;
+        }
+        &:last-child{
+            width: 11%;
         }
         &:first-child{
             width: 26%;
@@ -3181,7 +3236,6 @@ button{
             width: 12px;
             height: 3px;
             background-color: transparent;
-            transition: .3s;
         }
         &::before{
             top: 0;
@@ -3727,6 +3781,9 @@ button{
         line-height: 20px;
         border-bottom: 1px solid transparent;
     }
+    &:last-child{
+        padding-bottom: 100px;
+    }
 }
 .comments-item{
     &__row{
@@ -3787,6 +3844,7 @@ button{
     &__text-block{
         padding-right: 32px;
         max-width: 809px;
+        width: 100%;
         @include for-md{
             padding-right: 0;
             max-width: 100%;
@@ -3855,6 +3913,13 @@ button{
         position: relative;
         display: inline;
         top: 4px;
+    }
+    &__replay-button{
+        padding: 0 23px !important;
+        width: auto;
+        max-width: 100%;
+        font-weight: 300;
+        min-height: 33px;
     }
 }
 .emoji-container{
@@ -4371,6 +4436,8 @@ button{
     margin-top: 20px;
     width: 100%;
     flex-shrink: 0;
+    max-width: 662px;
+    flex-shrink: 0  ;
    &__container{
     border: 1px solid transparent;
     border-radius: 10px;
@@ -4424,14 +4491,17 @@ button{
         }
     }
     &__textarea{
+        display: block;
         box-sizing: border-box;
         padding: 20px;
+        width: 100%;
         appearance: none;
         border: 0;
         min-height: 350px;
         font-size: 16px;
         line-height: 20px;
         border-radius: 10px;
+        resize: none;
         @include for-sm(){
             min-height: 170px;
         }
@@ -4638,4 +4708,7 @@ button{
 }
 .nice-select:hover{
     // border-color: $black;
+}
+.nice-select .option.selected{
+    font-weight: 500;
 }

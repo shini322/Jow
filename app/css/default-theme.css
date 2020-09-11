@@ -21,8 +21,8 @@ body, .timesheets__input:disabled {
 .opened .bar-top, .nav-toggle [class*='bar-'], .opened .bar-bot, .title-menu__button::before,
  .project-timeline__graphic-line, .project-timeline__graphic-line::before, .project-timeline__graphic-line::after,
 .project-timeline__today-line, .table-scale__button::before, .table-scale__plus::after,
-.link-grahic, .key-point__img-block, .search-page__condition-button.active::before, .search-page__condition-button.active::after,
-.title-menu__button::after, .new-message__select:before{
+.link-grahic, .key-point__img-block, .search-page__condition-button.active::before, .search-page__condition-button.active::after, .new-message__select:before,
+.title-menu__button::after{
     background-color: #23262b;
 }
 
@@ -36,7 +36,8 @@ body, .timesheets__input:disabled {
 .profile-item__label::before, .nice-select:hover, .login__form-input,
 .project-edit__dropdown, .search-filters__select .list, .project-timeline__table--border-bottom,
 .search-filters__input, .search-table__td-input, .search-table__select, .search-table__select .list,
-.new-message__select, .new-message__select .list, .search-filters__select, .search__list{
+.new-message__select, .new-message__select .list, .search-filters__select, .search__list,
+.nice-select:active, .nice-select.open, .nice-select:focus{
     border-color: #23262b;
 }
 .project-page__tab, .project-timeline__filters, .project-timeline__today-line::after, .project-budget__th,
@@ -85,10 +86,10 @@ body, .timesheets__input:disabled {
     background-color: #868e9b !important;
 }
 
-.project-page__tab.active, .calendar-nav__tab.active{
-    background-color: #bbc2ce;
+.project-page__tab.active, .calendar-nav__tab.active, .calendar-nav__select .option.selected, .nice-select .option:hover{
+    background-color: #bbc2ce !important;
 }
-.calendar-item--old, .calendar-item--new, .calendar-item__week{
+.calendar-item--new, .calendar-item__week{
     color: #8b8c8d;
 }
 .calendar-item--weekend{

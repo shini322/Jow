@@ -124,37 +124,64 @@
             <div class="login">
                 <div class="container">
                     <div class="login__inner">
-                        <div class="login__title">
-                            <span class="login__title--big">Login </span>/ Signup
-                        </div>
-                        <form class="login__form">
-                            <div class="login__form-item">
-                                <label class="login__form-label">Name</label>
-                                <input class="login__form-input" type="text">
+                        
+                        <div class="login__tabs-container">
+                            <div class="login__title">
+                                <span class="login__title-tab active">Signup</span>
+                                
+                                <span class="login__title-tab">Login</span>                            
                             </div>
-                            <div class="login__form-item">
-                                <label class="login__form-label">E-mail</label>
-                                <input class="login__form-input" type="email" name="email" required>
-                            </div>
-                            <div class="login__form-item">
-                                <label class="login__form-label">Password</label>
-                                <input class="login__form-input" type="password">
-                            </div>
-                            <div class="login__form-item">
-                                <label class="login__form-label">Password again</label>
-                                <input class="login__form-input" type="password">
-                            </div>
-                            <div class="login__form-remember label-checkbox-block">
-                                <input class="login__form-input-checkbox label-checkbox-block__input" type="checkbox" id="rules" checked>
-                                <label class="login__form-label-checkbox label-checkbox-block__label" for="rules">Agree to <a class="login__rules-link login__rules-link--terms" href="#">Terms</a>, <a class="login__rules-link login__rules-link--policy" href="#">Privacy Policy</a> and <a class="login__rules-link login__rules-link--cookie" href="#"> Cookie Policy</a>.</label>
-                            </div>
-                            <button class="button button--green login__button" type="submit">
-                                Signup
-                            </button>
-                        </form>
-                    </div> 
-                </div>
+                            <div class="login__tab-container tab-content active">
                                
+                                <form class="login__form">
+                                    <div class="login__form-item">
+                                        <label class="login__form-label">Name</label>
+                                        <input class="login__form-input" type="text">
+                                    </div>
+                                    <div class="login__form-item">
+                                        <label class="login__form-label">E-mail</label>
+                                        <input class="login__form-input" type="email" required>
+                                    </div>
+                                    <div class="login__form-item">
+                                        <label class="login__form-label">Password</label>
+                                        <input class="login__form-input" type="password">
+                                    </div>
+                                    <div class="login__form-item">
+                                        <label class="login__form-label">Password again</label>
+                                        <input class="login__form-input" type="password">
+                                    </div>
+                                    <div class="login__form-remember label-checkbox-block">
+                                        <input class="login__form-input-checkbox label-checkbox-block__input" type="checkbox" id="rules" checked>
+                                        <label class="login__form-label-checkbox label-checkbox-block__label" for="rules">Agree to <a class="login__rules-link login__rules-link--terms" href="#">Terms</a>, <a class="login__rules-link login__rules-link--policy" href="#">Privacy Policy</a> and <a class="login__rules-link login__rules-link--cookie" href="#"> Cookie Policy</a>.</label>
+                                    </div>
+                                    <button class="button button--green login__button" type="submit">
+                                        Signup
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="login__tab-container tab-content">
+                                <form class="register__form">
+                                    <div class="login__form-item">
+                                        <label class="login__form-label">E-mail</label>
+                                        <input class="login__form-input" type="email" required>
+                                    </div>
+                                    <div class="login__form-item">
+                                        <label class="login__form-label">Password</label>
+                                        <input class="login__form-input" type="password">
+                                    </div>
+                                    <div class="login__form-remember label-checkbox-block">
+                                        <input class="login__form-input-checkbox label-checkbox-block__input" type="checkbox" id="remember">
+                                        <label class="login__form-label-checkbox label-checkbox-block__label" for="remember">Remember me</label>
+                                    </div>
+                                    <button class="button button--green login__button" type="submit">
+                                        Login
+                                    </button>
+                                    <a class="login__forgot" href="">Forgot password?</a>
+                                </form>
+                            </div>
+                        </div>                        
+                    </div> 
+                </div>                               
             </div>
         </main>
         <!--end main-->
