@@ -1991,6 +1991,9 @@ button{
             
         }
     }
+    &__th-name{
+        cursor: pointer;
+    }
     &__td{
         position: relative;
         padding-bottom: 25px;
