@@ -610,6 +610,7 @@ button{
         display: flex;
         min-height: 30px;
         padding: 4px 8px;
+        padding-left: 0;
         align-items: flex-start;
         margin-bottom: 6px;
         @include for-sm{
@@ -1851,9 +1852,6 @@ button{
     &__timeline-item-line{
         // height: 13px;
     }
-    &__timeline-item-name{
-        font-size: 18px;
-    }
     &__timeline-graphic-line{
         height: 13px;
         &::before, &::after{
@@ -2153,7 +2151,7 @@ button{
         position: relative;
         display: inline-block;
         padding: 0 12px;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 22px;
         font-weight: 500;
     }
@@ -2308,7 +2306,22 @@ button{
             padding-left: 24px;
         }
         &--date{
-            text-align: center !important;
+            text-align: left !important;
+        }
+    }
+    &__th-link{
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 9px;
+            background-image: url(../img/arrow-top.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: 0;
+            right: 20px;
+            transform: translateY(50%);
         }
     }
     &__td{
@@ -2327,6 +2340,7 @@ button{
         }
         &:last-child{
             width: 12% !important;
+            text-align: left;
         }
     }
     &__td-name{
@@ -2334,18 +2348,7 @@ button{
     }
     &__th--date{
         padding-right: 23px;
-        &:after{
-            content: '';
-            position: absolute;
-            width: 15px;
-            height: 9px;
-            background-image: url(../img/arrow-top.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            top: 0;
-            right: 20px;
-            transform: translateY(50%);
-        }
+        
     }
     &__td-action-block{
         position: relative;
@@ -3194,6 +3197,9 @@ button{
     
 }
 .search-page{
+    &__inner{
+        margin-bottom: 100px;
+    }
     &__condition{
         display: inline-block;
         margin-top: 17.5px;
@@ -3396,7 +3402,7 @@ button{
         }
         @include for-md{
             display: flex;
-            flex-direction: column  ;
+            flex-direction: column;
         }
     }
     &__td{
@@ -3425,6 +3431,10 @@ button{
         border: 1px solid transparent;
         border-radius: 4px;
         width: auto;
+        font-weight: 300;
+        &--name{
+            font-weight: 500;
+        }
         &--number{
             padding: 7px 6px;
             width: 50px;
@@ -3479,7 +3489,6 @@ button{
             line-height: 22px;
         }
         .option{
-            font-weight: 500 !important;
             &.focus{
                 // background-color: #868e9b !important;
             }
@@ -4460,6 +4469,10 @@ button{
             margin-right: 5px;
             padding: 5px;
             box-sizing: border-box;
+            &--link{
+                max-width: 32px;
+                height: 18px;
+            }
             @include for-sm(){
                 margin: 0 5px;
             }
@@ -4705,10 +4718,11 @@ button{
 }
 .nice-select .option{
     transition: none;
+    font-weight: 300;
 }
 .nice-select:hover{
     // border-color: $black;
 }
 .nice-select .option.selected{
-    font-weight: 500;
+    font-weight: 300;
 }

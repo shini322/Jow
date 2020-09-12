@@ -21,8 +21,7 @@ body, .timesheets__input:disabled {
 .opened .bar-top, .nav-toggle [class*='bar-'], .opened .bar-bot, .title-menu__button::before,
  .project-timeline__graphic-line, .project-timeline__graphic-line::before, .project-timeline__graphic-line::after,
 .project-timeline__today-line, .table-scale__button::before, .table-scale__plus::after,
-.link-grahic, .key-point__img-block, .search-page__condition-button.active::before, .search-page__condition-button.active::after, .new-message__select:before,
-.title-menu__button::after{
+.link-grahic, .key-point__img-block, .search-page__condition-button.active::before, .search-page__condition-button.active::after, .new-message__select:before,{
     background-color: #23262b;
 }
 
